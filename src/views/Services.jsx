@@ -231,11 +231,13 @@ export default function Services() {
 
                     <img
                       className={
-                        menu.id === 3 ? "menuImage menuHajjImage " : "menuImage "
+                        menu.id === 3
+                          ? "menuImage menuHajjImage "
+                          : "menuImage "
                       }
                       src={menu.imageUrl}
                       alt="menu Images"
-                      />
+                    />
                   </div>
                 </Link>
               ))}
@@ -292,9 +294,17 @@ export default function Services() {
                         alt="menu Images"
                       /> */}
                       <div className="otherMenuImage">
-  <img className="imageMain" src={menu.imageUrl1} data-src={menu.imageUrl2}/>
-  <img className="imageHover" src={menu.imageUrl2} data-src={menu.imageUrl2}/>
-</div>
+                        <img
+                          className="imageMain"
+                          src={menu.imageUrl1}
+                          data-src={menu.imageUrl2}
+                        />
+                        <img
+                          className="imageHover"
+                          src={menu.imageUrl2}
+                          data-src={menu.imageUrl2}
+                        />
+                      </div>
                       {/* <img src={menu.imageUrl1}
        onMouseOver={src = menu.imageUrl2}
        onMouseOut={src = menu.imageUrl1} 

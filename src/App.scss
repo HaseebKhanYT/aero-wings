@@ -4,6 +4,14 @@
   color: black;
 }
 
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
 .headerText{
   font-weight: 800;
   font-size: 32px;

@@ -252,16 +252,16 @@ export default function Home() {
       <div className="homeHolidays">
         <div className="homeHolidaysContainer">
           <div className="domesticHolidays">
-            <div className="holidayTitle">
+            <div className="homeHolidayTitle">
               Experience a Memorable Staycation with Our{" "}
               <span className="blue poppins600"> Domestic</span> Getaways
             </div>
-            <div className="holidayCards">
+            <div className="homeHolidayTitle">
               <HolidayCarousel arr={domesticHolidays} />
             </div>
           </div>
           <div className="internationalHolidays">
-            <div className="holidayTitle">
+            <div className="homeHolidayTitle">
               Discover the Best of the World with Our{" "}
               <span className="red poppins600">International</span> Tours
             </div>
@@ -333,8 +333,7 @@ export default function Home() {
               <div className="WhyUsRow">
                 <div className="WhyUsCard">
                   <div className="WhyUsCardText">
-                    <span className="gold">10+ awards</span> of service
-                    excellence
+                    <span className="gold">Peace of mind</span> with our meticulous service
                   </div>
                 </div>
                 <div className="WhyUsCard">

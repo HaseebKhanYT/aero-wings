@@ -8,14 +8,18 @@ export default function Airlines() {
   return (
     <>
       <div className="airlines">
-        <div className="greyStrip"></div>
-        <div className="airlinesHeaderImg">
-          <img
-            src={airlinesHeaderImg}
-            width={"100%"}
-            alt="airlines header image"
-          />
-          <div className="airlinesTitle">Airline Reservation and Ticketing</div>
+        <div className="airlinesHeader">
+          <div className="greyStrip"></div>
+          <div className="airlinesHeaderImg">
+            <img
+              src={airlinesHeaderImg}
+              width={"100%"}
+              alt="airlines header image"
+            />
+            <div className="airlinesTitle">
+              Airline Reservation and Ticketing
+            </div>
+          </div>
         </div>
         <div className="description container-sm my-5">
           Our airline reservation and ticketing service is designed to make your
