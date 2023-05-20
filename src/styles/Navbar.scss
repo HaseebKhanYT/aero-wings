@@ -1,0 +1,96 @@
+.atHome {
+    background: transparent;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 7vw;
+}
+
+.navbarLogo {
+    width: 150px;
+}
+
+.navbarMenuDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarMenu li {
+
+    display: flex;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    list-style: none;
+    padding: 0 28px;
+    margin-right: 22px;
+    transition: 0.3s;
+
+}
+
+
+.navbarMenu li.active {
+
+    display: flex;
+    height: 40px;
+    background: #F0F0F5;
+    box-sizing: border-box;
+    /* border-radius: 20px; */
+    padding: 0 26px;
+
+
+}
+
+.navbarMenu li:hover {
+
+    display: flex;
+    height: 40px;
+    background: rgba(249, 249, 251, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+
+.navbarMenu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: #363374;
+}
+
+li:has(> a.backButton) {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.notHome {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+li:has(> a.backButton) {
+
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}

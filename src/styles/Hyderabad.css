@@ -1,0 +1,14 @@
+.hyderabadDescription {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: justify;
+}
+
+.hydSlideImage {
+  width: 100%;
+  height: 720px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=Hyderabad.css.map */

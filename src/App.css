@@ -1,0 +1,98 @@
+#root {
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+
+.headerText {
+  font-weight: 800;
+  font-size: 32px;
+  color: #374957;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: justify;
+}
+
+.pageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 100vh;
+}
+
+.navigationBar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.red {
+  color: #E31E24;
+}
+
+.blue {
+  color: #363374;
+}
+
+.gold {
+  font-weight: 700;
+  color: #CA9E67;
+}
+
+@-webkit-keyframes logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    -webkit-animation: logo-spin infinite 20s linear;
+            animation: logo-spin infinite 20s linear;
+  }
+}
+
+:root {
+  color-scheme: only light;
+}
+/*# sourceMappingURL=App.css.map */

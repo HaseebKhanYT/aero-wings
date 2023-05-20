@@ -1,0 +1,73 @@
+#root {
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+
+.headerText{
+  font-weight: 800;
+  font-size: 32px;
+  color: #374957;
+}
+
+.description{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: justify;
+}
+
+.pageContainer{
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.navigationBar{
+  flex: 0 1 auto;
+}
+
+.content{
+  flex: 1 1 auto;
+}
+
+.footer{
+  flex: 0 1 100px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.red {
+  color: #E31E24;
+}
+
+.blue {
+  color: #363374;
+}
+
+.gold {
+  font-weight: 700;
+  color: #CA9E67;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+:root {
+  color-scheme: only light;
+}

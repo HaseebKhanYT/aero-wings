@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Josefin+Sans&display=swap");
+.homeCarousel {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.border-radius {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.homeCarousel .swiper-pagination-bullet {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  background-color: #d9d9d9;
+}
+
+.homeCarousel .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #374957;
+}
+
+.homeCarousel {
+  height: 70vh;
+}
+
+.homeCarousel .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.homeCarousel .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.homeCarousel .swiper-button-prev::after {
+  content: url("../assets/icons/fi-rs-angle-small-left.svg");
+  opacity: 1;
+}
+
+.homeCarousel .swiper-button-next::after {
+  content: url("../assets/icons/fi-rs-angle-small-right.svg");
+  opacity: 1;
+}
+
+.navigation-container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeCarousel .swiper-next,
+.swiper-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #374957;
+  background: #d9d9d94d;
+  opacity: 0.3;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* background: rgba(217, 217, 217, 0.3); */
+}
+
+.slide-text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 75%;
+}
+
+.yellowBeach {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcc00), to(#ffffff));
+  background: linear-gradient(180deg, #ffcc00 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.poppins250 {
+  font-weight: 250;
+  font-style: italic;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planeText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  color: #707070;
+}
+
+.aeroWingsImage {
+  width: 365px;
+}
+
+.beachText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-size: 3.5rem;
+}
+
+.kabahText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  height: 100%;
+}
+
+.indiaText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 60%;
+  line-height: 50px;
+  font-weight: 275;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.thailandText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 80%;
+  height: 75%;
+  text-align: right;
+  color: #707070;
+}
+
+.corporateText {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  height: 75%;
+}
+
+.corporateText1 {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.corporateText2 {
+  font-weight: 900;
+  font-size: 64px;
+}
+
+.corporateText3 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.fontSize15 {
+  font-size: 1.5rem;
+}
+
+.fontSize26 {
+  font-size: 2.6rem;
+}
+
+.fontSize25 {
+  font-size: 2.5rem;
+}
+
+.fontSize3 {
+  font-size: 3rem;
+}
+
+.fontSize35 {
+  font-size: 3.5rem;
+}
+
+.bone {
+  color: #f1d6c6;
+}
+
+.thaiTextBottom {
+  font-size: 24px;
+  line-height: 100%;
+  color: #374957;
+}
+
+.poppins700 {
+  font-weight: 700;
+}
+
+.poppins600 {
+  font-weight: 600;
+}
+
+.poppins900 {
+  font-weight: 900;
+}
+
+.poppins300 {
+  font-weight: 300;
+}
+
+.poppins275 {
+  font-weight: 275;
+}
+
+.cursive {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
+.josefinsSans {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.thaiGradient {
+  background: linear-gradient(172.38deg, #374957 30.16%, #ff543f 148.13%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.black {
+  color: black;
+}
+/*# sourceMappingURL=HomeCarousel.css.map */

@@ -1,0 +1,266 @@
+.services {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesHeading {
+  font-weight: 800;
+  font-size: 32px;
+  color: #374957;
+}
+
+.servicesMenuGridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuGrid {
+  max-width: 1069px;
+}
+
+.menuBoxContainer {
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.squareImage{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.rectangleImage{
+ width: 250px;
+ height: 250px;
+ overflow: hidden;
+}
+
+.menuBox {
+  margin: 0;
+  padding: 0;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.menuBox.menuHajjImage {
+  min-width: 250px;
+}
+
+.menuImage {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: 0.3s all ease-in-out;
+}
+
+.menuImage:hover {
+  transform: scale(1.2);
+}
+
+.menuBox {
+  height: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+.menuTextContainer {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  background: rgba(217, 217, 217, 0.3);
+  backdrop-filter: blur(2px);
+  border-radius: 0px 25px 25px 0px;
+  margin-bottom: 25px;
+}
+
+.menuText {
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: white;
+  padding: 13px 15px;
+}
+
+.grayStrip {
+  height: 100px;
+  background: rgba(217, 217, 217, 0.3);
+}
+
+.titleStrip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/otherTitleBg.svg");
+  height: 194px;
+}
+
+.otherTitleText {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: white;
+  width: 84%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .rectangleImage{
+    width: 523px;
+  }
+  .menuImage.menuHajjImage {
+    width: 523px;
+  }
+}
+@media (min-width: 1400px) {
+  .menuGrid {
+    max-width: 1140px !important;
+  }
+}
+
+.seeMoreBox {
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: center;
+}
+
+.seeMoreText {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  color: #d9d9d9;
+}
+
+.title14 {
+  font-size: 14px;
+  line-height: 14px;
+}
+.title16 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.title18 {
+  font-size: 18px;
+  line-height: 18px;
+}
+.title20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+.prefix18 {
+  font-size: 18px;
+  line-height: 18px;
+}
+.prefix20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+.suffix18 {
+  font-size: 18px;
+  line-height: 18px;
+}
+.suffix20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+.suffix12 {
+  font-size: 12px;
+  line-height: 17.5px;
+}
+
+.otherMenuImage{
+  position: relative;
+}
+
+.otherMenuImage img.imageHover{
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.otherMenuImage:hover img.imageHover{
+  opacity: 1;
+}
+
+.otherServicesContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.menuDescription {
+  width: 93%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.otherRow {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactButton {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  gap: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background: rgba(217, 217, 217, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.shortcutButton {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  padding: 19px 25px;
+  background: rgba(217, 217, 217, 0.3);
+  backdrop-filter: blur(8px);
+}

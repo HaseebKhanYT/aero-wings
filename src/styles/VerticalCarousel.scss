@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+.swiper-vertical .swiper-button-next,
+.swiper-vertical .swiper-button-prev {
+	left: 50%;
+	transform-origin: left center;
+}
+.swiper-vertical .swiper-button-prev {
+	top: calc(var(--swiper-navigation-size) / 2);
+}
+.swiper-vertical .swiper-button-next {
+	top: auto;
+	bottom: calc(var(--swiper-navigation-size) / 2);
+}
+
+.verticalCarousel .swiper-pagination-bullet {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+  }
+  
+  .verticalCarousel .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #CA9E67;
+  }
+
+  .verticalCarousel .swiper-button-prev::after {
+    content: url("../assets/icons/fi-rs-angle-up.svg");
+    opacity: 1;
+  }
+  .verticalCarousel .swiper-button-next::after {
+    content: url("../assets/icons/fi-rs-angle-down.svg");
+    opacity: 1;
+  }
+  
+
+.carouselContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.verticalSlide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.verticalCarousel{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.verticalHeading{
+    font-weight: 700;
+    font-size: 36px;
+    color: #CA9E67;
+}
+
+.verticalText{
+    padding-right: 30px;
+}
