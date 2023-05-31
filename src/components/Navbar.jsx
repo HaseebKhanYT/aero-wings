@@ -1,14 +1,12 @@
 import "../styles/Navbar.scss";
 import logo from "../assets/logo.png";
-import { Link, useLocation, useMatch, useResolvedPath } from "react-router-dom";
-import { useState } from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar() {
 
-  const resolvedPath = useResolvedPath(useLocation());
   return (
     <>
-      <nav>
+      <nav className="aeroNavbar">
         <div className="logo">
           <Link to="/">
             <img className="navbarLogo" src={logo} alt="aerowingslogo" />

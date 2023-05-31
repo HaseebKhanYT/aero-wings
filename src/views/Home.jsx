@@ -159,6 +159,7 @@ export default function Home() {
         </div>
       </div>
       <div className="blurBackground"></div>
+
       <div className="homeAbout">
         <div className="homeAboutContainer">
           <div className="homeAboutImageContainer">
@@ -333,7 +334,8 @@ export default function Home() {
               <div className="WhyUsRow">
                 <div className="WhyUsCard">
                   <div className="WhyUsCardText">
-                    <span className="gold">Peace of mind</span> with our meticulous service
+                    <span className="gold">Peace of mind</span> with our
+                    meticulous service
                   </div>
                 </div>
                 <div className="WhyUsCard">

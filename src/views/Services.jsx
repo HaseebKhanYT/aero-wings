@@ -1,5 +1,4 @@
 import "../styles/Services.scss";
-import "bootstrap/dist/css/bootstrap-grid.css";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 

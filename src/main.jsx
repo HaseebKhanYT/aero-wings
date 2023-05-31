@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "bootstrap/dist/css/bootstrap-grid.css";
+import "bootstrap/dist/css/bootstrap-utilities.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/js/dist/modal";
 import "./index.scss";
 import { BrowserRouter } from "react-router-dom";
 
