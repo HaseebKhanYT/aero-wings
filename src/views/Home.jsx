@@ -28,6 +28,10 @@ import Lakshwadeep from "../assets/holidays/domestic/lakshwadeepHoliday.svg";
 import Kerala from "../assets/holidays/domestic/keralaHoliday.svg";
 
 import Indonasia from "../assets/holidays/international/indonasiaHoliday.svg";
+
+import Indonasia1 from "../assets/holidays/international/indonesia1.png";
+import Indonasia2 from "../assets/holidays/international/indonesia2.png";
+import Indonasia3 from "../assets/holidays/international/indonesia3.png";
 import Singapore from "../assets/holidays/international/singaporeHoliday.svg";
 import Thailand from "../assets/holidays/international/thailandHoliday.svg";
 import Maldives from "../assets/holidays/international/maldivesHoliday.svg";
@@ -100,7 +104,10 @@ const internationalHolidays = [
     id: 1,
     prefix: "Bali ",
     title: "Indonesia",
-    imageUrl: Indonasia,
+    imageUrl: Indonasia1,
+    imageUrl1: Indonasia2,
+    imageUrl2: Indonasia3,
+    desc: "Indonesia is a country located in Southeast Asia, consisting of over 17,000 islands, making it the largest archipelago in the world. It is home to a diverse range of cultures, languages, and religions, and is renowned for its natural beauty, including stunning beaches, towering volcanoes, and lush tropical forests. Visitors to Indonesia can enjoy a wide range of activities, from surfing and scuba diving in crystal clear waters to exploring ancient temples and historic landmarks. The country is famous for its cuisine, with a variety of dishes featuring spicy flavors, fresh seafood, and exotic fruits. Some of the top destinations in Indonesia include Bali, with its beautiful beaches and vibrant nightlife, Yogyakarta, home to the ancient Borobudur temple, and the capital city of Jakarta, a bustling metropolis with a rich history and culture. Indonesia offers something for everyone, whether you are seeking adventure, relaxation, or a cultural experience.",
   },
   {
     id: 2,

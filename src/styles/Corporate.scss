@@ -28,6 +28,7 @@
   line-height: 144px;
   color: #d9d9d9;
   letter-spacing: 0.25em;
+  cursor: default;
 
   &:hover {
     .fw250-red {
@@ -44,14 +45,14 @@
 }
 
 .corporateFeatures {
-    display: flex;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 48px;
-    color: #d9d9d9;
-  }
-  
-  .corporateFeaturesRow {
-    list-style-position: inside;
-  }
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 48px;
+  color: #d9d9d9;
+}
+
+.corporateFeaturesRow {
+  list-style-position: inside;
+}

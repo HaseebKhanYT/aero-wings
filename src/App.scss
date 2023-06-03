@@ -2,6 +2,7 @@
   text-align: center;
   margin: 0;
   color: black;
+  --bs-border-radius: 25px;
 }
 
 .buttonContainer {
@@ -12,43 +13,54 @@
   gap: 60px;
 }
 
-.headerText{
+.darkButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 25px;
+}
+
+.headerText {
   font-weight: 800;
   font-size: 32px;
   color: #374957;
 }
 
-.description{
+.description {
   font-weight: 400;
   font-size: 24px;
   line-height: 48px;
   text-align: justify;
 }
 
-.pageContainer{
+.pageContainer {
   display: flex;
   flex-flow: column;
   height: 100vh;
 }
 
-.navigationBar{
+.navigationBar {
   flex: 0 1 auto;
 }
 
-.content{
+.content {
   flex: 1 1 auto;
 }
 
-.footer{
+.footer {
   flex: 0 1 100px;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .red {
-  color: #E31E24;
+  color: #e31e24;
 }
 
 .blue {
@@ -57,7 +69,7 @@ body {
 
 .gold {
   font-weight: 700;
-  color: #CA9E67;
+  color: #ca9e67;
 }
 
 @keyframes logo-spin {
