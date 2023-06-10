@@ -1,6 +1,32 @@
-.socialIcons{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
+.socialIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialIcon {
+  position: relative;
+}
+.socialIcon img.imageMain {
+  transition: opacity 0.2s;
+  opacity: 1;
+}
+
+.socialIcon img.imageHover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.socialIcon:hover img.imageHover {
+  opacity: 1;
+}
+
+.socialIcon:hover img.imageMain {
+  opacity: 0;
 }
