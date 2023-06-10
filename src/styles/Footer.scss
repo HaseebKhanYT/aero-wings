@@ -1,26 +1,7 @@
 .footerBackground{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
     background-color: #1F2041;
 }
 
-.footerContainer {
-    width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footerLogo{
-    width: 100px;
-}
-
 .copyrightText{
-    color: #fff;
     font-size: 12px;
 }
