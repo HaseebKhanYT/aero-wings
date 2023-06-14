@@ -1,6 +1,4 @@
-import whatsappColor from "../assets/services/whatsappColor.svg";
 import downArrow from "../assets/icons/fi-rs-angle-down.svg";
-import upArrow from "../assets/icons/fi-rs-angle-up.svg";
 
 import HolidayModal from "./HolidayModal";
 
@@ -9,12 +7,12 @@ import { useState } from "react";
 
 export default function CardsAccordian({ arr }) {
   const [expand, setExpand] = useState(false);
-  const [focusProject, setFocusProject] = useState(0);
+  const [focusHoliday, setFocusHoliday] = useState(0);
   return (
     <>
-      <div id="cardsAccordian" className={expand ? "expand" : ""}>
+      <div id="cardsAccordian" className={expand ? "expand" : "collapsed"}>
         <div className="cardsAccordianContainer d-flex justify-content-center flex-column container-xs container g-3">
-          <HolidayModal arr={focusProject} />
+          <HolidayModal arr={focusHoliday} />
           <div className="row">
             {arr.map((slides) => (
               <div
@@ -25,7 +23,7 @@ export default function CardsAccordian({ arr }) {
                   className="holidayImageContainer"
                   data-bs-toggle="modal"
                   data-bs-target="#holidayModal"
-                  onClick={() => setFocusProject(slides)}
+                  onClick={() => setFocusHoliday(slides)}
                 >
                   <div className="holidayImageTextContainer">
                     <div
@@ -65,16 +63,10 @@ export default function CardsAccordian({ arr }) {
         className="d-flex justify-content-center"
       >
         <img
-          className={expand ? "d-none" : "d-flex"}
+          className={expand ? " arrowButton open" : " arrowButton close"}
           src={downArrow}
           style={{ width: "56px" }}
           alt="down arrow button"
-        />
-        <img
-          className={expand ? "d-flex" : "d-none"}
-          src={upArrow}
-          style={{ width: "56px" }}
-          alt="up arrow button"
         />
       </a>
     </>

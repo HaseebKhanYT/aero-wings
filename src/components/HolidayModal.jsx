@@ -20,7 +20,6 @@ export default function HolidayModal(arr) {
           <div className="modal-content rounded">
             <div className="modal-header container border-0 align-items-start">
               <div className="row">
-                {/* {(arr.arr.title)} */}
                 <div className="d-flex justify-content-center my-2 col-lg-4 col-12">
                   <div className="holidayImageContainer ">
                     <div className="holidayImageTextContainer">
@@ -55,7 +54,7 @@ export default function HolidayModal(arr) {
                 </div>
                 <div className="holidayImageContainer d-flex justify-content-center my-2 col-lg-4 col-12">
                   <img
-                    src={arr.arr.modalImage1}
+                    src={arr.arr.imageUrl1}
                     alt="title image"
                     width={"250px"}
                     height={"250px"}
@@ -64,7 +63,7 @@ export default function HolidayModal(arr) {
                 </div>
                 <div className="holidayImageContainer d-flex justify-content-center my-2 col-lg-4 col-12">
                   <img
-                    src={arr.arr.modalImage2}
+                    src={arr.arr.imageUrl2}
                     alt="title image"
                     width={"250px"}
                     height={"250px"}
