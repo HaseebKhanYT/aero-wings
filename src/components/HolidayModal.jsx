@@ -2,11 +2,15 @@ import whatsappColor from "../assets/services/whatsappColor.svg";
 
 import "../styles/HolidayModal.scss";
 
+
+
 export default function HolidayModal(arr) {
+
+  
   return (
     <>
       <div
-        className="modal fade "
+        className="modal fade"
         id="holidayModal"
         tabIndex="-1"
         aria-labelledby="holidayModalLabel"
@@ -16,6 +20,7 @@ export default function HolidayModal(arr) {
           <div className="modal-content rounded">
             <div className="modal-header container border-0 align-items-start">
               <div className="row">
+                {/* {(arr.arr.title)} */}
                 <div className="d-flex justify-content-center my-2 col-lg-4 col-12">
                   <div className="holidayImageContainer ">
                     <div className="holidayImageTextContainer">
@@ -79,13 +84,17 @@ export default function HolidayModal(arr) {
                 {arr.arr.description}
               </div>
               <div className="darkButtonContainer my-3">
-                <div
+                <a
                   className="whatsappButton d-flex align-items-center text-white rounded"
-                  href="https://wa.me/919177177011?text=I'm%20interested%20in%20your%20car%20for%20sale"
+                  href="https://wa.me/919177177011?text=I'm%20interested"
                 >
-                  <img src={whatsappColor} width={"20px"} alt="whatsapp Logo" />
+                  <img
+                    src={whatsappColor}
+                    width={"20px"}
+                    alt="whatsapp Logo"
+                  />
                   Book Now
-                </div>
+                </a>
               </div>
             </div>
             <div className="modal-footer border-0"></div>

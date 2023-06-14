@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import HomeCarousel from "../components/HomeCarousel";
+
 import "../styles/Home.scss";
 
 import SocialIcons from "../components/SocialIcons";
-import HolidayCarousel from "../components/HolidayCarousel";
+
 
 import homeAboutImage from "../assets/homeAboutImage.svg";
 import hajjTitle from "../assets/hajjTitle.svg";
@@ -14,143 +15,7 @@ import iata from "../assets/iataLogo.svg";
 import kabahGate from "../assets/kabahGate.svg";
 import dhikrImage from "../assets/dhikrImage.svg";
 import madinaDome from "../assets/madinaDome.svg";
-
-import Hyderabad from "../assets/holidays/domestic/hyderabadHoliday.svg";
-import Delhi from "../assets/holidays/domestic/delhiHoliday.svg";
-import Agra from "../assets/holidays/domestic/agraHoliday.svg";
-import Sikkim from "../assets/holidays/domestic/sikkimHoliday.svg";
-import Kashmir from "../assets/holidays/domestic/kashmirHoliday.svg";
-import Shimla from "../assets/holidays/domestic/shimlaHoliday.svg";
-import Jaipur from "../assets/holidays/domestic/jaipurHoliday.svg";
-import Goa from "../assets/holidays/domestic/goaHoliday.svg";
-import Leh from "../assets/holidays/domestic/lehHoliday.svg";
-import Lakshwadeep from "../assets/holidays/domestic/lakshwadeepHoliday.svg";
-import Kerala from "../assets/holidays/domestic/keralaHoliday.svg";
-
-import Indonasia from "../assets/holidays/international/indonasiaHoliday.svg";
-
-import Indonasia1 from "../assets/holidays/international/indonesia1.png";
-import Indonasia2 from "../assets/holidays/international/indonesia2.png";
-import Indonasia3 from "../assets/holidays/international/indonesia3.png";
-import Singapore from "../assets/holidays/international/singaporeHoliday.svg";
-import Thailand from "../assets/holidays/international/thailandHoliday.svg";
-import Maldives from "../assets/holidays/international/maldivesHoliday.svg";
-import Russia from "../assets/holidays/international/russiaHoliday.svg";
-import MiddleEast from "../assets/holidays/international/middleEastHoliday.svg";
-import Europe from "../assets/holidays/international/europeHoliday.svg";
-import America from "../assets/holidays/international/americaHoliday.svg";
-
-const domesticHolidays = [
-  {
-    id: 1,
-    title: "Hyderabad",
-    imageUrl: Hyderabad,
-  },
-  {
-    id: 2,
-    title: "Delhi",
-    imageUrl: Delhi,
-  },
-  {
-    id: 3,
-    title: "Agra",
-    imageUrl: Agra,
-  },
-  {
-    id: 4,
-    prefix: "Tsomgo ",
-    title: "Sikkim",
-    imageUrl: Sikkim,
-  },
-  {
-    id: 5,
-    title: "Kashmir",
-    imageUrl: Kashmir,
-  },
-  {
-    id: 6,
-    title: "Shimla",
-    imageUrl: Shimla,
-  },
-  {
-    id: 7,
-    title: "Jaipur",
-    imageUrl: Jaipur,
-  },
-  {
-    id: 8,
-    title: "Goa",
-    imageUrl: Goa,
-  },
-  {
-    id: 9,
-    title: "Leh",
-    imageUrl: Leh,
-  },
-  {
-    id: 10,
-    title: "Lakshwadeep",
-    imageUrl: Lakshwadeep,
-  },
-  {
-    id: 11,
-    title: "Kerala",
-    imageUrl: Kerala,
-  },
-];
-
-const internationalHolidays = [
-  {
-    id: 1,
-    prefix: "Bali ",
-    title: "Indonesia",
-    imageUrl: Indonasia1,
-    imageUrl1: Indonasia2,
-    imageUrl2: Indonasia3,
-    desc: "Indonesia is a country located in Southeast Asia, consisting of over 17,000 islands, making it the largest archipelago in the world. It is home to a diverse range of cultures, languages, and religions, and is renowned for its natural beauty, including stunning beaches, towering volcanoes, and lush tropical forests. Visitors to Indonesia can enjoy a wide range of activities, from surfing and scuba diving in crystal clear waters to exploring ancient temples and historic landmarks. The country is famous for its cuisine, with a variety of dishes featuring spicy flavors, fresh seafood, and exotic fruits. Some of the top destinations in Indonesia include Bali, with its beautiful beaches and vibrant nightlife, Yogyakarta, home to the ancient Borobudur temple, and the capital city of Jakarta, a bustling metropolis with a rich history and culture. Indonesia offers something for everyone, whether you are seeking adventure, relaxation, or a cultural experience.",
-  },
-  {
-    id: 2,
-    title: "Singapore",
-    imageUrl: Singapore,
-  },
-  {
-    id: 3,
-    title: "Thailand",
-    imageUrl: Thailand,
-  },
-  {
-    id: 4,
-    title: "Maldives",
-    imageUrl: Maldives,
-  },
-  {
-    id: 5,
-    title: "Russia",
-    imageUrl: Russia,
-  },
-  {
-    id: 6,
-    font: 12,
-    prefix12: true,
-    suffix12: true,
-    title10: true,
-    prefix: "Middle East",
-    title: "and",
-    suffix: "North Africa",
-    imageUrl: MiddleEast,
-  },
-  {
-    id: 7,
-    title: "Europe",
-    imageUrl: Europe,
-  },
-  {
-    id: 8,
-    title: "Americas",
-    imageUrl: America,
-  },
-];
+import HomeHolidays from "../components/HomeHolidays";
 
 export default function Home() {
   return (
@@ -160,7 +25,7 @@ export default function Home() {
         <div className="iconContainer">
           <SocialIcons />
           <span>
-            <span className="blue">since</span>&nbsp;
+            <span className="blue" >since</span>&nbsp;
             <span className="red">1975</span>
           </span>
         </div>
@@ -168,186 +33,190 @@ export default function Home() {
       <div className="blurBackground"></div>
 
       <div className="homeAbout">
-        <div className="homeAboutContainer">
-          <div className="homeAboutImageContainer">
-            <div className="homeAboutLogoContainer">
+        <div className="container my-5">
+          <div className="row">
+            <div className="col-xl-6 col-lg-12 my-2 container homeAboutImageContainer">
+              <div className="homeAboutLogoContainer">
+                <img
+                  className="homeAboutLogo"
+                  src={logoWing}
+                  alt="Aero Wings Logo"
+                />
+              </div>
+              <div className="statsColumn">
+                <div className="statsRow1">
+                  <div className="statsContainer stat1">
+                    <div>
+                      {" "}
+                      <span className="blue statNumber"> 500,000+</span>
+                      <br /> <span className="statText">trips </span>
+                    </div>
+                  </div>
+                  <div className="statsContainer stat2">
+                    <div>
+                      {" "}
+                      <span className="blue statNumber"> 500+ </span>
+                      <br />
+                      <span className="statText">destinations</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="statsRow2">
+                  <div className="statsContainer stat3">
+                    <div>
+                      {" "}
+                      <span className="blue statNumber"> 40+</span>
+                      <br />
+                      <span className="statText">years</span>
+                    </div>
+                  </div>
+                  <div className="statsContainer stat4">
+                    <div>
+                      {" "}
+                      <span className="blue statNumber"> 20+ </span>
+                      <br />
+                      <span className="statText"> services </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="statsRow1">
+                  <div className="statsContainer stat5">
+                    <div>
+                      {" "}
+                      <span className="blue statNumber"> 10+ </span>
+                      <br />
+                      <span className="statText"> awards</span>
+                    </div>
+                  </div>
+                  <div className="statsContainer stat6">
+                    <div>
+                      {" "}
+                      <span className="blue statNumber"> 24/7 </span>
+                      <br />
+                      <span className="statText"> support</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img
-                className="homeAboutLogo"
-                src={logoWing}
-                alt="Aero Wings Logo"
+                className="homeAboutImage"
+                src={homeAboutImage}
+                alt="airplaneWindow"
               />
             </div>
-            <div className="statsColumn">
-              <div className="statsRow1">
-                <div className="statsContainer stat1">
-                  <div>
-                    {" "}
-                    <span className="blue statNumber"> 500,000+</span>
-                    <br /> <span className="statText">trips </span>
-                  </div>
-                </div>
-                <div className="statsContainer stat2">
-                  <div>
-                    {" "}
-                    <span className="blue statNumber"> 500+ </span>
-                    <br />
-                    <span className="statText">destinations</span>
-                  </div>
-                </div>
+            <div className="col-xl-6 col-lg-12 my-2 container homeAboutTextContainer">
+              <div className="textBox1 container">
+                At Aero Wings, we believe that travel is not just about reaching
+                a destination, but about the journey itself. Our team of
+                passionate travel experts is committed to creating personalized
+                and unique travel experiences for our clients. With over four
+                decades of experience in the travel industry, we have built a
+                reputation for excellence, reliability, and customer
+                satisfaction.
               </div>
-              <div className="statsRow2">
-                <div className="statsContainer stat3">
-                  <div>
-                    {" "}
-                    <span className="blue statNumber"> 40+</span>
-                    <br />
-                    <span className="statText">years</span>
-                  </div>
-                </div>
-                <div className="statsContainer stat4">
-                  <div>
-                    {" "}
-                    <span className="blue statNumber"> 20+ </span>
-                    <br />
-                    <span className="statText"> services </span>
-                  </div>
-                </div>
+              <div className="textBox2 container">
+                We are dedicated to making your travel dreams a reality and
+                ensuring that your journey with us is one to remember.
               </div>
-              <div className="statsRow1">
-                <div className="statsContainer stat5">
-                  <div>
-                    {" "}
-                    <span className="blue statNumber"> 10+ </span>
-                    <br />
-                    <span className="statText"> awards</span>
-                  </div>
-                </div>
-                <div className="statsContainer stat6">
-                  <div>
-                    {" "}
-                    <span className="blue statNumber"> 24/7 </span>
-                    <br />
-                    <span className="statText"> support</span>
-                  </div>
-                </div>
-              </div>
+              <Link to="/about" className="glassButton">
+                Read more
+              </Link>
             </div>
-            <img
-              className="homeAboutImage"
-              src={homeAboutImage}
-              alt="airplaneWindow"
-            />
-          </div>
-          <div className="homeAboutTextContainer">
-            <div className="textBox1">
-              At Aero Wings, we believe that travel is not just about reaching a
-              destination, but about the journey itself. Our team of passionate
-              travel experts is committed to creating personalized and unique
-              travel experiences for our clients. With over four decades of
-              experience in the travel industry, we have built a reputation for
-              excellence, reliability, and customer satisfaction.
-            </div>
-            <div className="textBox2">
-              We are dedicated to making your travel dreams a reality and
-              ensuring that your journey with us is one to remember.
-            </div>
-            <Link to="/about" className="glassButton">
-              Read more
-            </Link>
           </div>
         </div>
       </div>
       <div className="homeHolidays">
-        <div className="homeHolidaysContainer">
-          <div className="domesticHolidays">
-            <div className="homeHolidayTitle">
-              Experience a Memorable Staycation with Our{" "}
-              <span className="blue poppins600"> Domestic</span> Getaways
-            </div>
-            <div className="homeHolidayTitle">
-              <HolidayCarousel arr={domesticHolidays} />
-            </div>
-          </div>
-          <div className="internationalHolidays">
-            <div className="homeHolidayTitle">
-              Discover the Best of the World with Our{" "}
-              <span className="red poppins600">International</span> Tours
-            </div>
-            <div className="holidayCards">
-              <HolidayCarousel arr={internationalHolidays} />
-            </div>
-          </div>
-        </div>
+        <HomeHolidays/>
       </div>
       <div className="homeHajj">
         <div className="homeHajjContainer">
-          <div className="homeHajjTitleContainer">
-            <img src={hajjTitleGeometry} alt="geometry" />
+          <div className="homeHajjTitleContainer justify-content-center justify-content-lg-between my-5">
+
+            <img 
+             className="d-none d-lg-flex" src={hajjTitleGeometry} alt="geometry" />
 
             <div className="homeHajjTitleImage">
-              <img src={hajjTitle} alt="hajj" />
+              <img 
+              src={hajjTitle} alt="hajj" />
             </div>
-            <img src={hajjTitleGeometry} alt="geometry" />
+            <img 
+            className="d-none d-lg-flex" src={hajjTitleGeometry} alt="geometry" />
           </div>
 
-          <div className="hajjImagesContainer">
-            <div className="imageContainer">
-              <img className="hajjImages" src={kabahGate} alt="kabah gate" />
-            </div>
-            <div className="imageContainer">
-              <img className="hajjImages" src={dhikrImage} alt="hajj" />
-              <Link to="/hajj" className=" exploreButton glassButton">
-                Explore now
-              </Link>
-            </div>
-            <div className="imageContainer">
-              <img className="hajjImages" src={madinaDome} alt="hajj" />
+          <div className="hajjImagesContainer container justify-content-center my-5">
+            <div className="row w-100 justify-content-between">
+              <div className="col-xl-4 d-flex justify-content-center my-3">
+                <div className="imageContainer">
+                  <img
+                  
+                    className="hajjImages"
+                    src={kabahGate}
+                    alt="kabah gate"
+                  />
+                </div>
+              </div>
+              <div className="col-xl-4 d-flex justify-content-center my-3">
+                <div className="imageContainer">
+                  <img 
+                  className="hajjImages" src={dhikrImage} alt="hajj" />
+                  <Link to="/hajj" className=" exploreButton glassButton">
+                    Explore now
+                  </Link>
+                </div>
+              </div>
+              <div className="col-xl-4 d-flex justify-content-center my-3">
+                <div className="imageContainer">
+                  <img 
+                  className="hajjImages" src={madinaDome} alt="hajj" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="homeWhyUs">
         <div className="whyUsWrapper">
-          <div className="viewAllButtonContainer">
+          <div className="viewAllButtonContainer my-5">
             <Link to="/services" className="viewAllButton">
               View all our services
             </Link>
           </div>
-          <div className="WhyUsContainer">
-            <div className="WhyUsTitleContainer">
-              <div className="WhyUsTitle">
-                <span>Why</span>
-                <br />
-                <span className="aerowings" style={{ fontSize: "56px" }}>
-                  AeroWings?
-                </span>
-              </div>
-            </div>
-            <div className="WhyUsCardsContainer">
-              <div className="WhyUsRow">
-                <div className="WhyUsCard">
-                  <div className="WhyUsCardText">
-                    <span className="gold">40+ years</span> of experience and
-                    expertise
-                  </div>
-                </div>
-                <div className="WhyUsCard">
-                  <div className="WhyUsCardText">
-                    <span className="gold">Reliability</span> proven by serving
-                    half a million of customers
-                  </div>
+          <div className="container my-5">
+            <div className="row">
+              <div className=" col-md-6 d-flex justify-content-center align-items-center">
+                <div className="WhyUsTitle">
+                  <span>Why</span>
+                  <br />
+                  <span className="aerowings" style={{ fontSize: "56px" }}>
+                    AeroWings?
+                  </span>
                 </div>
               </div>
-              <div className="WhyUsRow">
-                <div className="WhyUsCard">
-                  <div className="WhyUsCardText">
-                    <span className="gold">Peace of mind</span> with our
-                    meticulous service
+              <div className="WhyUsCardsContainer container d-flex justify-content-center col-md-6">
+                <div className="WhyUsRow row">
+                  <div className="WhyUsCard col-6">
+                    <div className="WhyUsCardText">
+                      <span className="gold">40+ years</span> of experience and
+                      expertise
+                    </div>
                   </div>
-                </div>
-                <div className="WhyUsCard">
-                  <div className="WhyUsCardText">
-                    <img src={iata} alt="iata Logo" />
+                  <div className="WhyUsCard col-6">
+                    <div className="WhyUsCardText">
+                      <span className="gold">Reliability</span> proven by
+                      serving half a million of customers
+                    </div>
+                  </div>
+                  <div className="WhyUsCard col-6">
+                    <div className="WhyUsCardText">
+                      <span className="gold">Peace of mind</span> with our
+                      meticulous service
+                    </div>
+                  </div>
+                  <div className="WhyUsCard col-6">
+                    <div className="WhyUsCardText">
+                      <img 
+                      src={iata} alt="iata Logo" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -355,7 +224,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="homeFooter">
+      <div className="homeFooter d-none d-lg-flex">
         <div className="footerMenuContainer">
           <div className="footerTextContainer">
             <div className="footerColumn">
