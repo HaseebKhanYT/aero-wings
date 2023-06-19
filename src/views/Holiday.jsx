@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
+
 import holidayHeaderImg from "../assets/images/holidays-header-img.svg";
+
+import holidayPic from "../assets/holidays/holidayPic.png";
+import holidayPic1 from "../assets/holidays/holidayPic-1.png";
+import holidayPic2 from "../assets/holidays/holidayPic-2.png";
 
 import whatsappColor from "../assets/services/whatsappColor.svg";
 import "../styles/Holiday.scss";
@@ -9,7 +14,7 @@ export default function Holiday() {
     <>
       <div className="holiday">
         <div className="holidayHeader mb-5">
-        <div className="greyStrip"></div>
+          <div className="greyStrip"></div>
           <div className="holidayHeaderImg position-relative d-flex justify-content-center align-items-center">
             <img
               src={holidayHeaderImg}
@@ -39,27 +44,30 @@ export default function Holiday() {
           your trip will be nothing less than extraordinary.
         </div>
 
-        <div className="holidayImagesContainer container my-5">
-          <div className="imageContainer">
-            <img
-              className="holidayImages"
-              src={holidayHeaderImg}
-              alt="kabah gate"
-            />
-          </div>
-          <div className="imageContainer">
-            <img
-              className="holidayImages"
-              src={holidayHeaderImg}
-              alt="holiday"
-            />
-          </div>
-          <div className="imageContainer">
-            <img
-              className="holidayImages"
-              src={holidayHeaderImg}
-              alt="holiday"
-            />
+        <div className=" container justify-content-center my-5">
+          <div className="row w-100 g-3 justify-content-center">
+            <div className="imageContainer position-relative col-xl-4">
+              <div className="imageText position-absolute text-white d-flex align-items-center justify-content-center top-0">
+                custom.
+              </div>
+              <img
+                className="holidayImages"
+                src={holidayPic}
+                alt="kabah gate"
+              />
+            </div>
+            <div className="imageContainer position-relative col-xl-4">
+              <div className="imageText position-absolute text-white d-flex align-items-center justify-content-center top-0">
+                seamless.
+              </div>
+              <img className="holidayImages" src={holidayPic1} alt="holiday" />
+            </div>
+            <div className="imageContainer position-relative col-xl-4">
+              <div className="imageText position-absolute text-white d-flex align-items-center justify-content-center top-0 ">
+                memorable.
+              </div>
+              <img className="holidayImages" src={holidayPic2} alt="holiday" />
+            </div>
           </div>
         </div>
         <div className="instructions container-lg my-5">
@@ -112,13 +120,13 @@ export default function Holiday() {
             </li>
           </ul>
         </div>
-        <div className="buttonContainer my-5">
+        <div className="buttonContainer container my-5">
           <Link to="/contact" className="contactButton">
             <img src={whatsappColor} alt="whatsapp Logo" />
             Get Started
           </Link>
         </div>
-        <div className="buttonContainer my-5">
+        <div className="buttonContainer container my-5">
           <Link to="/foreign" className="shortcutButton">
             See International Destinations
           </Link>

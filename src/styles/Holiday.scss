@@ -12,32 +12,31 @@
   -webkit-text-fill-color: transparent;
 }
 
-.holidayImagesContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
 .holidayImages {
   width: 300px;
   height: 500px;
   object-fit: cover;
   border-radius: 25px;
-  transition: 0.3s all ease-in-out;
-}
-
-.holidayImages:hover {
-  transform: scale(1.2);
 }
 
 .imageContainer {
-  margin: 0;
-  padding: 0;
-  min-width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-width: 300px;
   border-radius: 25px;
   overflow: hidden;
+}
+
+.imageText {
+  width: 300px;
+  height: 190px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+
+  background: rgba(45, 60, 96, 0.25);
+  backdrop-filter: blur(2px);
 }
 
 .instructions {
@@ -47,11 +46,10 @@
   text-align: justify;
   display: flex;
   justify-content: center;
-  .instructionsList{
+  .instructionsList {
     width: 80%;
   }
-//   text-align: left;
-
+  //   text-align: left;
 }
 
 .bold700 {
