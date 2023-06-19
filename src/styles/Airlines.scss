@@ -30,3 +30,27 @@
   line-height: 48px;
   text-align: justify;
 }
+
+.logoContainer {
+  width: 200px;
+  height: 200px;
+  background: rgba(217, 217, 217, 0.15);
+  border-radius: 15px;
+}
+
+.navBackground {
+  background: rgba(217, 217, 217, 0.15);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.tabButton {
+  color: #374957 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabButton.active {
+  background-color: #374957 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+}
