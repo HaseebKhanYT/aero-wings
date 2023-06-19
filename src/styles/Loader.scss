@@ -1,23 +1,111 @@
 .loader-background {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 21vh;
-    width: 100%;
-    height: 100vh;
-
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 50%, rgba(54, 51, 116, 0.25) 100%);
-    background-color: white;
+  row-gap: 21vh;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(54, 51, 116, 0.25) 100%
+  );
+  background-color: white;
 }
 
 .loader-logo {
-    width: 250px;
+  width: 250px;
 }
 
 .loader-gif {
+  margin-bottom: 21vh;
+}
 
-    margin-bottom: 21vh;
-    width: 77px;
-
+@keyframes ldio-voxxa58fjp {
+  0% {
+    transform: translate(6px, 40px) scale(0);
+  }
+  25% {
+    transform: translate(6px, 40px) scale(0);
+  }
+  50% {
+    transform: translate(6px, 40px) scale(1);
+  }
+  75% {
+    transform: translate(40px, 40px) scale(1);
+  }
+  100% {
+    transform: translate(74px, 40px) scale(1);
+  }
+}
+@keyframes ldio-voxxa58fjp-r {
+  0% {
+    transform: translate(74px, 40px) scale(1);
+  }
+  100% {
+    transform: translate(74px, 40px) scale(0);
+  }
+}
+@keyframes ldio-voxxa58fjp-c {
+  0% {
+    background: #e31e24;
+  }
+  25% {
+    background: #363374;
+  }
+  50% {
+    background: #e31e24;
+  }
+  75% {
+    background: #363374;
+  }
+  100% {
+    background: #e31e24;
+  }
+}
+.ldio-voxxa58fjp div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(40px, 40px) scale(1);
+  background: #e31e24;
+  animation: ldio-voxxa58fjp 2s infinite cubic-bezier(0, 0.5, 0.5, 1);
+}
+.ldio-voxxa58fjp div:nth-child(1) {
+  background: #363374;
+  transform: translate(74px, 40px) scale(1);
+  animation: ldio-voxxa58fjp-r 0.5s infinite cubic-bezier(0, 0.5, 0.5, 1),
+    ldio-voxxa58fjp-c 2s infinite step-start;
+}
+.ldio-voxxa58fjp div:nth-child(2) {
+  animation-delay: -0.5s;
+  background: #e31e24;
+}
+.ldio-voxxa58fjp div:nth-child(3) {
+  animation-delay: -1s;
+  background: #363374;
+}
+.ldio-voxxa58fjp div:nth-child(4) {
+  animation-delay: -1.5s;
+  background: #e31e24;
+}
+.ldio-voxxa58fjp div:nth-child(5) {
+  animation-delay: -2s;
+  background: #363374;
+}
+.loadingio-spinner-ellipsis-t9jnxvauyv {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-voxxa58fjp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.8);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.ldio-voxxa58fjp div {
+  box-sizing: content-box;
 }

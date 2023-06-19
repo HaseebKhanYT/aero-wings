@@ -1,5 +1,5 @@
 import SocialIcons from "./SocialIcons";
-import logo from "../assets/logo/logo-white.svg";
+import logo from "../assets/logo/logo-white.png";
 import "../styles/Footer.scss";
 
 export default function Footer() {
@@ -13,7 +13,6 @@ export default function Footer() {
             </span>
             <a href="#" className="col-sm-4 my-3">
               <img
-                loading="lazy"
                 className="footerLogo"
                 src={logo}
                 width={"100px"}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 
 import "./App.scss";
 import Navbar from "./components/Navbar";
