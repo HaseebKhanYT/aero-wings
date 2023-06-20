@@ -1,0 +1,51 @@
+.contactDetailsTab{
+    background-color: #1F2041;
+    border-radius: 25px;
+}
+.contactDetailsTab2{
+    background-color: #1F2041;
+    border-radius: 25px;
+    width: 500px;
+}
+
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.darkButton{
+    background-color: #1F2041;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 25px 50px;
+gap: 25px;
+}
+.darkButtonText{
+    text-decoration: none;
+    font-weight: 700;
+font-size: 20px;
+}
+.darkButtonText:hover{
+    text-decoration: none;
+}
+
+.contactIconContainer{
+    background-color: #1F2041;
+    width: 175px;
+    height: 125px;
+}
+
+.contactInfo{
+    font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+}
+
+.contactText{
+    font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+}
