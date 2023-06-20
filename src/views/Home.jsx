@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import HomeCarousel from "../components/HomeCarousel";
+import TCModal from "../components/TCModal";
 
 import "../styles/Home.scss";
 
 import SocialIcons from "../components/SocialIcons";
-
 
 import homeAboutImage from "../assets/homeAboutImage.svg";
 import hajjTitle from "../assets/hajjTitle.svg";
@@ -25,16 +25,16 @@ export default function Home() {
         <div className="iconContainer">
           <SocialIcons />
           <span>
-            <span className="blue" >since</span>&nbsp;
+            <span className="blue">since</span>&nbsp;
             <span className="red">1975</span>
           </span>
         </div>
       </div>
       <div className="blurBackground"></div>
 
-      <div className="homeAbout">
+      <div className="homeAbout my-5">
         <div className="container my-5">
-          <div className="row">
+          <div className="row g-5">
             <div className="col-xl-6 col-lg-12 my-2 container homeAboutImageContainer">
               <div className="homeAboutLogoContainer">
                 <img
@@ -118,7 +118,7 @@ export default function Home() {
                 We are dedicated to making your travel dreams a reality and
                 ensuring that your journey with us is one to remember.
               </div>
-              <Link to="/about" className="glassButton">
+              <Link to="/about" className="shortcutButton">
                 Read more
               </Link>
             </div>
@@ -126,39 +126,41 @@ export default function Home() {
         </div>
       </div>
       <div className="homeHolidays">
-        <HomeHolidays/>
+        <HomeHolidays />
       </div>
       <div className="homeHajj">
         <div className="homeHajjContainer">
-          <div className="homeHajjTitleContainer justify-content-center justify-content-lg-between my-5">
-
-            <img 
-             className="d-none d-lg-flex" src={hajjTitleGeometry} alt="geometry" />
+          <div className="homeHajjTitleContainer justify-content-center justify-content-lg-between">
+            <img
+              className="d-none d-lg-flex"
+              src={hajjTitleGeometry}
+              alt="geometry"
+            />
 
             <div className="homeHajjTitleImage">
-              <img 
-              src={hajjTitle} alt="hajj" />
+              <img src={hajjTitle} alt="hajj" />
             </div>
-            <img 
-            className="d-none d-lg-flex" src={hajjTitleGeometry} alt="geometry" />
+            <img
+              className="d-none d-lg-flex"
+              src={hajjTitleGeometry}
+              alt="geometry"
+            />
           </div>
-
           <div className="hajjImagesContainer container justify-content-center my-5">
             <div className="row w-100 justify-content-between">
               <div className="col-xl-4 d-flex justify-content-center my-3">
                 <div className="imageContainer">
                   <img
-                  
                     className="hajjImages"
                     src={kabahGate}
                     alt="kabah gate"
                   />
                 </div>
               </div>
+
               <div className="col-xl-4 d-flex justify-content-center my-3">
                 <div className="imageContainer">
-                  <img 
-                  className="hajjImages" src={dhikrImage} alt="hajj" />
+                  <img className="hajjImages" src={dhikrImage} alt="hajj" />
                   <Link to="/hajj" className=" exploreButton glassButton">
                     Explore now
                   </Link>
@@ -166,8 +168,7 @@ export default function Home() {
               </div>
               <div className="col-xl-4 d-flex justify-content-center my-3">
                 <div className="imageContainer">
-                  <img 
-                  className="hajjImages" src={madinaDome} alt="hajj" />
+                  <img className="hajjImages" src={madinaDome} alt="hajj" />
                 </div>
               </div>
             </div>
@@ -214,8 +215,7 @@ export default function Home() {
                   </div>
                   <div className="WhyUsCard col-6">
                     <div className="WhyUsCardText">
-                      <img 
-                      src={iata} alt="iata Logo" />
+                      <img src={iata} alt="iata Logo" />
                     </div>
                   </div>
                 </div>
@@ -232,48 +232,57 @@ export default function Home() {
               <Link to="/about" className="footerTextMenu">
                 About Us
               </Link>
-              <Link to="/about" className="footerTextMenu">
-                Accreditations
-              </Link>
+              <a
+                href="https://forms.gle/eRffddLR6NbNCJEv9"
+                target="_blank"
+                className="footerTextMenu"
+              >
+                Careers
+              </a>
               <Link to="/contact" className="footerTextMenu">
                 Reach Us
               </Link>
             </div>
             <div className="footerColumn">
               <div className="footerTextHeading">Travel</div>
-              <Link to="/services" className="footerTextMenu">
+              <Link to="/india" className="footerTextMenu">
                 Domestic
               </Link>
-              <Link to="/services" className="footerTextMenu">
+              <Link to="/foreign" className="footerTextMenu">
                 International
               </Link>
-              <Link to="/services" className="footerTextMenu">
-                Charter
+              <Link to="/hyderabad" className="footerTextMenu">
+                Visit Hyderabad
               </Link>
             </div>
             <div className="footerColumn">
               <div className="footerTextHeading">Services</div>
-              <Link to="/services" className="footerTextMenu">
-                Holidays
+              <Link to="/visa" className="footerTextMenu">
+                Visa
               </Link>
-              <Link to="/services" className="footerTextMenu">
+              <Link to="/hajj" className="footerTextMenu">
                 Pilgrimage
               </Link>
-              <Link to="/services" className="footerTextMenu">
-                Personalized tours
+              <Link to="/holiday" className="footerTextMenu">
+                Personalized Tours
               </Link>
             </div>
             <div className="footerColumn">
               <div className="footerTextHeading">More</div>
-              <Link to="/services" className="footerTextMenu">
-                Airline ticketing
-              </Link>
-              <Link to="/services" className="footerTextMenu">
-                Visa processing
-              </Link>
               <Link to="/offers" className="footerTextMenu">
-                Offers
+                Pre-purchased Deals
               </Link>
+              <Link to="/services" className="footerTextMenu">
+                Book a Flight
+              </Link>
+              <div
+                className="footerTextMenu tnc"
+                data-bs-toggle="modal"
+                data-bs-target="#tcModal"
+              >
+                Terms and Conditions
+              </div>
+              <TCModal />
             </div>
           </div>
         </div>
