@@ -103,17 +103,18 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="aboutTimeline">
+        <div className="aboutTimeline ">
           <div className="timelineHeader my-5">
             <div className="headerText font48">our journey</div>
           </div>
-          <div className="timelineImageContainer my-5">
-            <div className="red">change timeline image</div>
-            <img
-              className="timelineImage"
-              src={timeline}
-              alt="timeline image"
-            />
+          <div className="container d-flex justify-content-center">
+            <div className="timelineImageContainer w-100 my-5">
+              <img
+                className="timelineImage"
+                src={timeline}
+                alt="timeline image"
+              />
+            </div>
           </div>
           <div className="aboutAccreditions my-5">
             <div className="accreditionsContainer rounded container py-5">

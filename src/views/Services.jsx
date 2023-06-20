@@ -267,8 +267,11 @@ export default function Services() {
           <div className="otherContent">
             <div className="otherServicesContainer container-fluid p-3">
               {otherServices.map((menu) => (
-                <div className="otherRow row my-3" key={menu.id}>
-                  <div className="menuBoxContainer col-3" key={menu.id}>
+                <div
+                  className="otherRow row justify-content-center my-3"
+                  key={menu.id}
+                >
+                  <div className="menuBoxContainer my-3 col-3" key={menu.id}>
                     <div className="menuBox">
                       <div className="menuTextContainer">
                         <div className="menuText">
@@ -287,11 +290,6 @@ export default function Services() {
                           </span>
                         </div>
                       </div>
-                      {/* <img
-                        className="menuImage"
-                        src={menu.imageUrl}
-                        alt="menu Images"
-                      /> */}
                       <div className="otherMenuImage">
                         <img
                           className="imageMain"
@@ -304,19 +302,10 @@ export default function Services() {
                           data-src={menu.imageUrl2}
                         />
                       </div>
-                      {/* <img src={menu.imageUrl1}
-       onMouseOver={src = menu.imageUrl2}
-       onMouseOut={src = menu.imageUrl1} 
-       /> */}
-                      {/* <img
-                        className="menuImage"
-                        src={menu.imageUrl}
-                        alt="menu Images"
-                      /> */}
                     </div>
                   </div>
-                  <div className="col-9">
-                    <div className="menuDescription">
+                  <div className="col-9 my-3">
+                    <div className="menuDescription container">
                       {menu.description1}
                       <br />
                       <br />

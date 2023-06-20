@@ -235,7 +235,7 @@ export default function Visa() {
           </div>
         </div>
         <div className="slidingText container my-5">
-          <div class="marquee">
+          <div className="marquee">
             <div>
               <span className="mx-2">Australia</span>
               <span className="mx-2">Bahrain</span>
@@ -289,8 +289,8 @@ export default function Visa() {
           Trust us to take care of all your visa needs, and enjoy peace of mind
           knowing that your visa application is in good hands.
         </div>
-        <div className=" visaFeatures container my-5">
-          <ul className=" visaFeaturesRow row">
+        <div className=" visaFeatures container w-50 my-5">
+          <ul className=" visaFeaturesRow text-start row">
             <li className="col-xs-12 my-3">Tourist visa</li>
             <li className="col-xs-12 my-3">Business visa</li>
             <li className="col-xs-12 my-3">Family / Visit visa</li>

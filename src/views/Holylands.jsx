@@ -104,9 +104,10 @@ export default function Holylands() {
     <>
       <div className="holyland">
         <div className="holylandHeader">
-          <img src={titleStrip} width={"100%"} alt="holy design image" />
+          <img 
+          src={titleStrip} width={"100%"} alt="holy design image" />
           <div className="holylandHeaderImg">
-            <img
+            <img 
               src={holylandHeaderImg}
               width={"100%"}
               alt="holyland header image"
@@ -143,6 +144,7 @@ export default function Holylands() {
           {holylandCarouselImages.map((slide) => (
             <SwiperSlide className="holylandCarouselSlide " key={slide.id}>
               <img
+              
                 className="holylandImage"
                 src={slide.imageUrl}
                 alt="holyland images"
@@ -155,7 +157,9 @@ export default function Holylands() {
         </Swiper>
         <div className="buttonContainer my-5">
           <Link to="/contact" className="contactButton">
-            <img src={whatsappColor} alt="whatsapp Logo" />
+            <img 
+            
+            src={whatsappColor} alt="whatsapp Logo" />
             Personalize Your itenary
           </Link>
         </div>

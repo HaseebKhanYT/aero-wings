@@ -10,6 +10,7 @@ export default function Corporate() {
           <div className="greyStrip"></div>
           <div className="corporateHeaderImg">
             <img
+            
               src={corporateHeaderImg}
               width={"100%"}
               alt="corporate header image"
@@ -64,7 +65,9 @@ export default function Corporate() {
         </div>
         <div className="buttonContainer my-5">
           <Link to="/contact" className="contactButton">
-            <img src={whatsappColor} alt="whatsapp Logo" />
+            <img 
+            
+            src={whatsappColor} alt="whatsapp Logo" />
             Reach Us To Know More
           </Link>
         </div>
