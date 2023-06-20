@@ -1,23 +1,25 @@
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
+import HolidayModal from "./HolidayModal";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/HolidayCarousel.scss";
 
-export default function HolidayCarousel({ arr }) {
+export default function HolidayCarousel({ arr, onClick, focus }) {
+
   return (
     <>
       <div>
         <Swiper
           modules={[Navigation, Pagination]}
-          // slidesPerView={4}
           spaceBetween={10}
           breakpoints={{
             0: {
-              slidesPerView: "auto",
+              slidesPerView: 1,
             },
-            600: {
+            720: {
               slidesPerView: 2,
             },
             960: {
@@ -25,10 +27,9 @@ export default function HolidayCarousel({ arr }) {
             },
             1200: {
               slidesPerView: 4,
-            }
+            },
           }}
-          // navigation={true}
-          // loop={true}
+          navigation={true}
           className="holidayCarousel"
         >
           {arr.map((slides) => (
@@ -38,7 +39,14 @@ export default function HolidayCarousel({ arr }) {
               text={slides.title}
               key={slides.id}
             >
-              <div className="holidayImageContainer">
+              <div
+                className="holidayImageContainer"
+                data-bs-toggle="modal"
+                data-bs-target="#holidayModal"
+                onClick={() => {
+                  onClick(slides);
+                }}
+              >
                 <div className="holidayImageTextContainer">
                   <div
                     className={
@@ -65,6 +73,7 @@ export default function HolidayCarousel({ arr }) {
             </SwiperSlide>
           ))}
         </Swiper>
+        <HolidayModal arr={focus} />
       </div>
     </>
   );

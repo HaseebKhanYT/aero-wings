@@ -5,6 +5,8 @@ import hajjHeaderImg from "../assets/images/hajj-header-img.svg";
 import hajjTitle from "../assets/hajjTitle.svg";
 import hajjTitleGeometry from "../assets/hajjTitleGeometry.svg";
 
+import formLogo from "../assets/icons/form-logo.svg";
+
 import hotelHiltonLogo from "../assets/hajj/hotel/hotel-hilton-logo.svg";
 import hotelSwissLogo from "../assets/hajj/hotel/hotel-swissotel-logo.svg";
 import hotelFairmontLogo from "../assets/hajj/hotel/hotel-fairmont-logo.svg";
@@ -125,15 +127,20 @@ export default function Hajj() {
     <>
       <div>
         <div className="hajjHeaderImage">
-          <img src={hajjHeaderImg} width={"100%"} alt="hajj image" />
+          <img 
+          
+          src={hajjHeaderImg} width={"100%"} alt="hajj image" />
         </div>
         <div className="hajjTitleContainer mb-5">
-          <img src={hajjTitleGeometry} alt="geometry" />
+          <img 
+          src={hajjTitleGeometry} alt="geometry" />
 
           <div className="hajjTitleImage">
-            <img src={hajjTitle} alt="hajj" />
+            <img 
+            src={hajjTitle} alt="hajj" />
           </div>
-          <img src={hajjTitleGeometry} alt="geometry" />
+          <img 
+          src={hajjTitleGeometry} alt="geometry" />
         </div>
         <div className="description container my-5">
           Our Hajj and Umrah services offer a hassle-free and unforgettable
@@ -160,15 +167,28 @@ export default function Hajj() {
             <li className="col-xs-12 col-md-6 my-3">24/7 support</li>
           </ul>
         </div>
+        <div className="darkButtonContainer container my-5">
+          <a
+            href="https://forms.gle/9yAdcShfzGj8Kdn9A"
+            target="_blank"
+            className="darkButton rounded d-flex"
+          >
+            <img src={formLogo} className="mx-1" alt="whatsapp Logo" />
+            <div className="darkButtonText text-white mx-1">Enquire Now</div>
+          </a>
+        </div>
         <div className="hajjImagesContainer container my-5">
           <div className="imageContainer">
-            <img className="hajjImages" src={kabahGate} alt="kabah gate" />
+            <img 
+            className="hajjImages" src={kabahGate} alt="kabah gate" />
           </div>
           <div className="imageContainer">
-            <img className="hajjImages" src={madinaArc} alt="hajj" />
+            <img 
+            className="hajjImages" src={madinaArc} alt="hajj" />
           </div>
           <div className="imageContainer">
-            <img className="hajjImages" src={madinaMinaret} alt="hajj" />
+            <img 
+            className="hajjImages" src={madinaMinaret} alt="hajj" />
           </div>
         </div>
         <Swiper
@@ -186,6 +206,7 @@ export default function Hajj() {
           {hotelCarouselImages.map((slide) => (
             <SwiperSlide className="hotelCarouselSlide " key={slide.id}>
               <img
+              
                 className="hotelImage"
                 src={slide.imageUrl}
                 alt="hotel images"
@@ -193,7 +214,8 @@ export default function Hajj() {
               <div className="hotelTextBox">
                 <div className="hotelText">{slide.hotel}</div>
                 <div className="hotelLogo">
-                  <img src={slide.hotelImageUrl} alt="hotel logo" />
+                  <img 
+                  src={slide.hotelImageUrl} alt="hotel logo" />
                 </div>
               </div>
             </SwiperSlide>
@@ -201,7 +223,8 @@ export default function Hajj() {
         </Swiper>
         <div className="buttonContainer my-5">
           <Link to="/contact" className="contactButton">
-            <img src={whatsappColor} alt="whatsapp Logo" />
+            <img 
+            src={whatsappColor} alt="whatsapp Logo" />
             Request A Quote
           </Link>
         </div>

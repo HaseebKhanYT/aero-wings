@@ -1,13 +1,20 @@
 import "../styles/Loader.scss";
 import logo from "../assets/logo.png";
-import loader from "../assets/loader.gif";
 
 export default function Loader() {
   return (
     <>
-      <div className="loader-background">
-        <img className="loader-logo" src={logo} alt="AeroWingsLogo" />
-        <img className="loader-gif" src={loader} alt="Loadergif" />
+      <div className=" d-flex justify-content-end align-items-center flex-column w-100 loader-background">
+        <img className="loader-logo " src={logo} alt="AeroWingsLogo" />
+        <div className="loader-gif loadingio-spinner-ellipsis-t9jnxvauyv">
+          <div className="ldio-voxxa58fjp">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -219,8 +219,7 @@
 
 
 .menuDescription {
-  width: 93%;
-  text-align: left;
+  text-align: justify;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -257,10 +256,14 @@
 }
 
 .shortcutButton {
+  border-radius: 25px;
   cursor: pointer;
   text-decoration: none;
   color: black;
   padding: 19px 25px;
   background: rgba(217, 217, 217, 0.3);
   backdrop-filter: blur(8px);
+  &:hover{
+    color: #1F2041;
+  }
 }

@@ -2,15 +2,29 @@
     background: transparent;
 }
 
-nav {
+.aeroNavbar{
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5vh 7vw;
+    padding: 5vh 7vw!important;
 }
 
 .navbarLogo {
-    width: 150px;
+    width: 100px;
+    @media (min-width: 991px) {
+        width: 150px;
+      }
+}
+
+.navbar-toggler:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+.navbar-toggler{
+    outline: none;
+    box-shadow: none;
 }
 
 .navbarMenuDiv {
@@ -36,6 +50,7 @@ nav {
     padding: 0 28px;
     margin-right: 22px;
     transition: 0.3s;
+    white-space: nowrap;
 
 }
 

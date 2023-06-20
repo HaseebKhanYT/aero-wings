@@ -360,7 +360,7 @@
   color: #363374;
 }
 
-.holidayTitle {
+.homeHolidayTitle {
   font-size: 24px;
   font-weight: 300;
   text-align: left;
@@ -528,6 +528,9 @@
 .WhyUsCardText {
   padding: 20px 20px;
   text-align: left;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .whyUsWrapper {

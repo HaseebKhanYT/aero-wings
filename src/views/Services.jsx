@@ -1,5 +1,4 @@
 import "../styles/Services.scss";
-import "bootstrap/dist/css/bootstrap-grid.css";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
@@ -231,11 +230,13 @@ export default function Services() {
 
                     <img
                       className={
-                        menu.id === 3 ? "menuImage menuHajjImage " : "menuImage "
+                        menu.id === 3
+                          ? "menuImage menuHajjImage "
+                          : "menuImage "
                       }
                       src={menu.imageUrl}
                       alt="menu Images"
-                      />
+                    />
                   </div>
                 </Link>
               ))}
@@ -266,8 +267,11 @@ export default function Services() {
           <div className="otherContent">
             <div className="otherServicesContainer container-fluid p-3">
               {otherServices.map((menu) => (
-                <div className="otherRow row my-3" key={menu.id}>
-                  <div className="menuBoxContainer col-3" key={menu.id}>
+                <div
+                  className="otherRow row justify-content-center my-3"
+                  key={menu.id}
+                >
+                  <div className="menuBoxContainer my-3 col-3" key={menu.id}>
                     <div className="menuBox">
                       <div className="menuTextContainer">
                         <div className="menuText">
@@ -286,28 +290,22 @@ export default function Services() {
                           </span>
                         </div>
                       </div>
-                      {/* <img
-                        className="menuImage"
-                        src={menu.imageUrl}
-                        alt="menu Images"
-                      /> */}
                       <div className="otherMenuImage">
-  <img className="imageMain" src={menu.imageUrl1} data-src={menu.imageUrl2}/>
-  <img className="imageHover" src={menu.imageUrl2} data-src={menu.imageUrl2}/>
-</div>
-                      {/* <img src={menu.imageUrl1}
-       onMouseOver={src = menu.imageUrl2}
-       onMouseOut={src = menu.imageUrl1} 
-       /> */}
-                      {/* <img
-                        className="menuImage"
-                        src={menu.imageUrl}
-                        alt="menu Images"
-                      /> */}
+                        <img
+                          className="imageMain"
+                          src={menu.imageUrl1}
+                          data-src={menu.imageUrl2}
+                        />
+                        <img
+                          className="imageHover"
+                          src={menu.imageUrl2}
+                          data-src={menu.imageUrl2}
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="col-9">
-                    <div className="menuDescription">
+                  <div className="col-9 my-3">
+                    <div className="menuDescription container">
                       {menu.description1}
                       <br />
                       <br />

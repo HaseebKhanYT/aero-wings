@@ -1,7 +1,7 @@
 .blurBackground {
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: 0;
   width: 100%;
   height: 100vh;
   background-image: url("../assets/images/takeoff-bg.svg");
@@ -16,6 +16,8 @@
 }
 
 .subHeaderContainer {
+  position: relative;
+  z-index: 1;
   height: 12vh;
 }
 
@@ -28,7 +30,7 @@
 .homeAbout {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  // height: 100vh;
   background-color: #fff;
   background-image: url("../assets/geometricHome.svg");
   background-position: bottom;
@@ -36,7 +38,7 @@
 }
 
 .homeHolidays {
-  height: 100vh;
+  // height: 100vh;
   background-color: #fff;
   background-image: url("../assets/geometricHomeInverted.svg");
   background-position: top;
@@ -56,18 +58,8 @@
   align-items: center;
 }
 
-.homeAboutContainer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .homeAboutImageContainer {
   display: flex;
-  /* height: 100%; */
-  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -147,12 +139,9 @@
 }
 
 .homeAboutTextContainer {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 50px;
-  text-align: left;
   justify-content: center;
   align-items: center;
 }
@@ -161,7 +150,7 @@
   font-size: 18px;
   font-weight: 275;
   text-align: justify;
-  width: 500px;
+  min-width: 500px;
 }
 
 .textBox2 {
@@ -169,7 +158,7 @@
   font-weight: 500;
   text-align: justify;
   font-style: italic;
-  width: 500px;
+  min-width: 500px;
 }
 
 .homeHajjContainer {
@@ -208,9 +197,10 @@
 }
 
 .imageContainer {
+  width: 300px;
+  height: 500px;
   margin: 0;
   padding: 0;
-  min-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,16 +236,10 @@
   color: #363374;
 }
 
-.holidayTitle {
+.homeHolidayTitle {
   font-size: 24px;
   font-weight: 300;
   text-align: left;
-  padding-left: 4%;
-  padding-bottom: 4%;
-}
-
-.holidayCards {
-  padding-bottom: 4%;
 }
 
 .domesticHolidays {
@@ -263,7 +247,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 40%;
 }
 
 .internationalHolidays {
@@ -271,16 +254,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 40%;
 }
 
 .homeHajj {
-  height: 832px;
+  // height: 832px;
   background-image: url("../assets/geometricHome.svg");
 }
 
 .homeWhyUs {
-  height: 832px;
+  // height: 832px;
   background-image: url("../assets/geometricHomeInverted.svg");
 }
 
@@ -307,34 +289,21 @@
   color: #374957;
 }
 
-.WhyUsContainer {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .WhyUsTitle {
   font-weight: 700;
   font-size: 128px;
   text-align: left;
-  line-height: 160px;
+  line-height: 128px;
 }
 
-.WhyUsTitleContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .WhyUsTitleContainer {
+
+  
+// }
 
 .WhyUsCardsContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  // flex-direction: column;
   gap: 40px;
 }
 
@@ -358,6 +327,9 @@
 .WhyUsCardText {
   padding: 20px 20px;
   text-align: left;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .whyUsWrapper {
@@ -405,4 +377,7 @@
 .footerTextMenu {
   text-decoration: none;
   color: white;
+}
+.tnc{
+  cursor: pointer;
 }

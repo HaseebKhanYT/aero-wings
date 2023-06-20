@@ -17,6 +17,30 @@ import hydDining from "../assets/images/hyd-dining.svg";
 import hyd7Tombs from "../assets/images/hyd-7tombs.svg";
 import hydFalaknuma from "../assets/images/hyd-falaknuma.svg";
 
+import hydHotel1 from "../assets/images/hydHotel01.svg"
+import hydHotel2 from "../assets/images/hydHotel02.svg"
+import hydHotel3 from "../assets/images/hydHotel03.svg"
+import hydHotel4 from "../assets/images/hydHotel04.svg"
+
+const hydHotels = [
+  {
+    id:1,
+    imageUrl: hydHotel1,
+  },
+  {
+    id:2,
+    imageUrl: hydHotel2,
+  },
+  {
+    id:3,
+    imageUrl: hydHotel3,
+  },
+  {
+    id:4,
+    imageUrl: hydHotel4,
+  },
+]
+
 import whatsappColor from "../assets/services/whatsappColor.svg";
 
 import "swiper/css";
@@ -168,6 +192,26 @@ export default function Hyderabad() {
         destination with an emerging nightlife scene. <br /> A vibrant city with
         a unique blend of history, culture, and modernity, Hyderabad is an
         exciting place to explore and experience.
+      </div>
+      <div className="hydHotels container">
+        <div className="row g-3">
+          {
+            hydHotels.map((logos)=>(
+              <div
+                        className="col col-lg-3 d-flex justify-content-center align-items-center"
+                        key={logos.id}
+                      >
+                        <div className="logoContainer d-flex justify-content-center">
+                          <img
+                            src={logos.imageUrl}
+                            width={"150px"}
+                            alt="logo img"
+                          />
+                        </div>
+                      </div>
+            ))
+          }
+        </div>
       </div>
       <div className="buttonContainer my-5">
         <Link to="/contact" className="contactButton">

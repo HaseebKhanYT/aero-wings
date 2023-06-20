@@ -43,7 +43,11 @@ export default function HomeCarousel() {
                 />
               </div>
             </div>
-            <img className="carouselImage" src={Plane} alt="carouselImages" />
+            <img
+              className="carouselImage"
+              src={Plane}
+              alt="carouselImages"
+            />
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="slide-text beachText">
@@ -59,7 +63,11 @@ export default function HomeCarousel() {
                 </span>
               </div>
             </div>
-            <img className="carouselImage" src={Beach} alt="carouselImages" />
+            <img
+              className="carouselImage"
+              src={Beach}
+              alt="carouselImages"
+            />
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="slide-text kabahText">
@@ -76,7 +84,11 @@ export default function HomeCarousel() {
                 <span className="white">of a lifetime.</span>
               </div>
             </div>
-            <img className="carouselImage" src={Kabah} alt="carouselImages" />
+            <img
+              className="carouselImage"
+              src={Kabah}
+              alt="carouselImages"
+            />
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="slide-text indiaText">
@@ -93,7 +105,11 @@ export default function HomeCarousel() {
                 <br /> and rich heritage
               </div>
             </div>
-            <img className="carouselImage" src={India} alt="carouselImages" />
+            <img
+              className="carouselImage"
+              src={India}
+              alt="carouselImages"
+            />
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="slide-text thailandText">
@@ -125,13 +141,6 @@ export default function HomeCarousel() {
               alt="carouselImages"
             />
           </SwiperSlide>
-
-          {/* {slidesText.map((slide, id) => (
-            <SwiperSlide className="slide" image={slide.image} text={slide.text} key={slide} virtualIndex={id}>
-              <p className="slide-text">{slide.text}</p>
-              <img className="carouselImage" src={slide.image} alt="carouselImages" />
-            </SwiperSlide>
-          ))} */}
         </Swiper>
       </div>
     </>
