@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ContactModal from "../components/ContactModal";
 import CardsAccordian from "../components/CardsAccordian";
 
 import picdomestic from "../assets/holidays/domestic/picdomestic.png";
@@ -224,11 +225,16 @@ export default function India() {
           <CardsAccordian arr={domesticHolidays} />
         </div>
         <div className="buttonContainer my-5">
-          <Link to="/contact" className="contactButton">
+          <button
+            className="contactButton border-0"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
             <img src={whatsappColor} alt="whatsapp Logo" />
             Plan Unforgettable Weekends Now
-          </Link>
+          </button>
         </div>
+        <ContactModal />
         <div className="buttonContainer my-5">
           <Link to="/foreign" className="shortcutButton">
             See International Destinations
