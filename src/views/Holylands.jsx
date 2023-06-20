@@ -6,12 +6,11 @@ import titleStrip from "../assets/holyland/title-strip1.png";
 import holylandHeaderImg from "../assets/holyland/holyland-header-img.svg";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 
-// import cordobaImg from "../assets/holyland/cordoba-spain-img.svg";
 import {
   aqsaImg,
   cordobaImg,
   cordobaMosqueImg,
-  mihrabImg,
+  // mihrabImg,
   domeRockImg,
   petraImg,
   gizaImg,
@@ -22,7 +21,7 @@ import {
   mustanUniImg,
   khivaUzbekImg,
   samarkandUzbekImg,
-} from "../assets/holyland"
+} from "../assets/holyland";
 
 import "../styles/Holylands.scss";
 
@@ -78,7 +77,7 @@ export default function Holylands() {
       imageUrl: azharUniImg,
       caption: "Al-Azhar University - Cairo, Egypt",
     },
-    
+
     {
       id: 10,
       imageUrl: baghdadIraqImg,
@@ -104,10 +103,9 @@ export default function Holylands() {
     <>
       <div className="holyland">
         <div className="holylandHeader">
-          <img 
-          src={titleStrip} width={"100%"} alt="holy design image" />
+          <img src={titleStrip} width={"100%"} alt="holy design image" />
           <div className="holylandHeaderImg">
-            <img 
+            <img
               src={holylandHeaderImg}
               width={"100%"}
               alt="holyland header image"
@@ -118,16 +116,28 @@ export default function Holylands() {
           </div>
         </div>
         <div className="description container-sm my-5">
-          Experience the beauty and diversity of India with our domestic tour
-          packages. Whether you want to explore the breathtaking landscapes of
-          the Himalayas, soak in the sun on the beaches of Goa, or immerse
-          yourself in the rich culture and history of Rajasthan, we have the
-          perfect itinerary for you. Our packages are designed to cater to every
-          budget and preference, from luxury stays to budget-friendly options.
-          Choose from our wide range of domestic tour packages and discover the
-          magic of India. With our experienced tour guides and hassle-free
-          travel arrangements, you can sit back and enjoy the journey while we
-          take care of the rest.
+          Embark on a spiritual journey with our Holy Land Tours and witness the
+          wonders of Islamic and Biblical sites. We offer an array of
+          destinations, including Jordan, Palestine and Israel, Egypt, Baghdad
+          in Iraq, Tashkent, Samarkand, and Bukhara in Uzbekistan, Turkey,
+          Morocco, Spain, and the Balkans - Bosnia & Herzegovina. Our tours are
+          meticulously crafted to provide a seamless and hassle-free experience,
+          so you can focus on exploring the holy sites and soaking in the
+          cultural richness of these destinations.
+          <br />
+          <br />
+          Our Holy Land Tours include luxurious accommodation in some of the
+          best hotels, airfare, daily meals, and border departure taxes for
+          Israel, Egypt & Jordan. You will be traveling in AC luxury coaches for
+          transfers and enjoying guided tours in English with experienced
+          guides. Our packages cover entrance fees to holy sites and other
+          places as per itinerary, and we also provide visa assistance for
+          Egypt, Jordan & Israel. Additionally, we offer insurance coverage up
+          to the age of 60 years.
+          <br />
+          <br />
+          Join us on a journey of a lifetime and let our Holy Land Tours fulfill
+          your spiritual aspirations with a touch of luxury and comfort.
         </div>
         <Swiper
           className="holylandCarousel container my-5"
@@ -144,7 +154,6 @@ export default function Holylands() {
           {holylandCarouselImages.map((slide) => (
             <SwiperSlide className="holylandCarouselSlide " key={slide.id}>
               <img
-              
                 className="holylandImage"
                 src={slide.imageUrl}
                 alt="holyland images"
@@ -157,9 +166,7 @@ export default function Holylands() {
         </Swiper>
         <div className="buttonContainer my-5">
           <Link to="/contact" className="contactButton">
-            <img 
-            
-            src={whatsappColor} alt="whatsapp Logo" />
+            <img src={whatsappColor} alt="whatsapp Logo" />
             Personalize Your itenary
           </Link>
         </div>
