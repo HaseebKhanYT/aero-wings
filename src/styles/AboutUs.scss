@@ -59,8 +59,14 @@
   flex-direction: column;
 }
 
-.timelineImage {
-  max-width: 80%;
+.timelineImageContainer {
+  width: 80%;
+  overflow-x: scroll;
+  padding: 50px;
+}
+
+.timelineImageContainer::-webkit-scrollbar{
+  display:none;
 }
 
 .aboutIconStrip {
