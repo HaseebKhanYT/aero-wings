@@ -11,7 +11,11 @@
 }
 
 .loader-logo {
-  width: 250px;
+  @media (min-width: 576px) {
+    width: 250px;
+  }
+  width: 100px;
+  
 }
 
 .loader-gif {

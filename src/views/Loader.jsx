@@ -5,7 +5,7 @@ export default function Loader() {
   return (
     <>
       <div className=" d-flex justify-content-end align-items-center flex-column w-100 loader-background">
-        <img className="loader-logo " src={logo} alt="AeroWingsLogo" />
+        <img className="loader-logo" src={logo} alt="AeroWingsLogo" />
         <div className="loader-gif loadingio-spinner-ellipsis-t9jnxvauyv">
           <div className="ldio-voxxa58fjp">
             <div></div>
@@ -20,4 +20,4 @@ export default function Loader() {
   );
 }
 
-//Completed
+//Ready for production
