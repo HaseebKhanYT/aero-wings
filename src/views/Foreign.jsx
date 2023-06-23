@@ -142,6 +142,9 @@ import picIntlMore80 from "../assets/holidays/international/picIntlMore-80.jpg";
 import picIntlMore81 from "../assets/holidays/international/picIntlMore-81.jpg";
 import picIntlMore82 from "../assets/holidays/international/picIntlMore-82.jpg";
 import picIntlMore83 from "../assets/holidays/international/picIntlMore-83.jpg";
+import picIntlMore84 from "../assets/holidays/international/picIntlMore-84.jpg";
+import picIntlMore85 from "../assets/holidays/international/picIntlMore-85.jpg";
+import picIntlMore86 from "../assets/holidays/international/picIntlMore-86.jpg";
 
 const internationalHolidays = [
   {
@@ -526,6 +529,15 @@ const internationalHolidays = [
   },
   {
     id: 43,
+    title: "Türkiye",
+    imageUrl: picIntlMore84,
+    imageUrl1: picIntlMore85,
+    imageUrl2: picIntlMore86,
+    description:
+      "Türkiye, a country bridging Europe and Asia, offers a rich tapestry of history, culture, and natural beauty. From ancient ruins and archaeological sites to vibrant cities and stunning landscapes, Türkiye captivates visitors with its diverse attractions. Explore the historical treasures of Istanbul, where the iconic Hagia Sophia and Blue Mosque stand as testaments to the city's fascinating past. Discover the ancient city of Ephesus, home to well-preserved Greek and Roman ruins, including the famous Library of Celsus. Immerse yourself in the surreal landscapes of Cappadocia, with its unique rock formations and cave dwellings. \n \n Turkish cuisine is renowned worldwide, with its flavorful dishes like kebabs, baklava, and Turkish tea. The bustling bazaars and markets offer a vibrant shopping experience, where you can find traditional textiles, spices, and handicrafts. Türkiye's natural beauty is evident in its stunning coastlines, such as the turquoise waters of the Mediterranean and the idyllic beaches of Antalya. The otherworldly terraces of Pamukkale and the fairy chimneys of Goreme create unforgettable landscapes. With its warm hospitality and a mix of old-world charm and modern delights, Türkiye invites travelers to immerse themselves in its captivating allure.",
+  },
+  {
+    id: 44,
     title: "Uzbekistan",
     imageUrl: picIntlMore80,
     imageUrl1: picIntlMore79,
@@ -534,7 +546,7 @@ const internationalHolidays = [
       "Uzbekistan, located in Central Asia, is a land of rich history, stunning architecture, and vibrant cultural heritage. With its captivating blend of ancient cities, Silk Road heritage, and natural beauty, Uzbekistan offers a unique and enchanting travel experience. Explore the UNESCO World Heritage Sites of Samarkand, Bukhara, and Khiva, where you'll be mesmerized by intricate Islamic architecture, vibrant bazaars, and the echoes of ancient trade routes. Immerse yourself in the bustling streets of Tashkent, the capital city, where modernity meets tradition. Discover the hospitality of the Uzbek people, savor the flavors of traditional cuisine, and witness the vibrant festivals and music that celebrate the country's cultural diversity. From the golden desert landscapes of Kyzylkum to the majestic mountain ranges of the Tian Shan, Uzbekistan's natural beauty is as captivating as its historical treasures. Embark on a journey through time and immerse yourself in the captivating charm of Uzbekistan.",
   },
   {
-    id: 44,
+    id: 45,
     title: "Vietnam",
     imageUrl: picIntlMore83,
     imageUrl1: picIntlMore82,
