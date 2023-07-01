@@ -1,221 +1,245 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HomeCarousel from "../components/HomeCarousel";
 import TCModal from "../components/TCModal";
 
 import "../styles/Home.scss";
 
-import SocialIcons from "../components/SocialIcons";
-
-import homeAboutImage from "../assets/homeAboutImage.svg";
+import homeAboutImage from "../assets/homeAboutImage.jpg";
 import hajjTitle from "../assets/hajjTitle.svg";
 import hajjTitleGeometry from "../assets/hajjTitleGeometry.svg";
 
-import logoWing from "../assets/logo/logo-wing.svg";
-import iata from "../assets/iataLogo.svg";
-import kabahGate from "../assets/kabahGate.svg";
-import dhikrImage from "../assets/dhikrImage.svg";
-import madinaDome from "../assets/madinaDome.svg";
+import logoWing from "../assets/wingslogo.svg";
+import iata from "../assets/logo/iataLogo.png";
+import kabahGate from "../assets/kabahGate.jpg";
+import dhikrImage from "../assets/dhikrImage.jpg";
+import madinaDome from "../assets/madinaDome.jpg";
 import HomeHolidays from "../components/HomeHolidays";
+import SubHeader from "../components/SubHeader";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <>
+      <div className="blurBackground position-absolute top-0 w-100 opacity-100"></div>
       <HomeCarousel />
-      <div className="subHeaderContainer">
-        <div className="iconContainer">
-          <SocialIcons />
-          <span>
-            <span className="blue">since</span>&nbsp;
-            <span className="red">1975</span>
-          </span>
-        </div>
-      </div>
-      <div className="blurBackground"></div>
+      <SubHeader />
 
-      <div className="homeAbout my-5">
-        <div className="container my-5">
-          <div className="row g-5">
-            <div className="col-xl-6 col-lg-12 my-2 container homeAboutImageContainer">
-              <div className="homeAboutLogoContainer">
-                <img
-                  className="homeAboutLogo"
-                  src={logoWing}
-                  alt="Aero Wings Logo"
-                />
-              </div>
-              <div className="statsColumn">
-                <div className="statsRow1">
-                  <div className="statsContainer stat1">
-                    <div>
-                      {" "}
-                      <span className="blue statNumber"> 500,000+</span>
-                      <br /> <span className="statText">trips </span>
-                    </div>
-                  </div>
-                  <div className="statsContainer stat2">
-                    <div>
-                      {" "}
-                      <span className="blue statNumber"> 500+ </span>
-                      <br />
-                      <span className="statText">destinations</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="statsRow2">
-                  <div className="statsContainer stat3">
-                    <div>
-                      {" "}
-                      <span className="blue statNumber"> 40+</span>
-                      <br />
-                      <span className="statText">years</span>
-                    </div>
-                  </div>
-                  <div className="statsContainer stat4">
-                    <div>
-                      {" "}
-                      <span className="blue statNumber"> 20+ </span>
-                      <br />
-                      <span className="statText"> services </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="statsRow1">
-                  <div className="statsContainer stat5">
-                    <div>
-                      {" "}
-                      <span className="blue statNumber"> 10+ </span>
-                      <br />
-                      <span className="statText"> awards</span>
-                    </div>
-                  </div>
-                  <div className="statsContainer stat6">
-                    <div>
-                      {" "}
-                      <span className="blue statNumber"> 24/7 </span>
-                      <br />
-                      <span className="statText"> support</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <img
-                className="homeAboutImage"
-                src={homeAboutImage}
-                alt="airplaneWindow"
-              />
-            </div>
-            <div className="col-xl-6 col-lg-12 my-2 container homeAboutTextContainer">
-              <div className="textBox1 container">
-                At Aero Wings, we believe that travel is not just about reaching
-                a destination, but about the journey itself. Our team of
-                passionate travel experts is committed to creating personalized
-                and unique travel experiences for our clients. With over four
-                decades of experience in the travel industry, we have built a
-                reputation for excellence, reliability, and customer
-                satisfaction.
-              </div>
-              <div className="textBox2 container">
-                We are dedicated to making your travel dreams a reality and
-                ensuring that your journey with us is one to remember.
-              </div>
-              <Link to="/about" className="shortcutButton">
-                Read more
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="homeHolidays">
-        <HomeHolidays />
-      </div>
-      <div className="homeHajj">
-        <div className="homeHajjContainer">
-          <div className="homeHajjTitleContainer justify-content-center justify-content-lg-between">
-            <img
-              className="d-none d-lg-flex"
-              src={hajjTitleGeometry}
-              alt="geometry"
-            />
-
-            <div className="homeHajjTitleImage">
-              <img src={hajjTitle} alt="hajj" />
-            </div>
-            <img
-              className="d-none d-lg-flex"
-              src={hajjTitleGeometry}
-              alt="geometry"
-            />
-          </div>
-          <div className="hajjImagesContainer container justify-content-center my-5">
-            <div className="row w-100 justify-content-between">
-              <div className="col-xl-4 d-flex justify-content-center my-3">
-                <div className="imageContainer">
-                  <img
-                    className="hajjImages"
-                    src={kabahGate}
-                    alt="kabah gate"
-                  />
-                </div>
-              </div>
-
-              <div className="col-xl-4 d-flex justify-content-center my-3">
-                <div className="imageContainer">
-                  <img className="hajjImages" src={dhikrImage} alt="hajj" />
-                  <Link to="/hajj" className=" exploreButton glassButton">
-                    Explore now
-                  </Link>
-                </div>
-              </div>
-              <div className="col-xl-4 d-flex justify-content-center my-3">
-                <div className="imageContainer">
-                  <img className="hajjImages" src={madinaDome} alt="hajj" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="homeWhyUs">
-        <div className="whyUsWrapper">
-          <div className="viewAllButtonContainer my-5">
-            <Link to="/services" className="viewAllButton">
-              View all our services
-            </Link>
-          </div>
+      <div className="geometry">
+        <div className="homeAbout d-flex justify-content-center">
           <div className="container my-5">
             <div className="row">
-              <div className=" col-md-6 d-flex justify-content-center align-items-center">
-                <div className="WhyUsTitle">
-                  <span>Why</span>
-                  <br />
-                  <span className="aerowings" style={{ fontSize: "56px" }}>
-                    AeroWings?
-                  </span>
+              <div className="col-xl-6 col-lg-12 mb-3 mb-xl-0 d-flex justify-content-center align-items-center homeAboutImageContainer ">
+                <img
+                  className="homeAboutImage rounded d-block d-sm-none"
+                  width={"225px"}
+                  src={homeAboutImage}
+                  alt="airplaneWindow"
+                />
+                <img
+                  className="homeAboutImage rounded d-none d-sm-block"
+                  width={"370px"}
+                  src={homeAboutImage}
+                  alt="airplaneWindow"
+                />
+                <div className="homeAboutLogoContainer rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                  <img
+                    className="homeAboutLogo d-block d-sm-none"
+                    width={"105px"}
+                    src={logoWing}
+                    alt="Aero Wings Logo"
+                  />
+                  <img
+                    className="homeAboutLogo d-none d-sm-block"
+                    width={"170px"}
+                    src={logoWing}
+                    alt="Aero Wings Logo"
+                  />
+                </div>
+                <div className="statsColumn position-absolute d-flex flex-column align-items-center">
+                  <div className="statsRow1 d-flex justify-content-between">
+                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat1">
+                      <div>
+                        {" "}
+                        <span className="blue statNumber"> 500,000+</span>
+                        <br /> <span className="statText">trips </span>
+                      </div>
+                    </div>
+                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat2">
+                      <div>
+                        {" "}
+                        <span className="blue statNumber"> 500+ </span>
+                        <br />
+                        <span className="statText">destinations</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="statsRow2 d-flex justify-content-between">
+                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat3">
+                      <div>
+                        {" "}
+                        <span className="blue statNumber"> 45+</span>
+                        <br />
+                        <span className="statText">years</span>
+                      </div>
+                    </div>
+                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat4">
+                      <div>
+                        {" "}
+                        <span className="blue statNumber"> 20+ </span>
+                        <br />
+                        <span className="statText"> services </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="statsRow1 d-flex justify-content-between">
+                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat5">
+                      <div>
+                        {" "}
+                        <span className="blue statNumber"> 40+ </span>
+                        <br />
+                        <span className="statText"> awards</span>
+                      </div>
+                    </div>
+                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat6">
+                      <div>
+                        {" "}
+                        <span className="blue statNumber"> 24/7 </span>
+                        <br />
+                        <span className="statText"> support</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="WhyUsCardsContainer container d-flex justify-content-center col-md-6">
-                <div className="WhyUsRow row">
-                  <div className="WhyUsCard col-6">
-                    <div className="WhyUsCardText">
-                      <span className="gold">40+ years</span> of experience and
-                      expertise
+              <div className="col-xl-6 col-lg-12 mt-3 mt-xl-0 homeAboutTextContainer d-flex flex-column justify-content-center align-items-center">
+                <div className="textBox1 px-3 container">
+                  At Aero Wings, we believe that travel is not just about
+                  reaching a destination, but about the journey itself. Our team
+                  of passionate travel experts is committed to creating
+                  personalized and unique travel experiences for our clients.
+                  With over four decades of experience in the travel industry,
+                  we have built a reputation for excellence, reliability, and
+                  customer satisfaction.
+                </div>
+                <div className="textBox2 px-3 fst-italic container">
+                  <br />
+                  <br />
+                  We are dedicated to making your travel dreams a reality and
+                  ensuring that your journey with us is one to remember.
+                  <br />
+                  <br />
+                </div>
+                <Link to="/about" className="shortcutButton">
+                  Read more
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="homeHolidays">
+          <HomeHolidays />
+        </div>
+        <div className="homeHajj">
+          <div className="homeHajjContainer h-100 d-flex justify-content-center align-items-center flex-column">
+            <div className="homeHajjTitleContainer w-100 d-flex align-items-center px-3 justify-content-center justify-content-sm-between">
+              <img
+                className="hajjGeometry d-none d-sm-flex"
+                src={hajjTitleGeometry}
+                alt="geometry"
+              />
+              <div>
+                <img
+                  className="homeHajjTitleImage"
+                  src={hajjTitle}
+                  alt="hajj"
+                />
+              </div>
+              <img
+                className="hajjGeometry d-none d-sm-flex"
+                src={hajjTitleGeometry}
+                alt="geometry"
+              />
+            </div>
+            <div className="hajjImagesContainer d-flex container justify-content-center mt-5">
+              <div className="row w-100 justify-content-between">
+                <div className="col-sm-4 d-flex justify-content-center my-3">
+                  <div className="hajjImageContainer m-0 p-0 d-flex justify-content-center align-items-center overflow-hidden">
+                    <img
+                      className="hajjImages"
+                      src={kabahGate}
+                      alt="kabah gate"
+                    />
+                  </div>
+                </div>
+
+                <div className="col-sm-4 d-flex justify-content-center my-3">
+                  <div className="hajjImageContainer m-0 p-0 d-flex justify-content-center align-items-center overflow-hidden">
+                    <img className="hajjImages" src={dhikrImage} alt="hajj" />
+                    <Link
+                      to="/hajj"
+                      className="exploreButton position-absolute glassButton"
+                    >
+                      Explore now
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-4 d-flex justify-content-center my-3">
+                  <div className="hajjImageContainer m-0 p-0 d-flex justify-content-center align-items-center overflow-hidden">
+                    <img className="hajjImages" src={madinaDome} alt="hajj" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="viewAllButtonContainer d-flex w-100 justify-content-center align-items-center my-5">
+          <Link
+            to="/services"
+            className=" viewAllButton text-nowrap"
+          >
+            View all our services
+          </Link>
+        </div>
+        <div className="homeWhyUs ">
+          <div className="whyUsWrapper container mt-5">
+            <div className="row ">
+              <div className=" col-lg-6 d-flex justify-content-center align-items-center">
+                <div className="WhyUsTitle text-start align-items-sm-start align-items-center">
+                  <div>Why</div>
+                  <span className="WhyUsSubTitle">Aerowings?</span>
+                </div>
+              </div>
+              <div className="WhyUsCardsContainer my-5 container d-flex justify-content-center col-lg-6">
+                <div className="WhyUsRow row gy-4">
+                  <div className="col-sm-6 d-flex  justify-content-center">
+                    <div className="WhyUsCard d-flex justify-content-center align-items-center">
+                      <div className="WhyUsCardText text-start">
+                        <span className="gold">45+ years</span> of experience
+                        and expertise
+                      </div>
                     </div>
                   </div>
-                  <div className="WhyUsCard col-6">
-                    <div className="WhyUsCardText">
-                      <span className="gold">Reliability</span> proven by
-                      serving half a million of customers
+                  <div className="col-sm-6 d-flex  justify-content-center">
+                    <div className="WhyUsCard d-flex justify-content-center align-items-center">
+                      <div className="WhyUsCardText text-start">
+                        <span className="gold">Reliability</span> proven by
+                        serving a million of customers
+                      </div>
                     </div>
                   </div>
-                  <div className="WhyUsCard col-6">
-                    <div className="WhyUsCardText">
-                      <span className="gold">Peace of mind</span> with our
-                      meticulous service
+                  <div className="col-sm-6 d-flex  justify-content-center">
+                    <div className="WhyUsCard d-flex justify-content-center align-items-center">
+                      <div className="WhyUsCardText text-start">
+                        <span className="gold">Peace of mind</span> with our
+                        meticulous service
+                      </div>
                     </div>
                   </div>
-                  <div className="WhyUsCard col-6">
-                    <div className="WhyUsCardText">
-                      <img src={iata} alt="iata Logo" />
+                  <div className="col-sm-6 d-flex  justify-content-center">
+                    <div className="WhyUsCard d-flex justify-content-center align-items-center">
+                      <div className="WhyUsCardText text-start">
+                        <img src={iata} alt="iata Logo" className="w-100 h-100" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -229,52 +253,102 @@ export default function Home() {
           <div className="footerTextContainer">
             <div className="footerColumn">
               <div className="footerTextHeading">Company</div>
-              <Link to="/about" className="footerTextMenu">
+              <div
+                onClick={() => {
+                  navigate("/about");
+                }}
+                className="footerTextMenu"
+              >
                 About Us
-              </Link>
+              </div>
               <a
-                href="https://forms.gle/eRffddLR6NbNCJEv9"
+                href="https://forms.gle/RkYHBCJLMtixuKvm7"
                 target="_blank"
                 className="footerTextMenu"
               >
                 Careers
               </a>
-              <Link to="/contact" className="footerTextMenu">
+              <div
+                onClick={() => {
+                  navigate("/contact");
+                }}
+                className="footerTextMenu"
+              >
                 Reach Us
-              </Link>
+              </div>
             </div>
             <div className="footerColumn">
               <div className="footerTextHeading">Travel</div>
-              <Link to="/india" className="footerTextMenu">
-                Domestic
-              </Link>
-              <Link to="/foreign" className="footerTextMenu">
-                International
-              </Link>
-              <Link to="/hyderabad" className="footerTextMenu">
+              <div
+                onClick={() => {
+                  navigate("/india");
+                }}
+                className="footerTextMenu"
+              >
+                Across India
+              </div>
+              <div
+                onClick={() => {
+                  navigate("/foreign");
+                }}
+                className="footerTextMenu"
+              >
+                Around the World
+              </div>
+              <div
+                onClick={() => {
+                  navigate("/hyderabad");
+                }}
+                className="footerTextMenu"
+              >
                 Visit Hyderabad
-              </Link>
+              </div>
             </div>
             <div className="footerColumn">
               <div className="footerTextHeading">Services</div>
-              <Link to="/visa" className="footerTextMenu">
+              <div
+                onClick={() => {
+                  navigate("/visa");
+                }}
+                className="footerTextMenu"
+              >
                 Visa
-              </Link>
-              <Link to="/hajj" className="footerTextMenu">
-                Pilgrimage
-              </Link>
-              <Link to="/holiday" className="footerTextMenu">
+              </div>
+              <div
+                onClick={() => {
+                  navigate("/hajj");
+                }}
+                className="footerTextMenu"
+              >
+                Hajj & Umrah
+              </div>
+              <div
+                onClick={() => {
+                  navigate("/holiday");
+                }}
+                className="footerTextMenu"
+              >
                 Personalized Tours
-              </Link>
+              </div>
             </div>
             <div className="footerColumn">
               <div className="footerTextHeading">More</div>
-              <Link to="/offers" className="footerTextMenu">
+              <div
+                onClick={() => {
+                  navigate("/offers");
+                }}
+                className="footerTextMenu"
+              >
                 Pre-purchased Deals
-              </Link>
-              <Link to="/services" className="footerTextMenu">
+              </div>
+              <div
+                onClick={() => {
+                  navigate("/services");
+                }}
+                className="footerTextMenu"
+              >
                 Book a Flight
-              </Link>
+              </div>
               <div
                 className="footerTextMenu tnc"
                 data-bs-toggle="modal"
