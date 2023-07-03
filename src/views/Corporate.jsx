@@ -18,7 +18,7 @@ export default function Corporate() {
             <div className="corporateTitle">Corporate Travel</div>
           </div>
         </div>
-        <div className="miceText my-5">
+        <div className="miceText my-5 text-nowrap">
           M <span className="fw250 fw250-blue"> •</span> I{" "}
           <span className="fw250-red fw250">•</span> C{" "}
           <span className="fw250-blue fw250">•</span> E
@@ -55,12 +55,12 @@ export default function Corporate() {
           event is a grand success. Trust us to take care of every detail, so
           you can focus on achieving your business goals.
         </div>
-        <div className=" corporateFeatures container my-5">
-          <ul className=" corporateFeaturesRow row">
-            <li className="col-xs-12 my-3">Meetings</li>
-            <li className="col-xs-12 my-3">Incentives</li>
-            <li className="col-xs-12 my-3">Conferences</li>
-            <li className="col-xs-12 my-3">Events</li>
+        <div className=" corporateFeatures container w-100 justify-content-center my-5">
+          <ul className=" corporateFeaturesRow text-start text-nowrap row">
+            <li className="col-12 my-3">Meetings</li>
+            <li className="col-12 my-3">Incentives</li>
+            <li className="col-12 my-3">Conferences</li>
+            <li className="col-12 my-3">Events</li>
           </ul>
         </div>
         <div className="buttonContainer my-5">

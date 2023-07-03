@@ -1,18 +1,6 @@
-.hajjTitleContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2%;
-}
-.hajjDescription {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 48px;
-  text-align: justify;
-}
-
 .hajjFeatures {
+  display: flex;
+  justify-content: center;
   font-weight: 900;
   font-size: 32px;
   line-height: 48px;
@@ -20,12 +8,30 @@
 }
 
 .hajjFeaturesRow {
-  list-style-position: inside;
-}
+  @media (max-width: 1200px) {
+    width: 85%;
+  }
+  @media (max-width: 991px) {
+    width: 65%;
+  }
+  @media (max-width: 768px) {
+    width: 75%;
+  }
+  @media (max-width: 576px) {
+    width: 70%;
+    font-size: 26px;
+  }
+  @media (max-width: 470px) {
+    width: 85%;
+    font-size: 26px;
+  }
+  @media (max-width: 470px) {
+    width: 100%;
+    font-size: 26px;
+  }
 
-.hajjImagesContainer {
-  display: flex;
-  justify-content: space-between;
+  width: 75%;
+  list-style-position: inside;
 }
 
 .hajjImages {
@@ -51,51 +57,37 @@
   overflow: hidden;
 }
 
-.exploreButton {
-  position: absolute;
-  font-size: 24px;
-  font-weight: 500;
-  border-radius: 25px;
-}
-
-.glassButton {
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-  padding: 19px 25px;
-  background: rgba(217, 217, 217, 0.3);
-  backdrop-filter: blur(8px);
-}
-
-.glassButton:hover {
-  color: black;
-}
-
-.hotelCarouselSlide {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
 .hotelImage {
   width: 100%;
   object-fit: cover;
-  border-radius: 25px;
 }
 .hotelTextBox {
-  width: 100%;
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(2px);
-  position: absolute;
   border-radius: 0 0 25px 25px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   font-weight: 900;
+  @media (max-width: 1200px) {
+    font-size: 42px;
+  }
+  @media (max-width: 991px) {
+    font-size: 32px;
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
   font-size: 48px;
-  line-height: 72px;
-  color: white;
+  line-height: 150%;
+}
+
+.hotelLogoImage{
+  @media (max-width: 576px) {
+    max-width: 75px;
+  }
+  max-width: 100px;
+
 }
 
 .bold700 {

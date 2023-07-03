@@ -1,23 +1,43 @@
 .greyStrip {
-    height: 100px;
-    width: 100%;
-    background: rgba(217, 217, 217, 0.3);
+  height: 100px;
+  width: 100%;
+  background: rgba(217, 217, 217, 0.3);
+}
+.trainHeaderImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trainTitle {
+  position: absolute;
+  font-weight: 900;
+  @media (max-width: 991px) {
+    font-size: 32px;
+    padding: 15px 30px;
   }
-  .trainHeaderImg {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    padding: 12px 24px;
   }
-  .trainTitle {
-    position: absolute;
-    font-weight: 900;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    padding: 20px 40px;
-    background: rgba(217, 217, 217, 0.3);
-    border-radius: 25px;
+  @media (max-width: 576px) {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 15px;
   }
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 40px;
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 25px;
+}
+.trainCarousel {
+  border-radius: 25px;
+}
+.trainSlideImage{
+  object-fit: cover;
+  
+}

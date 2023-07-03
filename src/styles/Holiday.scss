@@ -4,6 +4,15 @@
   position: absolute;
   font-family: "Pacifico";
   font-weight: 400;
+  @media (max-width: 991px) {
+    font-size: 48px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media (max-width: 576px) {
+    font-size: 28px;
+  }
   font-size: 64px;
   line-height: 180%;
   background: linear-gradient(180deg, #ffcc00 0%, #ffffff 100%);
@@ -46,9 +55,6 @@
   text-align: justify;
   display: flex;
   justify-content: center;
-  .instructionsList {
-    width: 80%;
-  }
   //   text-align: left;
 }
 

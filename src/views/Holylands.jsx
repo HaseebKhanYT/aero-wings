@@ -2,15 +2,14 @@ import { EffectFade, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
-import titleStrip from "../assets/holyland/title-strip1.png";
-import holylandHeaderImg from "../assets/holyland/holyland-header-img.svg";
+import titleStrip from "../assets/holyland/holylandStrip.jpg";
+import holylandHeaderImg from "../assets/holyland/holylandHeaderImg.jpg";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 
 import {
   aqsaImg,
   cordobaImg,
   cordobaMosqueImg,
-  // mihrabImg,
   domeRockImg,
   petraImg,
   gizaImg,
@@ -99,6 +98,7 @@ export default function Holylands() {
       caption: "Registon Square - Samarkand, Uzbekistan",
     },
   ];
+
   return (
     <>
       <div className="holyland">
@@ -140,7 +140,7 @@ export default function Holylands() {
           your spiritual aspirations with a touch of luxury and comfort.
         </div>
         <Swiper
-          className="holylandCarousel container my-5"
+          className="holylandCarousel container h-100 my-5"
           effect="fade"
           fadeEffect={{ crossFade: true }}
           modules={[Autoplay, EffectFade]}
@@ -152,9 +152,9 @@ export default function Holylands() {
           }}
         >
           {holylandCarouselImages.map((slide) => (
-            <SwiperSlide className="holylandCarouselSlide " key={slide.id}>
+            <SwiperSlide className="holylandCarouselSlide h-100" key={slide.id}>
               <img
-                className="holylandImage"
+                className="holylandImage w-100 h-100"
                 src={slide.imageUrl}
                 alt="holyland images"
               />
