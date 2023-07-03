@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import holidayHeaderImg from "../assets/images/holidays-header-img.svg";
+import holidayHeaderImg from "../assets/images/holidaysHeaderImg.jpg";
 
-import holidayPic from "../assets/holidays/holidayPic.png";
-import holidayPic1 from "../assets/holidays/holidayPic-1.png";
-import holidayPic2 from "../assets/holidays/holidayPic-2.png";
+import holidayPic from "../assets/holidays/holidayPic01.jpg";
+import holidayPic1 from "../assets/holidays/holidayPic02.jpg";
+import holidayPic2 from "../assets/holidays/holidayPic03.jpg";
 
 import whatsappColor from "../assets/services/whatsappColor.svg";
 import "../styles/Holiday.scss";
@@ -24,7 +24,7 @@ export default function Holiday() {
             <div className="holidayTitle">Personalize your Holiday!</div>
           </div>
         </div>
-        <div className="description container-sm my-5">
+        <div className="description container my-5">
           Discover the world with our exclusive holiday packages! We offer both
           international and domestic holiday packages tailored to your
           preferences. Whether you want to explore the stunning beaches of Bali
@@ -70,7 +70,7 @@ export default function Holiday() {
             </div>
           </div>
         </div>
-        <div className="instructions container-lg my-5">
+        <div className="instructions description container my-5">
           <ul className="instructionsList">
             <li>
               <span className="bold700">Select your destinations:</span> Consult

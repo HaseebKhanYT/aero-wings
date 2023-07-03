@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import ContactModal from "../components/ContactModal";
 import CardsAccordian from "../components/CardsAccordian";
 
-import foreignHeaderImg from "../assets/images/foreign-header-img.svg";
-import foreignFooterImg from "../assets/images/foreign-footer-img.svg";
+import foreignHeaderImg from "../assets/images/foreignHeaderImg.jpg";
+import foreignFooterImg from "../assets/images/foreignFooterImg.jpg";
 
 import whatsappColor from "../assets/services/whatsappColor.svg";
 
@@ -600,8 +600,8 @@ export default function Foreign() {
             See Domestic Destinations
           </Link>
         </div>
-        <div className="foreignFooterImage my-5">
-          <img src={foreignFooterImg} alt="footer image" />
+        <div className="foreignFooterImage container my-5">
+          <img src={foreignFooterImg} width={"100%"} alt="footer image" />
         </div>
       </div>
     </>
