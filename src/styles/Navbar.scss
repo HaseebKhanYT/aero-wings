@@ -1,111 +1,91 @@
 .atHome {
-    background: transparent;
+  background: transparent;
 }
 
-.aeroNavbar{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5vh 7vw!important;
+.aeroNavbar {
+  z-index: 1;
+  padding: 5vh 7vw !important;
 }
 
 .navbarLogo {
-    width: 100px;
-    @media (min-width: 991px) {
-        width: 150px;
-      }
+  width: 100px;
+  @media (min-width: 991px) {
+    width: 150px;
+  }
 }
 
-.navbar-toggler:focus{
-    outline: none!important;
-    box-shadow: none!important;
-}
-.navbar-toggler{
-    outline: none;
-    box-shadow: none;
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-.navbarMenuDiv {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+.navbarMenuDiv{
+  display: flex;
+  @media (max-width: 576px) {
+    padding-top: 5vh;
+  }
+  padding-top:0;
 
-.navbarMenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .navbarMenu li {
 
-    display: flex;
-    height: 40px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    list-style: none;
-    padding: 0 28px;
-    margin-right: 22px;
-    transition: 0.3s;
-    white-space: nowrap;
-
+  margin-top: (1rem * 0.25);
+  margin-bottom: (1rem * 0.25);
+  display: flex;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  list-style: none;
+  padding: 0 28px;
+  white-space: nowrap;
+  justify-content: center;
 }
 
-
 .navbarMenu li.active {
-
-    display: flex;
-    height: 40px;
-    background: #F0F0F5;
-    box-sizing: border-box;
-    /* border-radius: 20px; */
-    padding: 0 26px;
-
-
+  display: flex;
+  height: 40px;
+  background: #f0f0f5;
+  box-sizing: border-box;
+  padding: 0 26px;
 }
 
 .navbarMenu li:hover {
-
-    display: flex;
-    height: 40px;
-    background: rgba(249, 249, 251, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box;
-    border-radius: 20px;
-
+  display: flex;
+  height: 40px;
+  background: rgba(249, 249, 251, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .navbarMenu li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 500;
-    color: #363374;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #363374;
 }
 
 li:has(> a.backButton) {
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.notHome {
-    opacity: 0;
-    pointer-events: none;
-    display: none;
-}
+// .notHome {
+//   opacity: 0;
+//   pointer-events: none;
+//   display: none;
+// }
 
 li:has(> a.backButton) {
-
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }

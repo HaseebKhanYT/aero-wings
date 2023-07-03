@@ -5,45 +5,74 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-      <nav className="aeroNavbar container-fluid d-flex justify-content-between navbar navbar-expand-lg">
-          <div className="navbar-brand">
-            <Link to="/">
-              <img className="navbarLogo" src={logo} alt="aerowingslogo" />
-            </Link>
+      <nav className="aeroNavbar position-relative container-fluid d-flex justify-content-between navbar navbar-expand-lg">
+        <div className="d-flex flex-grow-1">
+          <span className="w-100 d-block d-lg-none"></span>
+          <Link to="/" className="navbar-brand mx-0">
+            <img className="navbarLogo" src={logo} alt="aerowingslogo" />
+          </Link>
+          <div className="w-100 d-flex align-items-center justify-content-end text-end">
+            <button
+              className="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggler"
+              aria-controls="navbarToggler"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <button
-            className="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarToggler"
-            aria-controls="navbarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="navbarMenuDiv justify-content-lg-end justify-content-center collapse navbar-collapse"
-            id="navbarToggler"
-          >
-            <ul className="navbarMenu navbar-nav me-2">
-              <BackButton to="/" className="navbarButtons nav-item">
+        </div>
+        <div
+          className="navbarMenuDiv justify-content-lg-end justify-content-center collapse navbar-collapse"
+          id="navbarToggler"
+        >
+          <ul className="navbarMenu d-flex justify-content-center navbar-nav ">
+            <BackButton to="/" className="navbarButtons nav-item">
+              <div
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+              >
                 Home
-              </BackButton>
-              <CustomLink to="/about" className="navbarButtons nav-item">
+              </div>
+            </BackButton>
+            <CustomLink to="/about" className="navbarButtons nav-item">
+              <div
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+              >
                 About Us
-              </CustomLink>
-              <CustomLink to="/services" className="navbarButtons nav-item">
+              </div>
+            </CustomLink>
+            <CustomLink to="/services" className="navbarButtons nav-item">
+              <div
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+              >
                 Services
-              </CustomLink>
-              <CustomLink to="/offers" className="navbarButtons nav-item">
+              </div>
+            </CustomLink>
+            <CustomLink to="/offers" className="navbarButtons nav-item">
+              <div
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+              >
                 Offers
-              </CustomLink>
-              <CustomLink to="/contact" className="navbarButtons nav-item">
+              </div>
+            </CustomLink>
+            <CustomLink to="/contact" className="navbarButtons nav-item">
+              <div
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+              >
                 Contact Us
-              </CustomLink>
-              <Link to="*"></Link>
-            </ul>
-          </div>
+              </div>
+            </CustomLink>
+            <Link to="*"></Link>
+          </ul>
+        </div>
       </nav>
     </>
   );
@@ -63,7 +92,7 @@ export default function Navbar() {
     const resolvedPath = useResolvedPath(to);
     const isNotHome = !useMatch({ path: resolvedPath.pathname, end: true });
     return (
-      <li className={isNotHome ? "" : "notHome"}>
+      <li className={isNotHome ? "d-flex" : "d-none"}>
         <Link to={to} {...props}>
           {children}
         </Link>
@@ -71,3 +100,4 @@ export default function Navbar() {
     );
   }
 }
+//Responsive and Complete
