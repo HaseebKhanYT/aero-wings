@@ -35,8 +35,7 @@ export default function VerticalCarousel() {
   ];
   return (
     <>
-      <div className="carouselContainer">
-        {/* here will lie a vertical carousel, stay tuned. */}
+      <div className="carouselContainer h-100 w-100">
         <Swiper
           modules={[Navigation, Pagination, EffectFade]}
           slidesPerView={1}
@@ -46,11 +45,11 @@ export default function VerticalCarousel() {
           loop={true}
           effect="fade"
           fadeEffect={{crossFade:true}}
-          className="verticalCarousel"
+          className="verticalCarousel h-100 w-100 d-flex justify-content-center align-items-center"
         >
           {slidesText.map((slide) => (
-            <SwiperSlide className="verticalSlide" key={slide.id}>
-              <div className="verticalHeading">{slide.heading}</div>
+            <SwiperSlide className="verticalSlide d-flex flex-column justify-content-center align-items-center" key={slide.id}>
+              <div className="verticalHeading text-center">{slide.heading}</div>
               <br />
               <div className="verticalText">{slide.text1}</div>
               <br />

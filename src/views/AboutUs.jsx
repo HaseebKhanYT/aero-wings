@@ -1,13 +1,13 @@
-import "../styles/AboutUs.scss";
+
 import iconAirplane from "../assets/iconAirplane.svg";
 import iconHotel from "../assets/iconHotel.svg";
 import iconCar from "../assets/iconCar.svg";
 import iconCargo from "../assets/iconCargo.svg";
 import iconHoliday from "../assets/iconHoliday.svg";
 
-import timeline from "../assets/timeline.svg";
+import timeline from "../assets/timeline.webp";
 
-import iata from "../assets/iataLogo.svg";
+import iata from "../assets/logo/iataLogo.png";
 import tafi from "../assets/tafiLogo.svg";
 import minority from "../assets/minorityLogo.svg";
 import mohu from "../assets/mohuLogo.svg";
@@ -20,13 +20,13 @@ export default function AboutUs() {
     <>
       <div className="about">
         <div className="aboutBackground">
-          <div className="aboutTextContainer container">
+          <div className="aboutTextContainer d-flex justify-content-center align-items-center p-5 h-100 text-white container">
             <div className="row align-items-center">
-              <div className="aboutTitle col-lg-6 col-md-12 my-2">
-                <div>
+              <div className="aboutTitle h-100 text-center text-sm-start d-flex align-items-center justify-content-center col-lg-6 col-md-12 my-2">
+                <div className="d-inline-block">
                   {" "}
                   since
-                  <br /> 1975
+                  <br className="d-none d-lg-flex" /> 1975
                 </div>
               </div>
               <div className="aboutTitleTextContainer col-lg-6 col-md-12 my-2 py-3">
@@ -42,7 +42,7 @@ export default function AboutUs() {
                     TAFI (Travel Agents Federation of India)
                   </span>
                   . With a reputation for excellence, reliability, and customer
-                  satisfaction built over 40 years of experience, we are
+                  satisfaction built over 45 years of experience, we are
                   committed to making personalized and unique travel experiences
                   for our clients, allowing them access to exclusive deals and
                   unique experiences in over 500 destinations worldwide.
@@ -54,98 +54,116 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="aboutIconStrip container-fluid d-flex align-items-center">
-          <div className="row d-flex justify-content-center w-100">
-            <div className=" d-flex justify-content-center  col-6 col-lg-2 ">
-              <div className="iconBg100  ">
-                <div className="iconBg70">
-                  <div className="iconBg50white">
-                    <img src={iconAirplane} alt="icon airplane" />
+        <div className="aboutIconStrip justify-content-center justify-content-lg-end container-fluid d-flex align-items-center">
+          <div className=" container-fluid g-5 d-flex justify-content-center justify-content-sm-end w-100">
+            <div className="row iconStripRow justify-content-sm-evenly">
+              <Link
+                to="/airlines"
+                className=" d-flex justify-content-center p-0  col-6 col-lg-2 "
+              >
+                <div className="iconBg100 d-flex justify-content-center align-items-center rounded-circle  ">
+                  <div className="iconBg70 d-flex justify-content-center align-items-center rounded-circle">
+                    <div className="iconBg50white d-flex justify-content-center align-items-center rounded-circle bg-white">
+                      <img src={iconAirplane} alt="icon airplane" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className=" d-flex justify-content-center  col-6 col-lg-2 ">
-              <div className="iconBg100  ">
-                <div className="iconBg70">
-                  <div className="iconBg50">
-                    <img src={iconHotel} alt="icon Hotel" />
+              </Link>
+              <Link
+                to="/holiday"
+                className=" d-flex justify-content-center p-0  col-6 col-lg-2 "
+              >
+                <div className="iconBg100 d-flex justify-content-center align-items-center rounded-circle  ">
+                  <div className="iconBg70 d-flex justify-content-center align-items-center rounded-circle">
+                    <div className="iconBg50 d-flex justify-content-center align-items-center rounded-circle">
+                      <img src={iconHotel} alt="icon Hotel" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className=" d-flex justify-content-center col-12 col-lg-2 ">
-              <div className="iconBg100">
-                <div className="iconBg70">
-                  <div className="iconBg50">
-                    <img src={iconCar} alt="icon Car" />
+              </Link>
+              <Link
+                to="/services"
+                className=" d-flex justify-content-center p-0 col-12 col-lg-2 "
+              >
+                <div className="iconBg100 d-flex justify-content-center align-items-center rounded-circle">
+                  <div className="iconBg70 d-flex justify-content-center align-items-center rounded-circle">
+                    <div className="iconBg50 d-flex justify-content-center align-items-center rounded-circle">
+                      <img src={iconCar} alt="icon Car" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className=" d-flex justify-content-center  col-6 col-lg-2 ">
-              <div className="iconBg100  ">
-                <div className="iconBg70">
-                  <div className="iconBg50">
-                    <img src={iconCargo} alt="icon Cargo" />
+              </Link>
+              <Link
+                to="/services"
+                className=" d-flex justify-content-center p-0  col-6 col-lg-2 "
+              >
+                <div className="iconBg100 d-flex justify-content-center align-items-center rounded-circle  ">
+                  <div className="iconBg70 d-flex justify-content-center align-items-center rounded-circle">
+                    <div className="iconBg50 d-flex justify-content-center align-items-center rounded-circle">
+                      <img src={iconCargo} alt="icon Cargo" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className=" d-flex justify-content-center  col-6 col-lg-2 ">
-              <div className="iconBg100  ">
-                <div className="iconBg70">
-                  <div className="iconBg50">
-                    <img src={iconHoliday} alt="icon Holiday" />
+              </Link>
+              <Link
+                to="/holiday"
+                className=" d-flex justify-content-center p-0  col-6 col-lg-2 "
+              >
+                <div className="iconBg100 d-flex justify-content-center align-items-center rounded-circle  ">
+                  <div className="iconBg70 d-flex justify-content-center align-items-center rounded-circle">
+                    <div className="iconBg50 d-flex justify-content-center align-items-center rounded-circle">
+                      <img src={iconHoliday} alt="icon Holiday" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="aboutTimeline ">
-          <div className="timelineHeader my-5">
+        <div className="aboutTimeline">
+          <div className="timelineHeader mt-5">
             <div className="headerText font48">our journey</div>
           </div>
           <div className="container d-flex justify-content-center">
-            <div className="timelineImageContainer w-100 my-5">
+            <div className="timelineImageContainer w-100 mb-5">
               <img
                 className="timelineImage"
                 src={timeline}
+                height={"591px"}
                 alt="timeline image"
               />
             </div>
           </div>
-          <div className="aboutAccreditions my-5">
-            <div className="accreditionsContainer rounded container py-5">
-              <div className="container ">
-                <div className="row ">
-                  <div className="col d-flex justify-content-center align-items-center py-3">
-                    <img src={iata} alt="iata logo" width={"77px"} />
-                  </div>
-                  <div className="col d-flex justify-content-center align-items-center py-3">
-                    <img src={tafi} alt="tafi logo" width={"102px"} />
-                  </div>
-                  <div className="col d-flex justify-content-center align-items-center py-3">
-                    <img src={minority} alt="minority logo" width={"182px"} />
-                  </div>
-                  <div className="col d-flex justify-content-center align-items-center py-3">
-                    <img src={mohu} alt="mohu logo" width={"240px"} />
-                  </div>
+        </div>
+        <div className="aboutAccreditions d-flex justify-content-center align-items-center container my-5">
+          <div className="accreditionsContainer d-flex justify-content-center align-items-center rounded container  py-5">
+            <div className="container ">
+              <div className="row ">
+                <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-3">
+                  <img src={iata} alt="iata logo" width={"100px"} />
+                </div>
+                <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-3">
+                  <img src={tafi} alt="tafi logo" width={"160px"} />
+                </div>
+                <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-3">
+                  <img src={minority} alt="minority logo" width={"180px"} />
+                </div>
+                <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-3">
+                  <img src={mohu} alt="mohu logo" width={"220px"} />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="aboutvvm my-5">
-          <div className="vvmContainer container">
-            <div className="valuesContainer row my-5">
+        <div className="aboutvvm d-flex justify-content-evenly align-items-center flex-column my-5">
+          <div className="vvmContainer d-flex flex-column  align-items-center container">
+            <div className="valuesContainer mb-5 row">
               <div className="valuesTitle vvmTitles mb-4 col-lg-6 ">values</div>
-              <div className="valuesTextContainer vvmTexts col-lg-6 ">
+              <div className="valuesTextContainer container vvmTexts col-lg-6 ">
                 <VerticalCarousel />
               </div>
             </div>
-            <div className="visionContainer row my-5">
+            <div className="visionContainer mb-5 row ">
               <div className="visionTitle vvmTitles mb-4 col-lg-6 ">vision</div>
               <div className="visionText vvmTexts col-lg-6 ">
                 To be the most trusted and preferred travel agency in the world,
@@ -153,7 +171,7 @@ export default function AboutUs() {
                 personalized service.
               </div>
             </div>
-            <div className="missionContainer row my-5">
+            <div className="missionContainer mb-5 row">
               <div className="missionTitle vvmTitles mb-4 col-lg-6 ">
                 mission
               </div>
@@ -168,7 +186,7 @@ export default function AboutUs() {
             </div>
           </div>
           <div className="buttonContainer my-5">
-            <Link to="/services" className="viewServicesButton">
+            <Link to="/services" className="viewAllButton">
               View our services
             </Link>
           </div>
