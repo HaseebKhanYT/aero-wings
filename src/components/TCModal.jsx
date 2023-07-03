@@ -9,7 +9,7 @@ export default function TCModal() {
       aria-labelledby="tcLabel"
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-dialog-centered">
+      <div className="modal-dialog modal-xl modal-dialog-centered">
         <div className="modal-content rounded">
           <div className="modal-header border-0">
             <button

@@ -1,133 +1,69 @@
 .blurBackground {
-  position: absolute;
-  top: 0;
   z-index: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../assets/images/takeoff-bg.svg");
+  height: 100svh;
+  background-image: url("../assets/images/takeoffBg.png");
   background-repeat: no-repeat;
   background-size: cover;
-
-  opacity: 1;
 }
 
-.homepage {
-  width: 100%;
-}
-
-.subHeaderContainer {
-  position: relative;
-  z-index: 1;
-  height: 12vh;
-}
-
-.iconContainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 4vh 7vw;
-}
-
-.homeAbout {
-  display: flex;
-  justify-content: center;
-  // height: 100vh;
-  background-color: #fff;
-  background-image: url("../assets/geometricHome.svg");
-  background-position: bottom;
-  background-repeat: repeat-x;
-}
-
-.homeHolidays {
-  // height: 100vh;
-  background-color: #fff;
-  background-image: url("../assets/geometricHomeInverted.svg");
-  background-position: top;
-  background-repeat: repeat-x;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.homeHolidaysContainer {
-  display: flex;
-  width: 85%;
+.geometry {
+  background-image: url("../assets/geometry.png");
+  background-size: contain;
+  background-repeat: repeat-y;
   height: 100%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-}
-
-.homeAboutImageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.statsColumn {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 115px;
-  /* height: 100%; */
-  width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 .homeAboutImage {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-
-  border-radius: 25px;
-}
-
-.statsRow1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 500px;
-}
-
-.statsRow2 {
-  /* position: absolute; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 570px;
 }
 
 .statsContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 25px;
-  width: 130px;
-  height: 90px;
+  @media (min-width: 576px) {
+    width: 130px;
+    height: 90px;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  border-radius: 15px;
+  width: 80px;
+  height: 55px;
+  font-size: 10px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-  font-size: 20px;
+}
+
+.statsRow1 {
+  @media (min-width: 576px) {
+    width: 500px;
+  }
+  width: 310px;
+}
+
+.statsRow2 {
+  @media (min-width: 576px) {
+    width: 570px;
+  }
+  width: 350px;
+}
+
+.statsColumn {
+  @media (min-width: 576px) {
+    gap: 115px;
+  }
+  gap: 70px;
 }
 
 .homeAboutLogoContainer {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+  @media (min-width: 576px) {
+    width: 200px;
+    height: 200px;
+  }
+  width: 115px;
+  height: 115px;
   background: #d9d9d94d;
   backdrop-filter: blur(2px);
-}
-
-.homeAboutLogo {
-  width: 170px;
-}
-
-.poppins600 {
-  font-weight: 600;
 }
 
 .statText {
@@ -138,53 +74,63 @@
   font-weight: 600;
 }
 
-.homeAboutTextContainer {
-  display: flex;
-  flex-direction: column;
-  row-gap: 50px;
-  justify-content: center;
-  align-items: center;
-}
-
 .textBox1 {
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
   font-size: 18px;
   font-weight: 275;
   text-align: justify;
-  min-width: 500px;
 }
 
 .textBox2 {
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
   font-size: 20px;
   font-weight: 500;
   text-align: justify;
-  font-style: italic;
-  min-width: 500px;
 }
 
-.homeHajjContainer {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.homeHolidayTitle {
+  @media (max-width: 991px) {
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 576px) {
+    // font-size: 16px;
+  }
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.homeHajjTitleContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2%;
-}
-
-.hajjImagesContainer {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.hajjImageContainer {
+  @media (max-width: 991px) {
+    width: 208px;
+    height: 346.66px;
+  }
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
 }
 
 .hajjImages {
+  @media (max-width: 991px) {
+    width: 208px;
+    height: 346.66px;
+  }
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 250px;
+    border-radius: 20px;
+  }
   width: 300px;
   height: 500px;
   object-fit: cover;
@@ -194,25 +140,6 @@
 
 .hajjImages:hover {
   transform: scale(1.2);
-}
-
-.imageContainer {
-  width: 300px;
-  height: 500px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  overflow: hidden;
-}
-
-.exploreButton {
-  position: absolute;
-  font-size: 24px;
-  font-weight: 500;
-  border-radius: 25px;
 }
 
 .glassButton {
@@ -228,90 +155,38 @@
   color: black;
 }
 
-.red {
-  color: #e31e24;
-}
-
-.blue {
-  color: #363374;
-}
-
-.homeHolidayTitle {
+.exploreButton {
+  @media (max-width: 991px) {
+    font-size: 18px;
+    padding: 16px 22px;
+    border-radius: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 12px 18px;
+    border-radius: 15px;
+  }
+  @media (max-width: 576px) {
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 10px;
+  }
   font-size: 24px;
-  font-weight: 300;
-  text-align: left;
-}
-
-.domesticHolidays {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.internationalHolidays {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.homeHajj {
-  // height: 832px;
-  background-image: url("../assets/geometricHome.svg");
-}
-
-.homeWhyUs {
-  // height: 832px;
-  background-image: url("../assets/geometricHomeInverted.svg");
-}
-
-.viewAllButtonContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.viewAllButton {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 400;
+  padding: 16px 22px;
   border-radius: 25px;
-  padding: 20px 100px;
-  color: #374957;
-  background-color: #d9d9d94d;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(2px);
-}
-
-.viewAllButton:hover {
-  color: #374957;
+  font-weight: 500;
 }
 
 .WhyUsTitle {
+  @media (max-width: 576px) {
+    font-size: 48px;
+  }
+  font-size: 72px;
   font-weight: 700;
-  font-size: 128px;
-  text-align: left;
-  line-height: 128px;
-}
-
-// .WhyUsTitleContainer {
-
-  
-// }
-
-.WhyUsCardsContainer {
-  align-items: center;
-  // flex-direction: column;
-  gap: 40px;
 }
 
 .WhyUsRow {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 40px;
+  max-width: 460px;
 }
 
 .WhyUsCard {
@@ -319,24 +194,13 @@
   height: 200px;
   border-radius: 15px;
   background: rgba(217, 217, 217, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .WhyUsCardText {
   padding: 20px 20px;
-  text-align: left;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-}
-
-.whyUsWrapper {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  height: 100%;
 }
 
 .footerMenuContainer {
@@ -377,7 +241,8 @@
 .footerTextMenu {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
-.tnc{
+.tnc {
   cursor: pointer;
 }

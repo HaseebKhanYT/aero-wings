@@ -1,5 +1,5 @@
 .loader-background {
-  row-gap: 21vh;
+  // row-gap: 21vh;
   height: 100vh;
   background: linear-gradient(
     180deg,
@@ -10,6 +10,7 @@
 }
 
 .loader-logo {
+  margin-top: 21vh;
   @media (min-width: 576px) {
     width: 250px;
   }
