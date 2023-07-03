@@ -61,10 +61,13 @@ import picIntl24 from "../assets/holidays/international/picIntl-24.jpg";
 import picIntl25 from "../assets/holidays/international/picIntl-25.jpg";
 import picIntl26 from "../assets/holidays/international/picIntl-26.jpg";
 
+
+
 const domesticHolidays = [
   {
     id: 1,
     title: "Hyderabad",
+    type:"/india",
     imageUrl: picdomestic,
     imageUrl1: picdomestic1,
     imageUrl2: picdomestic2,
@@ -74,6 +77,7 @@ const domesticHolidays = [
   {
     id: 2,
     title: "Delhi",
+    type:"/india",
     imageUrl: picdomestic4,
     imageUrl1: picdomestic3,
     imageUrl2: picdomestic5,
@@ -83,6 +87,7 @@ const domesticHolidays = [
   {
     id: 3,
     title: "Agra",
+    type:"/india",
     imageUrl: picdomestic8,
     imageUrl1: picdomestic7,
     imageUrl2: picdomestic6,
@@ -93,6 +98,7 @@ const domesticHolidays = [
     id: 4,
     prefix: "Tsomgo ",
     title: "Sikkim",
+    type:"/india",
     imageUrl: picdomestic48,
     imageUrl1: picdomestic49,
     imageUrl2: picdomestic50,
@@ -102,6 +108,7 @@ const domesticHolidays = [
   {
     id: 5,
     title: "Kashmir",
+    type:"/india",
     imageUrl: picdomestic12,
     imageUrl1: picdomestic13,
     imageUrl2: picdomestic14,
@@ -111,6 +118,7 @@ const domesticHolidays = [
   {
     id: 6,
     title: "Shimla",
+    type:"/india",
     imageUrl: picdomestic16,
     imageUrl1: picdomestic15,
     imageUrl2: picdomestic17,
@@ -120,6 +128,7 @@ const domesticHolidays = [
   {
     id: 7,
     title: "Jaipur",
+    type:"/india",
     imageUrl: picdomestic11,
     imageUrl1: picdomestic10,
     imageUrl2: picdomestic9,
@@ -129,6 +138,7 @@ const domesticHolidays = [
   {
     id: 8,
     title: "Goa",
+    type:"/india",
     imageUrl: picdomestic23,
     imageUrl1: picdomestic22,
     imageUrl2: picdomestic21,
@@ -138,6 +148,7 @@ const domesticHolidays = [
   {
     id: 9,
     title: "Leh",
+    type:"/india",
     imageUrl: picdomestic36,
     imageUrl1: picdomestic37,
     imageUrl2: picdomestic38,
@@ -147,6 +158,7 @@ const domesticHolidays = [
   {
     id: 10,
     title: "Lakshadweep",
+    type:"/india",
     imageUrl: picdomestic40,
     imageUrl1: picdomestic39,
     imageUrl2: picdomestic41,
@@ -156,12 +168,19 @@ const domesticHolidays = [
   {
     id: 11,
     title: "Kerala",
+    type:"/india",
     imageUrl: picdomestic44,
     imageUrl1: picdomestic43,
     imageUrl2: picdomestic42,
     description:
       'Kerala, also known as "God\'s Own Country," is a tropical paradise located in the southwestern region of India. It is known for its picturesque landscapes, serene backwaters, palm-lined beaches, and lush greenery. The state is a popular destination for tourists who are seeking a serene escape from the hustle and bustle of city life. One of the most popular destinations in Kerala is the hill station of Munnar, known for its rolling hills, tea plantations, and picturesque landscapes. Another must-visit location is the backwaters of Alleppey, where visitors can enjoy a leisurely boat ride and soak up the stunning natural beauty. Kerala is also known for its mouth-watering cuisine, which features a variety of seafood dishes, coconut-based curries, and traditional vegetarian fare. Overall, Kerala is a must-visit destination for those looking to relax and rejuvenate amidst natural beauty and traditional culture.',
   },
+  // {
+  //   id: 12,
+  //   title: "",
+  //   imageUrl: seemore,
+  //   type: "link"
+  // },
 ];
 
 const internationalHolidays = [
@@ -169,6 +188,7 @@ const internationalHolidays = [
     id: 1,
     prefix: "Bali ",
     title: "Indonesia",
+    type: "/foreign",
     imageUrl: picIntl,
     imageUrl1: picIntl1,
     imageUrl2: picIntl2,
@@ -178,6 +198,7 @@ const internationalHolidays = [
   {
     id: 2,
     title: "Singapore",
+    type: "/foreign",
     imageUrl: picIntl4,
     imageUrl1: picIntl3,
     imageUrl2: picIntl5,
@@ -187,6 +208,7 @@ const internationalHolidays = [
   {
     id: 3,
     title: "Thailand",
+    type: "/foreign",
     imageUrl: picIntl8,
     imageUrl1: picIntl7,
     imageUrl2: picIntl6,
@@ -196,15 +218,17 @@ const internationalHolidays = [
   {
     id: 4,
     title: "Maldives",
+    type: "/foreign",
     imageUrl: picIntl11,
     imageUrl1: picIntl10,
     imageUrl2: picIntl9,
     description:
-      "Maldives is a stunning tropical paradise located in the Indian Ocean, made up of 26 atolls comprising more than 1,000 coral islands. It is known for its crystal-clear turquoise waters, white-sand beaches, and luxurious overwater bungalows. The Maldives is a popular destination for honeymooners, scuba divers, and those seeking a peaceful retreat. Visitors can enjoy a range of activities including snorkeling, diving, island hopping, fishing, and water sports. The Maldives is also home to a diverse marine ecosystem, with a wide variety of coral reefs and marine life, including sea turtles, whale sharks, and manta rays. Visitors can also indulge in a spa treatment at one of the many world-class spas, or simply relax on a pristine beach while soaking up the tropical sun. The Maldives is truly a haven for those seeking relaxation, adventure, and natural beauty.",
+      "Welcome to the Maldives! Let Aerowings Travel help you book your dream vacation. \nMaldives is a stunning tropical paradise located in the Indian Ocean, made up of 26 atolls comprising more than 1,000 coral islands. It is known for its crystal-clear turquoise waters, white-sand beaches, and luxurious overwater bungalows. Visitors can enjoy a range of activities including snorkeling, diving, island hopping, fishing, and water sports. \nExperience luxury of Maldives with Aerowings Travel. Book your stay in the most luxurious resorts and enjoy the beauty of Maldives in Style! \nWhether you're looking for a romantic getaway, a family holiday, or a business trip, we have something for everyone.",
   },
   {
     id: 5,
     title: "Russia",
+    type: "/foreign",
     imageUrl: picIntl24,
     imageUrl1: picIntl25,
     imageUrl2: picIntl26,
@@ -214,6 +238,7 @@ const internationalHolidays = [
   {
     id: 6,
     title: "United States",
+    type: "/foreign",
     imageUrl: picIntl12,
     imageUrl1: picIntl13,
     imageUrl2: picIntl14,
@@ -223,6 +248,7 @@ const internationalHolidays = [
   {
     id: 7,
     title: "United Kingdom",
+    type: "/foreign",
     imageUrl: picIntl16,
     imageUrl1: picIntl15,
     imageUrl2: picIntl17,
@@ -232,6 +258,7 @@ const internationalHolidays = [
   {
     id: 8,
     title: "France",
+    type: "/foreign",
     imageUrl: picIntl20,
     imageUrl1: picIntl19,
     imageUrl2: picIntl18,
@@ -248,13 +275,13 @@ export default function HomeHolidays() {
   }
   return (
     <>
-      <div className="homeHolidaysContainer container my-5">
-        <div className="domesticHolidays">
-          <div className="homeHolidayTitle my-3">
+      <div className="homeHolidaysContainer container-fluid gx-3 d-flex flex-column h-100  mb-5">
+        <div className="domesticHolidays  w-100 d-flex flex-column">
+          <div className="homeHolidayTitle px-5 text-start mb-3">
             Experience a Memorable Staycation with Our{" "}
             <span className="blue poppins600"> Domestic</span> Getaways
           </div>
-          <div className="holidayCards container my-4">
+          <div className="holidayCards my-4">
             <HolidayCarousel
               arr={domesticHolidays}
               onClick={handleClick}
@@ -262,12 +289,12 @@ export default function HomeHolidays() {
             />
           </div>
         </div>
-        <div className="internationalHolidays">
-          <div className="homeHolidayTitle my-3">
+        <div className="internationalHolidays w-100 d-flex flex-column">
+          <div className="homeHolidayTitle px-5 text-start my-3">
             Discover the Best of the World with Our{" "}
             <span className="red poppins600">International</span> Tours
           </div>
-          <div className="holidayCards container my-4">
+          <div className="holidayCards my-4">
             <HolidayCarousel
               arr={internationalHolidays}
               onClick={handleClick}
