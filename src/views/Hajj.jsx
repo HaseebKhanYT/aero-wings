@@ -1,37 +1,37 @@
 import { EffectFade, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
-import hajjHeaderImg from "../assets/images/hajj-header-img.svg";
+import ContactModal from "../components/ContactModal";
+import hajjHeaderImg from "../assets/images/hajjHeaderImg.jpg";
 import hajjTitle from "../assets/hajjTitle.svg";
 import hajjTitleGeometry from "../assets/hajjTitleGeometry.svg";
 
 import formLogo from "../assets/icons/form-logo.svg";
 
-import hotelHiltonLogo from "../assets/hajj/hotel/hotel-hilton-logo.svg";
-import hotelSwissLogo from "../assets/hajj/hotel/hotel-swissotel-logo.svg";
-import hotelFairmontLogo from "../assets/hajj/hotel/hotel-fairmont-logo.svg";
-import hotelPullmanLogo from "../assets/hajj/hotel/hotel-pullman-logo.svg";
-import hotelMovenpickLogo from "../assets/hajj/hotel/hotel-movenpick-logo.svg";
-import hotelInterLogo from "../assets/hajj/hotel/hotel-intercontinental-logo.svg";
+import hotelHiltonLogo from "../assets/hajj/hotel/hotelHiltonLogo.png";
+import hotelSwissLogo from "../assets/hajj/hotel/hotelSwissotelLogo.png";
+import hotelFairmontLogo from "../assets/hajj/hotel/hotelFairmontLogo.png";
+import hotelPullmanLogo from "../assets/hajj/hotel/hotelPullmanLogo.png";
+import hotelMovenpickLogo from "../assets/hajj/hotel/hotelMovenpickLogo.png";
+import hotelInterLogo from "../assets/hajj/hotel/hotelIntercontinentalLogo.png";
 
-import hotelHilton1 from "../assets/hajj/hotel/hotel-hilton1.svg";
-import hotelHilton2 from "../assets/hajj/hotel/hotel-hilton2.svg";
-import hotelHilton3 from "../assets/hajj/hotel/hotel-hilton3.svg";
-import hotelHilton4 from "../assets/hajj/hotel/hotel-hilton4.svg";
-import hotelPullman1 from "../assets/hajj/hotel/hotel-pullman1.svg";
-import hotelPullman2 from "../assets/hajj/hotel/hotel-pullman2.svg";
-import hotelPullman3 from "../assets/hajj/hotel/hotel-pullman3.svg";
-import hotelSwiss1 from "../assets/hajj/hotel/hotel-swiss1.svg";
-import hotelSwiss2 from "../assets/hajj/hotel/hotel-swiss2.svg";
-import hotelMovenpick from "../assets/hajj/hotel/hotel-movenpick.svg";
-import hotelInter1 from "../assets/hajj/hotel/hotel-inter1.svg";
-import hotelInter2 from "../assets/hajj/hotel/hotel-inter2.svg";
-import hotelFairmont1 from "../assets/hajj/hotel/hotel-fairmont1.svg";
-import hotelFairmont2 from "../assets/hajj/hotel/hotel-fairmont2.svg";
+import hotelHilton1 from "../assets/hajj/hotel/hotelHilton01.jpg";
+import hotelHilton2 from "../assets/hajj/hotel/hotelHilton02.jpg";
+import hotelHilton3 from "../assets/hajj/hotel/hotelHilton03.jpg";
+import hotelHilton4 from "../assets/hajj/hotel/hotelHilton04.jpg";
+import hotelPullman1 from "../assets/hajj/hotel/hotelPullman01.jpg";
+import hotelPullman2 from "../assets/hajj/hotel/hotelPullman02.jpg";
+import hotelPullman3 from "../assets/hajj/hotel/hotelPullman03.jpg";
+import hotelSwiss1 from "../assets/hajj/hotel/hotelSwiss01.jpg";
+import hotelSwiss2 from "../assets/hajj/hotel/hotelSwiss02.jpg";
+import hotelMovenpick from "../assets/hajj/hotel/hotelMovenpick.jpg";
+import hotelInter1 from "../assets/hajj/hotel/hotelInter01.jpg";
+import hotelInter2 from "../assets/hajj/hotel/hotelInter02.jpg";
+import hotelFairmont1 from "../assets/hajj/hotel/hotelFairmont01.jpg";
+import hotelFairmont2 from "../assets/hajj/hotel/hotelFairmont02.jpg";
 
-import kabahGate from "../assets/kabahGate.svg";
-import madinaArc from "../assets/hajj/madina-arc-img.svg";
-import madinaMinaret from "../assets/hajj/madina-minaret-img.svg";
+import kabahGate from "../assets/kabahGate.jpg";
+import madinaArc from "../assets/hajj/medinaArc.jpg";
+import madinaMinaret from "../assets/hajj/medinaMinaret.jpg";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 
 import "../styles/Hajj.scss";
@@ -127,20 +127,22 @@ export default function Hajj() {
     <>
       <div>
         <div className="hajjHeaderImage">
-          <img 
-          
-          src={hajjHeaderImg} width={"100%"} alt="hajj image" />
+          <img src={hajjHeaderImg} width={"100%"} alt="hajj image" />
         </div>
-        <div className="hajjTitleContainer mb-5">
-          <img 
-          src={hajjTitleGeometry} alt="geometry" />
-
-          <div className="hajjTitleImage">
-            <img 
-            src={hajjTitle} alt="hajj" />
+        <div className="homeHajjTitleContainer mb-5 w-100 d-flex align-items-center px-3 justify-content-center justify-content-sm-between">
+          <img
+            className="hajjGeometry d-none d-sm-flex"
+            src={hajjTitleGeometry}
+            alt="geometry"
+          />
+          <div>
+            <img className="homeHajjTitleImage" src={hajjTitle} alt="hajj" />
           </div>
-          <img 
-          src={hajjTitleGeometry} alt="geometry" />
+          <img
+            className="hajjGeometry d-none d-sm-flex"
+            src={hajjTitleGeometry}
+            alt="geometry"
+          />
         </div>
         <div className="description container my-5">
           Our Hajj and Umrah services offer a hassle-free and unforgettable
@@ -157,19 +159,19 @@ export default function Hajj() {
           and we strive to exceed their expectations with our unparalleled
           services.
         </div>
-        <div className=" hajjFeatures container my-5">
-          <ul className=" hajjFeaturesRow row">
-            <li className="col-xs-12 col-md-6 my-3">Visa and tickets</li>
-            <li className="col-xs-12 col-md-6 my-3">Premium hotels</li>
-            <li className="col-xs-12 col-md-6 my-3">Continental buffet</li>
-            <li className="col-xs-12 col-md-6 my-3">Luxury coaches</li>
-            <li className="col-xs-12 col-md-6 my-3">Experienced guide</li>
-            <li className="col-xs-12 col-md-6 my-3">24/7 support</li>
+        <div className=" hajjFeatures container w-100 justify-content-center my-5">
+          <ul className=" hajjFeaturesRow row text-nowrap text-start">
+            <li className="col-12 col-lg-6 my-3">Visa and tickets</li>
+            <li className="col-12 col-lg-6 my-3">Premium hotels</li>
+            <li className="col-12 col-lg-6 my-3">Continental buffet</li>
+            <li className="col-12 col-lg-6 my-3">Luxury coaches</li>
+            <li className="col-12 col-lg-6 my-3">Experienced guide</li>
+            <li className="col-12 col-lg-6 my-3">24/7 support</li>
           </ul>
         </div>
         <div className="darkButtonContainer container my-5">
           <a
-            href="https://forms.gle/9yAdcShfzGj8Kdn9A"
+            href="https://forms.gle/XQbbQNeo2dVA5QF87"
             target="_blank"
             className="darkButton rounded d-flex"
           >
@@ -177,18 +179,23 @@ export default function Hajj() {
             <div className="darkButtonText text-white mx-1">Enquire Now</div>
           </a>
         </div>
-        <div className="hajjImagesContainer container my-5">
-          <div className="imageContainer">
-            <img 
-            className="hajjImages" src={kabahGate} alt="kabah gate" />
-          </div>
-          <div className="imageContainer">
-            <img 
-            className="hajjImages" src={madinaArc} alt="hajj" />
-          </div>
-          <div className="imageContainer">
-            <img 
-            className="hajjImages" src={madinaMinaret} alt="hajj" />
+        <div className="hajjImagesContainer d-flex container justify-content-center mt-5">
+          <div className="row w-100 justify-content-between">
+            <div className="col-sm-4 d-flex justify-content-center my-3">
+              <div className="hajjImageContainer m-0 p-0 d-flex justify-content-center align-items-center overflow-hidden">
+                <img className="hajjImages" src={kabahGate} alt="kabah gate" />
+              </div>
+            </div>
+            <div className="col-sm-4 d-flex justify-content-center my-3">
+              <div className="hajjImageContainer m-0 p-0 d-flex justify-content-center align-items-center overflow-hidden">
+                <img className="hajjImages" src={madinaArc} alt="hajj" />
+              </div>
+            </div>
+            <div className="col-sm-4 d-flex justify-content-center my-3">
+              <div className="hajjImageContainer m-0 p-0 d-flex justify-content-center align-items-center overflow-hidden">
+                <img className="hajjImages" src={madinaMinaret} alt="hajj" />
+              </div>
+            </div>
           </div>
         </div>
         <Swiper
@@ -204,30 +211,34 @@ export default function Hajj() {
           }}
         >
           {hotelCarouselImages.map((slide) => (
-            <SwiperSlide className="hotelCarouselSlide " key={slide.id}>
+            <SwiperSlide
+              className="hotelCarouselSlide d-flex justify-content-center align-items-end position-relative "
+              key={slide.id}
+            >
               <img
-              
-                className="hotelImage"
+                className="hotelImage rounded"
                 src={slide.imageUrl}
                 alt="hotel images"
               />
-              <div className="hotelTextBox">
-                <div className="hotelText">{slide.hotel}</div>
-                <div className="hotelLogo">
-                  <img 
-                  src={slide.hotelImageUrl} alt="hotel logo" />
+              <div className="hotelTextBox container-fluid g-0 position-absolute w-100 text-white">
+                <div className="row">
+                  <div className="hotelText col-8 d-flex justify-content-center align-items-center">{slide.hotel}</div>
+                  <div className="hotelLogo col-4 d-flex justify-content-center align-items-center">
+                    <img className="hotelLogoImage py-3" src={slide.hotelImageUrl} alt="hotel logo" />
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
         <div className="buttonContainer my-5">
-          <Link to="/contact" className="contactButton">
-            <img 
-            src={whatsappColor} alt="whatsapp Logo" />
+          <div className="contactButton" data-bs-toggle="modal"
+            data-bs-target="#contactModal">
+            <img src={whatsappColor} alt="whatsapp Logo" />
             Request A Quote
-          </Link>
+          </div>
         </div>
+        <ContactModal />
       </div>
     </>
   );

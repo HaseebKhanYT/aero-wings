@@ -1,41 +1,37 @@
 import "../styles/Services.scss";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import ServicesModal from "../components/ServicesModal";
+import ContactModal from "../components/ContactModal";
 
-import whatsappColor from "../assets/services/whatsappColor.svg";
+import internationalMenuImage from "../assets/services/menupic.jpg";
+import domesticMenuImage from "../assets/services/menupic-1.jpg";
+import hajjMenuImage from "../assets/services/menupic-2.jpg";
+import airlineMenuImage from "../assets/services/menupic-3.jpg";
+import holidayMenuImage from "../assets/services/menupic-4.jpg";
+import holyMenuImage from "../assets/services/menupic-5.jpg";
+import visaMenuImage from "../assets/services/menupic-6.jpg";
+import corporateMenuImage from "../assets/services/menupic-7.jpg";
+import cruiseMenuImage from "../assets/services/menupic-8.jpg";
+import trainMenuImage from "../assets/services/menupic-9.jpg";
 
-import internationalMenuImage from "../assets/services/internationalMenuImage.svg";
-import domesticMenuImage from "../assets/services/domesticMenuImage.svg";
-import hajjMenuImage from "../assets/services/hajjMenuImage.svg";
-import airlineMenuImage from "../assets/services/airlineMenuImage.svg";
-import holidayMenuImage from "../assets/services/holidayMenuImage.svg";
-import holyMenuImage from "../assets/services/holyMenuImage.svg";
-import visaMenuImage from "../assets/services/visaMenuImage.svg";
-import corporateMenuImage from "../assets/services/corporateMenuImage.svg";
-import cruiseMenuImage from "../assets/services/cruiseMenuImage.svg";
-import trainMenuImage from "../assets/services/trainMenuImage.svg";
-
-import otherCharter1 from "../assets/services/otherCharter1.svg";
-import otherCharter2 from "../assets/services/otherCharter2.svg";
-import otherPassport1 from "../assets/services/otherPassport1.svg";
-import otherPassport2 from "../assets/services/otherPassport2.svg";
-import otherCar1 from "../assets/services/otherCar1.svg";
-import otherCar2 from "../assets/services/otherCar2.svg";
-import otherInsurance1 from "../assets/services/otherInsurance1.svg";
-import otherInsurance2 from "../assets/services/otherInsurance2.svg";
-import otherCurrency1 from "../assets/services/otherCurrency1.svg";
-import otherCurrency2 from "../assets/services/otherCurrency2.svg";
-import otherEdu1 from "../assets/services/otherEdu1.svg";
-import otherEdu2 from "../assets/services/otherEdu2.svg";
-import otherLogo1 from "../assets/services/otherCertificate1.svg";
-import otherLogo2 from "../assets/services/otherCertificate2.svg";
+import otherCharter from "../assets/services/othermenupic.jpg";
+import otherPassport from "../assets/services/othermenupic-1.jpg";
+import otherCar from "../assets/services/othermenupic-2.jpg";
+import otherInsurance from "../assets/services/othermenupic-3.jpg";
+import otherCurrency from "../assets/services/othermenupic-4.jpg";
+import otherEdu from "../assets/services/othermenupic-5.jpg";
+import otherCertificate from "../assets/services/otherCertificate.jpg";
+import otherPre from "../assets/services/otherPre.jpg";
 
 export default function Services() {
+  const [focusService, setFocusService] = useState(0);
   const ref = useRef(null);
 
-  const scrollToServices = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToServices = () => {
+  //   ref.current?.scrollIntoView({ behavior: "smooth" });
+  // };
+
   const mainServices = [
     {
       id: 1,
@@ -102,12 +98,12 @@ export default function Services() {
       to: "/train",
     },
   ];
+
   const otherServices = [
     {
       id: 1,
       title: "Charter Flights",
-      imageUrl1: otherCharter1,
-      imageUrl2: otherCharter2,
+      imageUrl: otherCharter,
       description1:
         "Charter flights are a convenient and flexible way to travel. Whether you're traveling for business or pleasure, chartering a flight can save you time and provide a more comfortable and personalized travel experience. With our charter flights service, we offer a wide range of aircraft options to meet your specific needs and preferences, from small prop planes to larger jets.",
       description2:
@@ -116,8 +112,7 @@ export default function Services() {
     {
       id: 2,
       title: "Passport services",
-      imageUrl1: otherPassport1,
-      imageUrl2: otherPassport2,
+      imageUrl: otherPassport,
       description1:
         "Our passport service is designed to make the application process as smooth and hassle-free as possible. Whether you are applying for a new passport, renewing an existing one, or need assistance with any other passport-related matter, our team is here to help. With years of experience and expertise in this area, we understand the complexities of the application process and are committed to providing you with the guidance and support you need.",
       description2:
@@ -126,8 +121,7 @@ export default function Services() {
     {
       id: 3,
       title: "Car rental",
-      imageUrl1: otherCar1,
-      imageUrl2: otherCar2,
+      imageUrl: otherCar,
       description1:
         "We offer a comprehensive car rental service that includes a wide range of vehicles to choose from, ranging from economy to luxury cars, and everything in between. Our car rental service ensures that you have a hassle-free and comfortable journey by providing you with a vehicle that suits your needs and preferences. Our team of experts is dedicated to providing you with the best car rental service possible, and we strive to make your travel experience seamless and enjoyable.",
       description2:
@@ -136,8 +130,7 @@ export default function Services() {
     {
       id: 4,
       title: "Travel insurance",
-      imageUrl1: otherInsurance1,
-      imageUrl2: otherInsurance2,
+      imageUrl: otherInsurance,
       description1:
         "With travel insurance, travelers can enjoy peace of mind knowing that they have coverage in case of any unforeseen circumstances. Policies can be customized based on the specific needs of the traveler, such as the length of the trip and the activities planned. Whether you're traveling for business or pleasure, travel insurance can help ensure that your trip is stress-free and enjoyable.",
       description2:
@@ -151,8 +144,7 @@ export default function Services() {
       prefix: "Currency exchange",
       title: "and",
       suffix: "money transfer",
-      imageUrl1: otherCurrency1,
-      imageUrl2: otherCurrency2,
+      imageUrl: otherCurrency,
       description1:
         "Our foreign currency exchange service offers you the best deals on your currency exchange needs. We understand the importance of having cash in hand while traveling abroad, and that is why we bring the convenience of doorstep delivery to you. Our team of experts provides assistance with foreign exchange and money transfer services through providers such as Money Gram, Western Union, RIA Money, and Transfast.",
       description2:
@@ -162,8 +154,7 @@ export default function Services() {
       id: 6,
       prefix: "Overseas",
       title: "Education",
-      imageUrl1: otherEdu1,
-      imageUrl2: otherEdu2,
+      imageUrl: otherEdu,
       description1:
         "We offer guidance and support to students who wish to pursue their higher education abroad. Our team of experienced and knowledgeable consultants provide end-to-end assistance, from selecting the right course and university to visa processing and post-landing services.",
       description2:
@@ -173,8 +164,7 @@ export default function Services() {
       id: 7,
       prefix: "Certificate",
       title: "Attestation",
-      imageUrl1: otherLogo1,
-      imageUrl2: otherLogo2,
+      imageUrl: otherCertificate,
       description1:
         "Certificate attestation is a crucial service for those who are planning to study, work, or settle abroad. It involves the process of verifying and authenticating various documents such as educational certificates, marriage certificates, and birth certificates, among others, from government authorities.",
       description2:
@@ -184,40 +174,40 @@ export default function Services() {
       id: 8,
       prefix: "Pre-purchased",
       title: "deals",
-      imageUrl1: otherLogo1,
-      imageUrl2: otherLogo2,
+      imageUrl: otherPre,
       description1:
         "Get the best deals on flights and hotels with our pre-purchased deals service. We offer both international and domestic flights at affordable rates. For hotels, we collaborate with a wide range of top-rated brands and you can review and select the best deals from our page.",
       description2:
         "Our pre-purchased deals are cost-effective when buying in bulk, making it the perfect choice for corporate travel or group vacations.",
     },
   ];
+
   return (
     <>
       <div className="services">
         <div className="headerText">Our Services</div>
-        <div className="servicesMenuGridContainer ">
-          <div className="menuGrid container-xl p-5 m-5">
-            <div className="row g-3">
+        <div className="servicesMenuGridContainer d-flex justify-content-center align-items-center">
+          <div className="menuGrid container-xl px-5 m-5">
+            <div className="row m-0 g-3">
               {mainServices.map((menu) => (
                 <Link
                   to={menu.to}
                   className={
                     menu.id === 3
-                      ? "menuBoxContainer menuHajj col-sm-12 col-md-6 col-lg-4 col-xl-6"
-                      : "menuBoxContainer col-sm-12 col-md-6 col-lg-4 col-xl-3"
+                      ? "menuBoxContainer d-flex justify-content-center align-items-center menuHajj col-sm-12 col-md-6 col-lg-4 col-xl-6"
+                      : "menuBoxContainer d-flex justify-content-center align-items-center col-sm-12 col-md-6 col-lg-4 col-xl-3"
                   }
                   key={menu.id}
                 >
                   <div
                     className={
                       menu.id === 3
-                        ? "menuBox menuHajjImage rectangleImage"
-                        : "menuBox squareImage"
+                        ? "menuBox d-flex justify-content-start align-items-end rounded menuHajjImage rectangleImage"
+                        : "menuBox d-flex justify-content-start align-items-end rounded squareImage"
                     }
                   >
-                    <div className="menuTextContainer">
-                      <div className="menuText">
+                    <div className="menuTextContainer position-absolute d-flex">
+                      <div className={"menuText"}>
                         <div className={menu.prefix12 ? "prefix12" : "prefix"}>
                           {menu.prefix}
                         </div>
@@ -231,8 +221,8 @@ export default function Services() {
                     <img
                       className={
                         menu.id === 3
-                          ? "menuImage menuHajjImage "
-                          : "menuImage "
+                          ? "menuImage rounded menuHajjImage "
+                          : "menuImage rounded "
                       }
                       src={menu.imageUrl}
                       alt="menu Images"
@@ -240,94 +230,57 @@ export default function Services() {
                   </div>
                 </Link>
               ))}
-
-              <div
-                onClick={scrollToServices}
-                className=" menuBoxContainer d-none d-sm-flex col-sm-12 col-md-6 col-lg-4 col-xl-3"
-              >
-                <div className="menuBox seeMoreBox">
-                  <div className=" seeMoreText">
-                    see
-                    <br /> more
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="otherServices">
-          <div className="otherTitle">
-            <div className="grayStrip"></div>
-            <div className="titleStrip">
-              <div ref={ref} className="otherTitleText">
-                Our services
-              </div>
-            </div>
-          </div>
-          <div className="otherContent">
-            <div className="otherServicesContainer container-fluid p-3">
               {otherServices.map((menu) => (
                 <div
-                  className="otherRow row justify-content-center my-3"
+                  className="menuBoxContainer d-flex justify-content-center align-items-center col-sm-12 col-md-6 col-lg-4 col-xl-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#servicesModal"
                   key={menu.id}
+                  onClick={() => setFocusService(menu)}
                 >
-                  <div className="menuBoxContainer my-3 col-3" key={menu.id}>
-                    <div className="menuBox">
-                      <div className="menuTextContainer">
-                        <div className="menuText">
-                          <div
-                            className={menu.prefix18 ? "prefix20" : "prefix"}
-                          >
-                            {menu.prefix}
-                          </div>
-                          <span className={menu.title14 ? "title16" : "title"}>
-                            {" " + menu.title + " "}
-                          </span>
-                          <span
-                            className={menu.suffix18 ? "suffix20" : "suffix"}
-                          >
-                            {menu.suffix}
-                          </span>
+                  <div
+                    className="menuBox d-flex justify-content-start align-items-end rounded squareImage clickable"
+                  >
+                    <div className="menuTextContainer position-absolute d-flex">
+                      <div className="menuText">
+                        <div className={menu.prefix18 ? "prefix20" : "prefix"}>
+                          {menu.prefix}
                         </div>
-                      </div>
-                      <div className="otherMenuImage">
-                        <img
-                          className="imageMain"
-                          src={menu.imageUrl1}
-                          data-src={menu.imageUrl2}
-                        />
-                        <img
-                          className="imageHover"
-                          src={menu.imageUrl2}
-                          data-src={menu.imageUrl2}
-                        />
+                        <span className={menu.title14 ? "title16" : "title"}>
+                          {" " + menu.title + " "}
+                        </span>
+                        <span className={menu.suffix18 ? "suffix20" : "suffix"}>
+                          {menu.suffix}
+                        </span>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-9 my-3">
-                    <div className="menuDescription container">
-                      {menu.description1}
-                      <br />
-                      <br />
-                      {menu.description2}
+                    <div className="otherMenuImage position-relative">
+                      <img
+                        className="imageMain menuImage rounded"
+                        src={menu.imageUrl}
+                        width={"250px"}
+                      />
                     </div>
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="buttonContainer my-5">
-              <Link to="/contact" className="contactButton">
-                <img src={whatsappColor} alt="whatsapp Logo" />
-                Get In Touch With Us
-              </Link>
-            </div>
-            <div className="buttonContainer my-5">
-              <Link to="/offers" className="shortcutButton">
-                View offers
-              </Link>
+              <div className=" menuBoxContainer d-flex justify-content-center align-items-center d-none d-sm-flex col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div
+                  className="menuBox d-flex justify-content-center align-items-center clickable rounded seeMoreBox"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  <div className=" seeMoreText">
+                    Contact
+                    <br /> Us
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <ServicesModal arr={focusService} />
+        <ContactModal />
       </div>
     </>
   );

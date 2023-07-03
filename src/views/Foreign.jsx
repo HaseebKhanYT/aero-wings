@@ -2,146 +2,149 @@ import { Link } from "react-router-dom";
 import ContactModal from "../components/ContactModal";
 import CardsAccordian from "../components/CardsAccordian";
 
-import foreignHeaderImg from "../assets/images/foreign-header-img.svg";
-import foreignFooterImg from "../assets/images/foreign-footer-img.svg";
+import foreignHeaderImg from "../assets/images/foreignHeaderImg.jpg";
+import foreignFooterImg from "../assets/images/foreignFooterImg.jpg";
 
 import whatsappColor from "../assets/services/whatsappColor.svg";
 
 import "../styles/Foreign.scss";
 
-import picIntl from "../assets/holidays/international/picIntl.png";
-import picIntl1 from "../assets/holidays/international/picIntl-1.png";
-import picIntl2 from "../assets/holidays/international/picIntl-2.png";
-import picIntl3 from "../assets/holidays/international/picIntl-3.png";
-import picIntl4 from "../assets/holidays/international/picIntl-4.png";
-import picIntl5 from "../assets/holidays/international/picIntl-5.png";
-import picIntl6 from "../assets/holidays/international/picIntl-6.png";
-import picIntl7 from "../assets/holidays/international/picIntl-7.png";
-import picIntl8 from "../assets/holidays/international/picIntl-8.png";
-import picIntl9 from "../assets/holidays/international/picIntl-9.png";
-import picIntl10 from "../assets/holidays/international/picIntl-10.png";
-import picIntl11 from "../assets/holidays/international/picIntl-11.png";
-import picIntl12 from "../assets/holidays/international/picIntl-12.png";
-import picIntl13 from "../assets/holidays/international/picIntl-13.png";
-import picIntl14 from "../assets/holidays/international/picIntl-14.png";
-import picIntl15 from "../assets/holidays/international/picIntl-15.png";
-import picIntl16 from "../assets/holidays/international/picIntl-16.png";
-import picIntl17 from "../assets/holidays/international/picIntl-17.png";
-import picIntl18 from "../assets/holidays/international/picIntl-18.png";
-import picIntl19 from "../assets/holidays/international/picIntl-19.png";
-import picIntl20 from "../assets/holidays/international/picIntl-20.png";
-import picIntl21 from "../assets/holidays/international/picIntl-21.png";
-import picIntl22 from "../assets/holidays/international/picIntl-22.png";
-import picIntl23 from "../assets/holidays/international/picIntl-23.png";
-import picIntl24 from "../assets/holidays/international/picIntl-24.png";
-import picIntl25 from "../assets/holidays/international/picIntl-25.png";
-import picIntl26 from "../assets/holidays/international/picIntl-26.png";
-import picIntl27 from "../assets/holidays/international/picIntl-27.png";
-import picIntl28 from "../assets/holidays/international/picIntl-28.png";
-import picIntl29 from "../assets/holidays/international/picIntl-29.png";
-import picIntl30 from "../assets/holidays/international/picIntl-30.png";
-import picIntl31 from "../assets/holidays/international/picIntl-31.png";
-import picIntl32 from "../assets/holidays/international/picIntl-32.png";
-import picIntl33 from "../assets/holidays/international/picIntl-33.png";
-import picIntl34 from "../assets/holidays/international/picIntl-34.png";
-import picIntl35 from "../assets/holidays/international/picIntl-35.png";
-import picIntl36 from "../assets/holidays/international/picIntl-36.png";
-import picIntl37 from "../assets/holidays/international/picIntl-37.png";
-import picIntl38 from "../assets/holidays/international/picIntl-38.png";
-import picIntl39 from "../assets/holidays/international/picIntl-39.png";
-import picIntl40 from "../assets/holidays/international/picIntl-40.png";
-import picIntl41 from "../assets/holidays/international/picIntl-41.png";
-import picIntl42 from "../assets/holidays/international/picIntl-42.png";
-import picIntl43 from "../assets/holidays/international/picIntl-43.png";
-import picIntl44 from "../assets/holidays/international/picIntl-44.png";
-import picIntl45 from "../assets/holidays/international/picIntl-45.png";
-import picIntl46 from "../assets/holidays/international/picIntl-46.png";
-import picIntl47 from "../assets/holidays/international/picIntl-47.png";
+import picIntl from "../assets/holidays/international/picIntl.jpg";
+import picIntl1 from "../assets/holidays/international/picIntl-1.jpg";
+import picIntl2 from "../assets/holidays/international/picIntl-2.jpg";
+import picIntl3 from "../assets/holidays/international/picIntl-3.jpg";
+import picIntl4 from "../assets/holidays/international/picIntl-4.jpg";
+import picIntl5 from "../assets/holidays/international/picIntl-5.jpg";
+import picIntl6 from "../assets/holidays/international/picIntl-6.jpg";
+import picIntl7 from "../assets/holidays/international/picIntl-7.jpg";
+import picIntl8 from "../assets/holidays/international/picIntl-8.jpg";
+import picIntl9 from "../assets/holidays/international/picIntl-9.jpg";
+import picIntl10 from "../assets/holidays/international/picIntl-10.jpg";
+import picIntl11 from "../assets/holidays/international/picIntl-11.jpg";
+import picIntl12 from "../assets/holidays/international/picIntl-12.jpg";
+import picIntl13 from "../assets/holidays/international/picIntl-13.jpg";
+import picIntl14 from "../assets/holidays/international/picIntl-14.jpg";
+import picIntl15 from "../assets/holidays/international/picIntl-15.jpg";
+import picIntl16 from "../assets/holidays/international/picIntl-16.jpg";
+import picIntl17 from "../assets/holidays/international/picIntl-17.jpg";
+import picIntl18 from "../assets/holidays/international/picIntl-18.jpg";
+import picIntl19 from "../assets/holidays/international/picIntl-19.jpg";
+import picIntl20 from "../assets/holidays/international/picIntl-20.jpg";
+import picIntl21 from "../assets/holidays/international/picIntl-21.jpg";
+import picIntl22 from "../assets/holidays/international/picIntl-22.jpg";
+import picIntl23 from "../assets/holidays/international/picIntl-23.jpg";
+import picIntl24 from "../assets/holidays/international/picIntl-24.jpg";
+import picIntl25 from "../assets/holidays/international/picIntl-25.jpg";
+import picIntl26 from "../assets/holidays/international/picIntl-26.jpg";
+import picIntl27 from "../assets/holidays/international/picIntl-27.jpg";
+import picIntl28 from "../assets/holidays/international/picIntl-28.jpg";
+import picIntl29 from "../assets/holidays/international/picIntl-29.jpg";
+import picIntl30 from "../assets/holidays/international/picIntl-30.jpg";
+import picIntl31 from "../assets/holidays/international/picIntl-31.jpg";
+import picIntl32 from "../assets/holidays/international/picIntl-32.jpg";
+import picIntl33 from "../assets/holidays/international/picIntl-33.jpg";
+import picIntl34 from "../assets/holidays/international/picIntl-34.jpg";
+import picIntl35 from "../assets/holidays/international/picIntl-35.jpg";
+import picIntl36 from "../assets/holidays/international/picIntl-36.jpg";
+import picIntl37 from "../assets/holidays/international/picIntl-37.jpg";
+import picIntl38 from "../assets/holidays/international/picIntl-38.jpg";
+import picIntl39 from "../assets/holidays/international/picIntl-39.jpg";
+import picIntl40 from "../assets/holidays/international/picIntl-40.jpg";
+import picIntl41 from "../assets/holidays/international/picIntl-41.jpg";
+import picIntl42 from "../assets/holidays/international/picIntl-42.jpg";
+import picIntl43 from "../assets/holidays/international/picIntl-43.jpg";
+import picIntl44 from "../assets/holidays/international/picIntl-44.jpg";
+import picIntl45 from "../assets/holidays/international/picIntl-45.jpg";
+import picIntl46 from "../assets/holidays/international/picIntl-46.jpg";
+import picIntl47 from "../assets/holidays/international/picIntl-47.jpg";
 
-import picIntlMore from "../assets/holidays/international/picIntlMore.png";
-import picIntlMore1 from "../assets/holidays/international/picIntlMore-1.png";
-import picIntlMore2 from "../assets/holidays/international/picIntlMore-2.png";
-import picIntlMore3 from "../assets/holidays/international/picIntlMore-3.png";
-import picIntlMore4 from "../assets/holidays/international/picIntlMore-4.png";
-import picIntlMore5 from "../assets/holidays/international/picIntlMore-5.png";
-import picIntlMore6 from "../assets/holidays/international/picIntlMore-6.png";
-import picIntlMore7 from "../assets/holidays/international/picIntlMore-7.png";
-import picIntlMore8 from "../assets/holidays/international/picIntlMore-8.png";
-import picIntlMore9 from "../assets/holidays/international/picIntlMore-9.png";
-import picIntlMore10 from "../assets/holidays/international/picIntlMore-10.png";
-import picIntlMore11 from "../assets/holidays/international/picIntlMore-11.png";
-import picIntlMore12 from "../assets/holidays/international/picIntlMore-12.png";
-import picIntlMore13 from "../assets/holidays/international/picIntlMore-13.png";
-import picIntlMore14 from "../assets/holidays/international/picIntlMore-14.png";
-import picIntlMore15 from "../assets/holidays/international/picIntlMore-15.png";
-import picIntlMore16 from "../assets/holidays/international/picIntlMore-16.png";
-import picIntlMore17 from "../assets/holidays/international/picIntlMore-17.png";
-import picIntlMore18 from "../assets/holidays/international/picIntlMore-18.png";
-import picIntlMore19 from "../assets/holidays/international/picIntlMore-19.png";
-import picIntlMore20 from "../assets/holidays/international/picIntlMore-20.png";
-import picIntlMore21 from "../assets/holidays/international/picIntlMore-21.png";
-import picIntlMore22 from "../assets/holidays/international/picIntlMore-22.png";
-import picIntlMore23 from "../assets/holidays/international/picIntlMore-23.png";
-import picIntlMore24 from "../assets/holidays/international/picIntlMore-24.png";
-import picIntlMore25 from "../assets/holidays/international/picIntlMore-25.png";
-import picIntlMore26 from "../assets/holidays/international/picIntlMore-26.png";
-import picIntlMore27 from "../assets/holidays/international/picIntlMore-27.png";
-import picIntlMore28 from "../assets/holidays/international/picIntlMore-28.png";
-import picIntlMore29 from "../assets/holidays/international/picIntlMore-29.png";
-import picIntlMore30 from "../assets/holidays/international/picIntlMore-30.png";
-import picIntlMore31 from "../assets/holidays/international/picIntlMore-31.png";
-import picIntlMore32 from "../assets/holidays/international/picIntlMore-32.png";
-import picIntlMore33 from "../assets/holidays/international/picIntlMore-33.png";
-import picIntlMore34 from "../assets/holidays/international/picIntlMore-34.png";
-import picIntlMore35 from "../assets/holidays/international/picIntlMore-35.png";
-import picIntlMore36 from "../assets/holidays/international/picIntlMore-36.png";
-import picIntlMore37 from "../assets/holidays/international/picIntlMore-37.png";
-import picIntlMore38 from "../assets/holidays/international/picIntlMore-38.png";
-import picIntlMore39 from "../assets/holidays/international/picIntlMore-39.png";
-import picIntlMore40 from "../assets/holidays/international/picIntlMore-40.png";
-import picIntlMore41 from "../assets/holidays/international/picIntlMore-41.png";
-import picIntlMore42 from "../assets/holidays/international/picIntlMore-42.png";
-import picIntlMore43 from "../assets/holidays/international/picIntlMore-43.png";
-import picIntlMore44 from "../assets/holidays/international/picIntlMore-44.png";
-import picIntlMore45 from "../assets/holidays/international/picIntlMore-45.png";
-import picIntlMore46 from "../assets/holidays/international/picIntlMore-46.png";
-import picIntlMore47 from "../assets/holidays/international/picIntlMore-47.png";
-import picIntlMore48 from "../assets/holidays/international/picIntlMore-48.png";
-import picIntlMore49 from "../assets/holidays/international/picIntlMore-49.png";
-import picIntlMore50 from "../assets/holidays/international/picIntlMore-50.png";
-import picIntlMore51 from "../assets/holidays/international/picIntlMore-51.png";
-import picIntlMore52 from "../assets/holidays/international/picIntlMore-52.png";
-import picIntlMore53 from "../assets/holidays/international/picIntlMore-53.png";
-import picIntlMore54 from "../assets/holidays/international/picIntlMore-54.png";
-import picIntlMore55 from "../assets/holidays/international/picIntlMore-55.png";
-import picIntlMore56 from "../assets/holidays/international/picIntlMore-56.png";
-import picIntlMore57 from "../assets/holidays/international/picIntlMore-57.png";
-import picIntlMore58 from "../assets/holidays/international/picIntlMore-58.png";
-import picIntlMore59 from "../assets/holidays/international/picIntlMore-59.png";
-import picIntlMore60 from "../assets/holidays/international/picIntlMore-60.png";
-import picIntlMore61 from "../assets/holidays/international/picIntlMore-61.png";
-import picIntlMore62 from "../assets/holidays/international/picIntlMore-62.png";
-import picIntlMore63 from "../assets/holidays/international/picIntlMore-63.png";
-import picIntlMore64 from "../assets/holidays/international/picIntlMore-64.png";
-import picIntlMore65 from "../assets/holidays/international/picIntlMore-65.png";
-import picIntlMore66 from "../assets/holidays/international/picIntlMore-66.png";
-import picIntlMore67 from "../assets/holidays/international/picIntlMore-67.png";
-import picIntlMore68 from "../assets/holidays/international/picIntlMore-68.png";
-import picIntlMore69 from "../assets/holidays/international/picIntlMore-69.png";
-import picIntlMore70 from "../assets/holidays/international/picIntlMore-70.png";
-import picIntlMore71 from "../assets/holidays/international/picIntlMore-71.png";
-import picIntlMore72 from "../assets/holidays/international/picIntlMore-72.png";
-import picIntlMore73 from "../assets/holidays/international/picIntlMore-73.png";
-import picIntlMore74 from "../assets/holidays/international/picIntlMore-74.png";
-import picIntlMore75 from "../assets/holidays/international/picIntlMore-75.png";
-import picIntlMore76 from "../assets/holidays/international/picIntlMore-76.png";
-import picIntlMore77 from "../assets/holidays/international/picIntlMore-77.png";
-import picIntlMore78 from "../assets/holidays/international/picIntlMore-78.png";
-import picIntlMore79 from "../assets/holidays/international/picIntlMore-79.png";
-import picIntlMore80 from "../assets/holidays/international/picIntlMore-80.png";
-import picIntlMore81 from "../assets/holidays/international/picIntlMore-81.png";
-import picIntlMore82 from "../assets/holidays/international/picIntlMore-82.png";
-import picIntlMore83 from "../assets/holidays/international/picIntlMore-83.png";
+import picIntlMore from "../assets/holidays/international/picIntlMore.jpg";
+import picIntlMore1 from "../assets/holidays/international/picIntlMore-1.jpg";
+import picIntlMore2 from "../assets/holidays/international/picIntlMore-2.jpg";
+import picIntlMore3 from "../assets/holidays/international/picIntlMore-3.jpg";
+import picIntlMore4 from "../assets/holidays/international/picIntlMore-4.jpg";
+import picIntlMore5 from "../assets/holidays/international/picIntlMore-5.jpg";
+import picIntlMore6 from "../assets/holidays/international/picIntlMore-6.jpg";
+import picIntlMore7 from "../assets/holidays/international/picIntlMore-7.jpg";
+import picIntlMore8 from "../assets/holidays/international/picIntlMore-8.jpg";
+import picIntlMore9 from "../assets/holidays/international/picIntlMore-9.jpg";
+import picIntlMore10 from "../assets/holidays/international/picIntlMore-10.jpg";
+import picIntlMore11 from "../assets/holidays/international/picIntlMore-11.jpg";
+import picIntlMore12 from "../assets/holidays/international/picIntlMore-12.jpg";
+import picIntlMore13 from "../assets/holidays/international/picIntlMore-13.jpg";
+import picIntlMore14 from "../assets/holidays/international/picIntlMore-14.jpg";
+import picIntlMore15 from "../assets/holidays/international/picIntlMore-15.jpg";
+import picIntlMore16 from "../assets/holidays/international/picIntlMore-16.jpg";
+import picIntlMore17 from "../assets/holidays/international/picIntlMore-17.jpg";
+import picIntlMore18 from "../assets/holidays/international/picIntlMore-18.jpg";
+import picIntlMore19 from "../assets/holidays/international/picIntlMore-19.jpg";
+import picIntlMore20 from "../assets/holidays/international/picIntlMore-20.jpg";
+import picIntlMore21 from "../assets/holidays/international/picIntlMore-21.jpg";
+import picIntlMore22 from "../assets/holidays/international/picIntlMore-22.jpg";
+import picIntlMore23 from "../assets/holidays/international/picIntlMore-23.jpg";
+import picIntlMore24 from "../assets/holidays/international/picIntlMore-24.jpg";
+import picIntlMore25 from "../assets/holidays/international/picIntlMore-25.jpg";
+import picIntlMore26 from "../assets/holidays/international/picIntlMore-26.jpg";
+import picIntlMore27 from "../assets/holidays/international/picIntlMore-27.jpg";
+import picIntlMore28 from "../assets/holidays/international/picIntlMore-28.jpg";
+import picIntlMore29 from "../assets/holidays/international/picIntlMore-29.jpg";
+import picIntlMore30 from "../assets/holidays/international/picIntlMore-30.jpg";
+import picIntlMore31 from "../assets/holidays/international/picIntlMore-31.jpg";
+import picIntlMore32 from "../assets/holidays/international/picIntlMore-32.jpg";
+import picIntlMore33 from "../assets/holidays/international/picIntlMore-33.jpg";
+import picIntlMore34 from "../assets/holidays/international/picIntlMore-34.jpg";
+import picIntlMore35 from "../assets/holidays/international/picIntlMore-35.jpg";
+import picIntlMore36 from "../assets/holidays/international/picIntlMore-36.jpg";
+import picIntlMore37 from "../assets/holidays/international/picIntlMore-37.jpg";
+import picIntlMore38 from "../assets/holidays/international/picIntlMore-38.jpg";
+import picIntlMore39 from "../assets/holidays/international/picIntlMore-39.jpg";
+import picIntlMore40 from "../assets/holidays/international/picIntlMore-40.jpg";
+import picIntlMore41 from "../assets/holidays/international/picIntlMore-41.jpg";
+import picIntlMore42 from "../assets/holidays/international/picIntlMore-42.jpg";
+import picIntlMore43 from "../assets/holidays/international/picIntlMore-43.jpg";
+import picIntlMore44 from "../assets/holidays/international/picIntlMore-44.jpg";
+import picIntlMore45 from "../assets/holidays/international/picIntlMore-45.jpg";
+import picIntlMore46 from "../assets/holidays/international/picIntlMore-46.jpg";
+import picIntlMore47 from "../assets/holidays/international/picIntlMore-47.jpg";
+import picIntlMore48 from "../assets/holidays/international/picIntlMore-48.jpg";
+import picIntlMore49 from "../assets/holidays/international/picIntlMore-49.jpg";
+import picIntlMore50 from "../assets/holidays/international/picIntlMore-50.jpg";
+import picIntlMore51 from "../assets/holidays/international/picIntlMore-51.jpg";
+import picIntlMore52 from "../assets/holidays/international/picIntlMore-52.jpg";
+import picIntlMore53 from "../assets/holidays/international/picIntlMore-53.jpg";
+import picIntlMore54 from "../assets/holidays/international/picIntlMore-54.jpg";
+import picIntlMore55 from "../assets/holidays/international/picIntlMore-55.jpg";
+import picIntlMore56 from "../assets/holidays/international/picIntlMore-56.jpg";
+import picIntlMore57 from "../assets/holidays/international/picIntlMore-57.jpg";
+import picIntlMore58 from "../assets/holidays/international/picIntlMore-58.jpg";
+import picIntlMore59 from "../assets/holidays/international/picIntlMore-59.jpg";
+import picIntlMore60 from "../assets/holidays/international/picIntlMore-60.jpg";
+import picIntlMore61 from "../assets/holidays/international/picIntlMore-61.jpg";
+import picIntlMore62 from "../assets/holidays/international/picIntlMore-62.jpg";
+import picIntlMore63 from "../assets/holidays/international/picIntlMore-63.jpg";
+import picIntlMore64 from "../assets/holidays/international/picIntlMore-64.jpg";
+import picIntlMore65 from "../assets/holidays/international/picIntlMore-65.jpg";
+import picIntlMore66 from "../assets/holidays/international/picIntlMore-66.jpg";
+import picIntlMore67 from "../assets/holidays/international/picIntlMore-67.jpg";
+import picIntlMore68 from "../assets/holidays/international/picIntlMore-68.jpg";
+import picIntlMore69 from "../assets/holidays/international/picIntlMore-69.jpg";
+import picIntlMore70 from "../assets/holidays/international/picIntlMore-70.jpg";
+import picIntlMore71 from "../assets/holidays/international/picIntlMore-71.jpg";
+import picIntlMore72 from "../assets/holidays/international/picIntlMore-72.jpg";
+import picIntlMore73 from "../assets/holidays/international/picIntlMore-73.jpg";
+import picIntlMore74 from "../assets/holidays/international/picIntlMore-74.jpg";
+import picIntlMore75 from "../assets/holidays/international/picIntlMore-75.jpg";
+import picIntlMore76 from "../assets/holidays/international/picIntlMore-76.jpg";
+import picIntlMore77 from "../assets/holidays/international/picIntlMore-77.jpg";
+import picIntlMore78 from "../assets/holidays/international/picIntlMore-78.jpg";
+import picIntlMore79 from "../assets/holidays/international/picIntlMore-79.jpg";
+import picIntlMore80 from "../assets/holidays/international/picIntlMore-80.jpg";
+import picIntlMore81 from "../assets/holidays/international/picIntlMore-81.jpg";
+import picIntlMore82 from "../assets/holidays/international/picIntlMore-82.jpg";
+import picIntlMore83 from "../assets/holidays/international/picIntlMore-83.jpg";
+import picIntlMore84 from "../assets/holidays/international/picIntlMore-84.jpg";
+import picIntlMore85 from "../assets/holidays/international/picIntlMore-85.jpg";
+import picIntlMore86 from "../assets/holidays/international/picIntlMore-86.jpg";
 
 const internationalHolidays = [
   {
@@ -526,6 +529,15 @@ const internationalHolidays = [
   },
   {
     id: 43,
+    title: "Türkiye",
+    imageUrl: picIntlMore84,
+    imageUrl1: picIntlMore85,
+    imageUrl2: picIntlMore86,
+    description:
+      "Türkiye, a country bridging Europe and Asia, offers a rich tapestry of history, culture, and natural beauty. From ancient ruins and archaeological sites to vibrant cities and stunning landscapes, Türkiye captivates visitors with its diverse attractions. Explore the historical treasures of Istanbul, where the iconic Hagia Sophia and Blue Mosque stand as testaments to the city's fascinating past. Discover the ancient city of Ephesus, home to well-preserved Greek and Roman ruins, including the famous Library of Celsus. Immerse yourself in the surreal landscapes of Cappadocia, with its unique rock formations and cave dwellings. \n \n Turkish cuisine is renowned worldwide, with its flavorful dishes like kebabs, baklava, and Turkish tea. The bustling bazaars and markets offer a vibrant shopping experience, where you can find traditional textiles, spices, and handicrafts. Türkiye's natural beauty is evident in its stunning coastlines, such as the turquoise waters of the Mediterranean and the idyllic beaches of Antalya. The otherworldly terraces of Pamukkale and the fairy chimneys of Goreme create unforgettable landscapes. With its warm hospitality and a mix of old-world charm and modern delights, Türkiye invites travelers to immerse themselves in its captivating allure.",
+  },
+  {
+    id: 44,
     title: "Uzbekistan",
     imageUrl: picIntlMore80,
     imageUrl1: picIntlMore79,
@@ -534,7 +546,7 @@ const internationalHolidays = [
       "Uzbekistan, located in Central Asia, is a land of rich history, stunning architecture, and vibrant cultural heritage. With its captivating blend of ancient cities, Silk Road heritage, and natural beauty, Uzbekistan offers a unique and enchanting travel experience. Explore the UNESCO World Heritage Sites of Samarkand, Bukhara, and Khiva, where you'll be mesmerized by intricate Islamic architecture, vibrant bazaars, and the echoes of ancient trade routes. Immerse yourself in the bustling streets of Tashkent, the capital city, where modernity meets tradition. Discover the hospitality of the Uzbek people, savor the flavors of traditional cuisine, and witness the vibrant festivals and music that celebrate the country's cultural diversity. From the golden desert landscapes of Kyzylkum to the majestic mountain ranges of the Tian Shan, Uzbekistan's natural beauty is as captivating as its historical treasures. Embark on a journey through time and immerse yourself in the captivating charm of Uzbekistan.",
   },
   {
-    id: 44,
+    id: 45,
     title: "Vietnam",
     imageUrl: picIntlMore83,
     imageUrl1: picIntlMore82,
@@ -588,8 +600,8 @@ export default function Foreign() {
             See Domestic Destinations
           </Link>
         </div>
-        <div className="foreignFooterImage my-5">
-          <img src={foreignFooterImg} alt="footer image" />
+        <div className="foreignFooterImage container my-5">
+          <img src={foreignFooterImg} width={"100%"} alt="footer image" />
         </div>
       </div>
     </>

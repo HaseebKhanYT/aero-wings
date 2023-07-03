@@ -12,6 +12,19 @@
 .corporateTitle {
   position: absolute;
   font-weight: 900;
+  @media (max-width: 991px) {
+    font-size: 32px;
+    padding: 15px 30px;
+  }
+  @media (max-width: 768px) {
+    font-size: 24px;
+    padding: 12px 24px;
+  }
+  @media (max-width: 576px) {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -24,6 +37,15 @@
 
 .miceText {
   font-weight: 900;
+  @media (max-width: 991px) {
+    font-size: 72px;
+  }
+  @media (max-width: 768px) {
+    font-size: 56px;
+  }
+  @media (max-width: 576px) {
+    font-size: 42px;
+  }
   font-size: 96px;
   line-height: 144px;
   color: #d9d9d9;
@@ -54,5 +76,23 @@
 }
 
 .corporateFeaturesRow {
+  @media (max-width: 1200px) {
+    width: 40%;
+  }
+  @media (max-width: 991px) {
+    width: 70%;
+  }
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+  @media (max-width: 576px) {
+    width: 80%;
+    font-size: 26px;
+  }
+  @media (max-width: 470px) {
+    width: 100%;
+    font-size: 22px;
+  }
+  width: min-content;
   list-style-position: inside;
 }

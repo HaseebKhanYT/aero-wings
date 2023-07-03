@@ -289,19 +289,19 @@ export default function Visa() {
           Trust us to take care of all your visa needs, and enjoy peace of mind
           knowing that your visa application is in good hands.
         </div>
-        <div className=" visaFeatures container w-50 my-5">
-          <ul className=" visaFeaturesRow text-start row">
-            <li className="col-xs-12 my-3">Tourist visa</li>
-            <li className="col-xs-12 my-3">Business visa</li>
-            <li className="col-xs-12 my-3">Family / Visit visa</li>
-            <li className="col-xs-12 my-3">Work / Employment visa</li>
-            <li className="col-xs-12 my-3">Transit visa</li>
+        <div className=" visaFeatures container w-100 justify-content-center my-5">
+          <ul className=" visaFeaturesRow text-start text-nowrap row">
+            <li className="col-12 my-3">Tourist visa</li>
+            <li className="col-12 my-3">Business visa</li>
+            <li className="col-12 my-3">Family / Visit visa</li>
+            <li className="col-12 my-3">Work / Employment visa</li>
+            <li className="col-12 my-3">Transit visa</li>
           </ul>
         </div>
         <div className="flagContainer container my-5">
           <div className="row g-3">
             {countries.map((country) => (
-              <div className="col-2" key={country.id}>
+              <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={country.id}>
                 <div className="countryTitle my-3">{country.name}</div>
                 <div className="countryFlag">
                   <img src={country.imageUrl} alt="country flag" />

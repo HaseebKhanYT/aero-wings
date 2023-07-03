@@ -5,6 +5,96 @@
   --bs-border-radius: 25px;
 }
 
+.headerText {
+  font-size: 32px;
+  font-weight: 800;
+  color: #374957;
+}
+
+.pageContainer {
+  display: flex;
+  flex-flow: column;
+}
+
+.navigationBar {
+  flex: 0 1 auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.whatsapp-button{
+  position: fixed;  
+  z-index: 20;
+  
+  @media (max-width: 576px) {
+    bottom: 20px;
+  }
+  right: 20px; 
+  bottom: 150px;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.footer {
+  flex: 0 1 100px;
+}
+
+//styles:
+
+.clickable {
+  cursor: pointer;
+}
+.description {
+  @media (max-width: 991px) {
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 200%;
+  text-align: justify;
+}
+.rounded {
+  border-radius: 25px;
+}
+
+//components:
+
+.hajjGeometry {
+  @media (max-width: 1200px) {
+    width: 280px;
+  }
+  @media (max-width: 991px) {
+    width: 180px;
+  }
+  @media (max-width: 768px) {
+    width: 150px;
+  }
+  width: 332px;
+}
+
+.homeHajjTitleImage {
+  @media (max-width: 1200px) {
+    width: 350px;
+  }
+  @media (max-width: 991px) {
+    width: 250px;
+  }
+  @media (max-width: 768px) {
+    width: 220px;
+  }
+  width: 385px;
+}
+
 .buttonContainer {
   width: 100%;
   display: flex;
@@ -20,45 +110,132 @@
   align-items: center;
 }
 
-.rounded {
-  border-radius: 25px;
-}
-
-.headerText {
-  font-weight: 800;
-  font-size: 32px;
-  color: #374957;
-}
-
-.description {
-  font-weight: 400;
+.viewAllButton {
+  @media (max-width: 991px) {
+    font-size: 20px;
+    padding: 18px 90px;
+    border-radius: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 15px 75px;
+    border-radius: 20px;
+  }
+  @media (max-width: 576px) {
+    padding: 12px 60px;
+    border-radius: 15px;
+  }
   font-size: 24px;
-  line-height: 48px;
-  text-align: justify;
+  padding: 20px 100px;
+
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #2d3c60;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
 }
 
-.pageContainer {
+.viewAllButton:hover {
+  color: #fff;
+}
+
+.darkButton {
+  background-color: #1f2041;
+  cursor: pointer;
+  text-decoration: none;
+  @media (max-width: 991px) {
+    font-size: 20px;
+    padding: 20px 40px;
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding: 15px 30px;
+    gap: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 16px;
+    padding: 15px 30px;
+    gap: 10px;
+  }
+  font-size: 22px;
+  padding: 25px 50px;
+  gap: 25px;
+}
+.darkButtonText {
+  text-decoration: none;
+  font-weight: 700;
+}
+.darkButtonText:hover {
+  text-decoration: none;
+}
+
+.contactButton {
+  @media (max-width: 991px) {
+    font-size: 18px;
+    padding: 20px 50px;
+    gap: 30px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding: 15px 25px;
+    gap: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 16px;
+    padding: 10px 13px;
+    gap: 10px;
+  }
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 25px;
+  gap: 50px;
+  font-weight: 400;
+  line-height: 110%;
   display: flex;
-  flex-flow: column;
-  height: 100vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background: rgba(217, 217, 217, 0.3);
+  backdrop-filter: blur(8px);
 }
 
-.navigationBar {
-  flex: 0 1 auto;
+.shortcutButton {
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  padding: 19px 25px;
+  background: rgba(217, 217, 217, 0.3);
+  backdrop-filter: blur(8px);
+  &:hover {
+    color: #1f2041;
+  }
 }
 
-.content {
-  flex: 1 1 auto;
-}
-
-.footer {
-  flex: 0 1 100px;
-}
-
+//fonts:
 body {
   font-family: "Poppins", sans-serif !important;
 }
+.poppins275 {
+  font-weight: 275;
+}
+.poppins300 {
+  font-weight: 300;
+}
+.poppins600 {
+  font-weight: 600;
+}
+.poppins700 {
+  font-weight: 700;
+}
 
+//colors:
 .red {
   color: #e31e24;
 }
@@ -67,9 +244,17 @@ body {
   color: #363374;
 }
 
+.headerBlue {
+  color: #374957;
+}
+
 .gold {
   font-weight: 700;
   color: #ca9e67;
+}
+
+.bone {
+  color: #f1d6c6;
 }
 
 @keyframes logo-spin {

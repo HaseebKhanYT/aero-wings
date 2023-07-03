@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import airlinesHeaderImg from "../assets/airlines/airlines-header-img.svg";
+import airlinesHeaderImg from "../assets/airlines/airlineHeaderImg.jpg";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 import "../styles/Airlines.scss";
 

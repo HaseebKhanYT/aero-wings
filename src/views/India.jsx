@@ -2,61 +2,70 @@ import { Link } from "react-router-dom";
 import ContactModal from "../components/ContactModal";
 import CardsAccordian from "../components/CardsAccordian";
 
-import picdomestic from "../assets/holidays/domestic/picdomestic.png";
-import picdomestic1 from "../assets/holidays/domestic/picdomestic-1.png";
-import picdomestic2 from "../assets/holidays/domestic/picdomestic-2.png";
-import picdomestic3 from "../assets/holidays/domestic/picdomestic-3.png";
-import picdomestic4 from "../assets/holidays/domestic/picdomestic-4.png";
-import picdomestic5 from "../assets/holidays/domestic/picdomestic-5.png";
-import picdomestic6 from "../assets/holidays/domestic/picdomestic-6.png";
-import picdomestic7 from "../assets/holidays/domestic/picdomestic-7.png";
-import picdomestic8 from "../assets/holidays/domestic/picdomestic-8.png";
-import picdomestic9 from "../assets/holidays/domestic/picdomestic-9.png";
-import picdomestic10 from "../assets/holidays/domestic/picdomestic-10.png";
-import picdomestic11 from "../assets/holidays/domestic/picdomestic-11.png";
-import picdomestic12 from "../assets/holidays/domestic/picdomestic-12.png";
-import picdomestic13 from "../assets/holidays/domestic/picdomestic-13.png";
-import picdomestic14 from "../assets/holidays/domestic/picdomestic-14.png";
-import picdomestic15 from "../assets/holidays/domestic/picdomestic-15.png";
-import picdomestic16 from "../assets/holidays/domestic/picdomestic-16.png";
-import picdomestic17 from "../assets/holidays/domestic/picdomestic-17.png";
-import picdomestic18 from "../assets/holidays/domestic/picdomestic-18.png";
-import picdomestic19 from "../assets/holidays/domestic/picdomestic-19.png";
-import picdomestic20 from "../assets/holidays/domestic/picdomestic-20.png";
-import picdomestic21 from "../assets/holidays/domestic/picdomestic-21.png";
-import picdomestic22 from "../assets/holidays/domestic/picdomestic-22.png";
-import picdomestic23 from "../assets/holidays/domestic/picdomestic-23.png";
-import picdomestic24 from "../assets/holidays/domestic/picdomestic-24.png";
-import picdomestic25 from "../assets/holidays/domestic/picdomestic-25.png";
-import picdomestic26 from "../assets/holidays/domestic/picdomestic-26.png";
-import picdomestic27 from "../assets/holidays/domestic/picdomestic-27.png";
-import picdomestic28 from "../assets/holidays/domestic/picdomestic-28.png";
-import picdomestic29 from "../assets/holidays/domestic/picdomestic-29.png";
-import picdomestic30 from "../assets/holidays/domestic/picdomestic-30.png";
-import picdomestic31 from "../assets/holidays/domestic/picdomestic-31.png";
-import picdomestic32 from "../assets/holidays/domestic/picdomestic-32.png";
-import picdomestic33 from "../assets/holidays/domestic/picdomestic-33.png";
-import picdomestic34 from "../assets/holidays/domestic/picdomestic-34.png";
-import picdomestic35 from "../assets/holidays/domestic/picdomestic-35.png";
-import picdomestic36 from "../assets/holidays/domestic/picdomestic-36.png";
-import picdomestic37 from "../assets/holidays/domestic/picdomestic-37.png";
-import picdomestic38 from "../assets/holidays/domestic/picdomestic-38.png";
-import picdomestic39 from "../assets/holidays/domestic/picdomestic-39.png";
-import picdomestic40 from "../assets/holidays/domestic/picdomestic-40.png";
-import picdomestic41 from "../assets/holidays/domestic/picdomestic-41.png";
-import picdomestic42 from "../assets/holidays/domestic/picdomestic-42.png";
-import picdomestic43 from "../assets/holidays/domestic/picdomestic-43.png";
-import picdomestic44 from "../assets/holidays/domestic/picdomestic-44.png";
-import picdomestic45 from "../assets/holidays/domestic/picdomestic-45.png";
-import picdomestic46 from "../assets/holidays/domestic/picdomestic-46.png";
-import picdomestic47 from "../assets/holidays/domestic/picdomestic-47.png";
-import picdomestic48 from "../assets/holidays/domestic/picdomestic-48.png";
-import picdomestic49 from "../assets/holidays/domestic/picdomestic-49.png";
-import picdomestic50 from "../assets/holidays/domestic/picdomestic-50.png";
+import picdomestic from "../assets/holidays/domestic/picdomestic.jpg";
+import picdomestic1 from "../assets/holidays/domestic/picdomestic-1.jpg";
+import picdomestic2 from "../assets/holidays/domestic/picdomestic-2.jpg";
+import picdomestic3 from "../assets/holidays/domestic/picdomestic-3.jpg";
+import picdomestic4 from "../assets/holidays/domestic/picdomestic-4.jpg";
+import picdomestic5 from "../assets/holidays/domestic/picdomestic-5.jpg";
+import picdomestic6 from "../assets/holidays/domestic/picdomestic-6.jpg";
+import picdomestic7 from "../assets/holidays/domestic/picdomestic-7.jpg";
+import picdomestic8 from "../assets/holidays/domestic/picdomestic-8.jpg";
+import picdomestic9 from "../assets/holidays/domestic/picdomestic-9.jpg";
+import picdomestic10 from "../assets/holidays/domestic/picdomestic-10.jpg";
+import picdomestic11 from "../assets/holidays/domestic/picdomestic-11.jpg";
+import picdomestic12 from "../assets/holidays/domestic/picdomestic-12.jpg";
+import picdomestic13 from "../assets/holidays/domestic/picdomestic-13.jpg";
+import picdomestic14 from "../assets/holidays/domestic/picdomestic-14.jpg";
+import picdomestic15 from "../assets/holidays/domestic/picdomestic-15.jpg";
+import picdomestic16 from "../assets/holidays/domestic/picdomestic-16.jpg";
+import picdomestic17 from "../assets/holidays/domestic/picdomestic-17.jpg";
+import picdomestic18 from "../assets/holidays/domestic/picdomestic-18.jpg";
+import picdomestic19 from "../assets/holidays/domestic/picdomestic-19.jpg";
+import picdomestic20 from "../assets/holidays/domestic/picdomestic-20.jpg";
+import picdomestic21 from "../assets/holidays/domestic/picdomestic-21.jpg";
+import picdomestic22 from "../assets/holidays/domestic/picdomestic-22.jpg";
+import picdomestic23 from "../assets/holidays/domestic/picdomestic-23.jpg";
+import picdomestic24 from "../assets/holidays/domestic/picdomestic-24.jpg";
+import picdomestic25 from "../assets/holidays/domestic/picdomestic-25.jpg";
+import picdomestic26 from "../assets/holidays/domestic/picdomestic-26.jpg";
+import picdomestic27 from "../assets/holidays/domestic/picdomestic-27.jpg";
+import picdomestic28 from "../assets/holidays/domestic/picdomestic-28.jpg";
+import picdomestic29 from "../assets/holidays/domestic/picdomestic-29.jpg";
+import picdomestic30 from "../assets/holidays/domestic/picdomestic-30.jpg";
+import picdomestic31 from "../assets/holidays/domestic/picdomestic-31.jpg";
+import picdomestic32 from "../assets/holidays/domestic/picdomestic-32.jpg";
+import picdomestic33 from "../assets/holidays/domestic/picdomestic-33.jpg";
+import picdomestic34 from "../assets/holidays/domestic/picdomestic-34.jpg";
+import picdomestic35 from "../assets/holidays/domestic/picdomestic-35.jpg";
+import picdomestic36 from "../assets/holidays/domestic/picdomestic-36.jpg";
+import picdomestic37 from "../assets/holidays/domestic/picdomestic-37.jpg";
+import picdomestic38 from "../assets/holidays/domestic/picdomestic-38.jpg";
+import picdomestic39 from "../assets/holidays/domestic/picdomestic-39.jpg";
+import picdomestic40 from "../assets/holidays/domestic/picdomestic-40.jpg";
+import picdomestic41 from "../assets/holidays/domestic/picdomestic-41.jpg";
+import picdomestic42 from "../assets/holidays/domestic/picdomestic-42.jpg";
+import picdomestic43 from "../assets/holidays/domestic/picdomestic-43.jpg";
+import picdomestic44 from "../assets/holidays/domestic/picdomestic-44.jpg";
+import picdomestic45 from "../assets/holidays/domestic/picdomestic-45.jpg";
+import picdomestic46 from "../assets/holidays/domestic/picdomestic-46.jpg";
+import picdomestic47 from "../assets/holidays/domestic/picdomestic-47.jpg";
+import picdomestic48 from "../assets/holidays/domestic/picdomestic-48.jpg";
+import picdomestic49 from "../assets/holidays/domestic/picdomestic-49.jpg";
+import picdomestic50 from "../assets/holidays/domestic/picdomestic-50.jpg";
+import picdomestic51 from "../assets/holidays/domestic/picdomestic-51.jpg";
+import picdomestic52 from "../assets/holidays/domestic/picdomestic-52.jpg";
+import picdomestic53 from "../assets/holidays/domestic/picdomestic-53.jpg";
+import picdomestic54 from "../assets/holidays/domestic/picdomestic-54.jpg";
+import picdomestic55 from "../assets/holidays/domestic/picdomestic-55.jpg";
+import picdomestic56 from "../assets/holidays/domestic/picdomestic-56.jpg";
+import picdomestic57 from "../assets/holidays/domestic/picdomestic-57.jpg";
+import picdomestic58 from "../assets/holidays/domestic/picdomestic-58.jpg";
+import picdomestic59 from "../assets/holidays/domestic/picdomestic-59.jpg";
 
 import whatsappColor from "../assets/services/whatsappColor.svg";
-import indiaHeaderImg from "../assets/images/india-header-img.svg";
-import indiaFooterImg from "../assets/images/india-footer-img.svg";
+import indiaHeaderImg from "../assets/images/indiaHeaderImg.jpg";
+import indiaFooterImg from "../assets/images/indiaFooterImg.webp";
 import "../styles/India.scss";
 
 const domesticHolidays = [
@@ -197,6 +206,30 @@ const domesticHolidays = [
     imageUrl2: picdomestic50,
     description:"Tsomgo Lake, also known as Changu Lake, is a high-altitude glacial lake located in the Indian state of Sikkim. Situated at an altitude of 12,400 feet above sea level, the lake is a popular tourist destination, known for its scenic beauty and tranquil atmosphere. The lake is surrounded by majestic snow-capped mountains and lush green valleys, offering breathtaking views to visitors. It is also a sacred site for the local Sikkimese people, who consider the lake to be a holy site. Visitors can enjoy a variety of activities at the lake, such as boating and trekking. During the winter months, the lake freezes over, creating a beautiful and unique landscape. The surrounding hills are also a popular spot for trekking and hiking, offering stunning views of the lake and the surrounding mountain range. The area around the lake is also home to rare species of flora and fauna. Tsomgo Lake is a must-visit destination for anyone traveling to Sikkim, offering a unique and memorable experience of natural beauty, adventure, and spirituality."
   },
+  {
+    id: 18,
+    title: "Badrinath",
+    imageUrl: picdomestic51,
+    imageUrl1: picdomestic52,
+    imageUrl2: picdomestic53,
+    description:"Badrinath is a sacred town nestled in the Chamoli district of Uttarakhand, India. Situated in the Garhwal Himalayas at an elevation of approximately 3,300 meters (10,827 feet), it is one of the holiest pilgrimage sites for Hindus and an important part of the Char Dham Yatra. The town is renowned for the Badrinath Temple, dedicated to Lord Vishnu. The Badrinath Temple is beautifully located amidst the stunning Himalayan peaks, surrounded by awe-inspiring natural beauty. The temple's architecture showcases intricate stone carvings and sculptures, reflecting the rich heritage of Indian craftsmanship. \n \nApart from the temple, Badrinath offers breathtaking vistas of the Himalayan landscape. The snow-clad mountains, gushing rivers, and verdant valleys create a picturesque backdrop for spiritual contemplation. The nearby Tapt Kund, a natural hot water spring, is considered holy, and pilgrims often take a dip in its therapeutic waters before visiting the temple. The pilgrimage season in Badrinath generally begins in May and lasts until November. Badrinath holds a significant place in the hearts of millions of devotees and spiritual seekers offering a unique blend of natural splendor, religious fervor, and tranquility that leaves a lasting impression on visitors."
+  },
+  {
+    id: 19,
+    title: "Kedarnath",
+    imageUrl: picdomestic54,
+    imageUrl1: picdomestic55,
+    imageUrl2: picdomestic56,
+    description:"Kedarnath, nestled in the picturesque Garhwal Himalayas of Uttarakhand, is a sacred pilgrimage site and a haven for spiritual seekers. It is one of the Char Dham destinations and holds immense significance in Hindu mythology and religious beliefs. Located at an elevation of 3,583 meters (11,755 feet), Kedarnath is renowned for its ancient Kedarnath Temple, dedicated to Lord Shiva. The temple, believed to be over a thousand years old, stands amidst breathtaking mountain peaks, offering a serene and divine atmosphere. Pilgrims from all over the world visit Kedarnath to seek blessings and experience the spiritual energy that permeates the surroundings. \n \nThe journey to Kedarnath is an adventure in itself. The scenic trek through rugged terrains and picturesque landscapes adds to the spiritual experience. As you trek along the well-defined trails, you can witness the pristine beauty of the Himalayan mountains, lush green valleys, and gushing rivers. The crisp mountain air and the sound of bells and chants create a tranquil ambiance that touches the soul. Kedarnath is not only a place of religious importance but also a gateway to numerous trekking trails and natural wonders. It offers opportunities for adventurous souls to explore the rugged beauty of the region. From witnessing the majestic Kedarnath Glacier to venturing on treks to nearby attractions like Vasuki Tal and Chorabari Tal, nature lovers and adventure enthusiasts are in for a treat. Due to the geographical location and seasonal variations, it is advisable to check the local weather conditions and plan your visit accordingly."
+  },
+  {
+    id: 20,
+    title: "Varanasi",
+    imageUrl: picdomestic57,
+    imageUrl1: picdomestic58,
+    imageUrl2: picdomestic59,
+    description:"Varanasi, also known as Kashi or Banaras, is a city located on the banks of the sacred Ganges River in Uttar Pradesh, India. It is one of the oldest continuously inhabited cities in the world and holds immense spiritual and cultural significance. Varanasi is considered the spiritual capital of India and is renowned for its ghats, which are steps leading down to the river. The ghats are bustling with pilgrims and devotees who come to take part in sacred rituals, perform prayers, and take holy dips in the Ganges. Exploring the narrow winding lanes of Varanasi is a fascinating experience. The old city is a maze of bustling markets, ancient temples, and hidden gems waiting to be discovered. The Kashi Vishwanath Temple, dedicated to Lord Shiva, is one of the most revered temples in Varanasi and attracts devotees from all over the world.\n\nAs the sun rises over the Ganges, you can witness the ethereal beauty of the city during a boat ride along the river. The morning light casts a golden glow on the ghats and creates a serene atmosphere, perfect for introspection and reflection. Varanasi is a city that encapsulates the essence of spirituality, culture, and ancient traditions. It offers a glimpse into the profound spiritual heritage of India and leaves visitors with a deep sense of awe and reverence."
+  },
 ];
 
 export default function India() {
@@ -221,6 +254,11 @@ export default function India() {
           travel arrangements, you can sit back and enjoy the journey while we
           take care of the rest.
         </div>
+        <Link to="/hyderabad">
+          <div className=" container my-5">
+            <img src={indiaFooterImg} className="indiaFooterImage w-100" alt="" />
+          </div>
+        </Link>
         <div className="indiaAccordian my-5">
           <CardsAccordian arr={domesticHolidays} />
         </div>
@@ -240,11 +278,7 @@ export default function India() {
             See International Destinations
           </Link>
         </div>
-        <Link to="/hyderabad">
-          <div className="foreignFooterImage my-5">
-            <img src={indiaFooterImg} alt="" />
-          </div>
-        </Link>
+        
       </div>
     </>
   );

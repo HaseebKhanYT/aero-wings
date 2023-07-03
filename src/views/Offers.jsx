@@ -61,12 +61,12 @@ export default function Offers() {
   return (
     <>
       <div className="offers">
-        <div className="offersHeading">Special deals for you</div>
+        <div className="headerText">Special deals for you</div>
 
         <OfferDisplay arr={offersArray} />
         <div className="prePurchasedDeals my-5">
           <div className="container">
-            <div className="offersHeading my-5">Pre-purchased deals</div>
+            <div className="headerText my-5">Pre-purchased deals</div>
             <div className="description my-5">
               Get the best deals on flights and hotels with our pre-purchased
               deals service. We offer both international and domestic flights at
@@ -78,20 +78,20 @@ export default function Offers() {
               making it the perfect choice for corporate travel or group
               vacations.
             </div>
-            <div className=" ppdFeatures container my-5">
+            <div className=" ppdFeatures container w-100 justify-content-center my-5">
               <ul className=" ppdFeaturesRow text-start row">
-                <li className="col-xs-12 my-3 ">
+                <li className="col-12 my-3 ">
                   Travel the best carriers at discounted prices.
                 </li>
-                <li className="col-xs-12 my-3">
+                <li className="col-12 my-3">
                   Enjoy top deals with Aero Wings hospitality partners
                   worldwide.
                 </li>
-                <li className="col-xs-12 my-3">
+                <li className="col-12 my-3">
                   Pay guaranteed less than regular season tariffs.
                 </li>
-                <li className="col-xs-12 my-3">Work / Employment visa</li>
-                <li className="col-xs-12 my-3">
+                <li className="col-12 my-3">Work / Employment visa</li>
+                <li className="col-12 my-3">
                   Book your group tours at special prices.
                 </li>
               </ul>

@@ -3,8 +3,10 @@
 .swiper-vertical .swiper-button-next,
 .swiper-vertical .swiper-button-prev {
 	left: 50%;
+  margin-left: -16px;
 	transform-origin: left center;
 }
+
 .swiper-vertical .swiper-button-prev {
 	top: calc(var(--swiper-navigation-size) / 2);
 }
@@ -33,32 +35,22 @@
     content: url("../assets/icons/fi-rs-angle-down.svg");
     opacity: 1;
   }
-  
-
-.carouselContainer{
-    height: 100%;
-    width: 100%;
-}
 
 .verticalSlide{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: justify;
-}
-
-.verticalCarousel{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .verticalHeading{
     font-weight: 700;
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+    @media (max-width: 576px) {
+      font-size: 18px;
+    }
     font-size: 36px;
     color: #CA9E67;
 }

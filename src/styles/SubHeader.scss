@@ -1,0 +1,14 @@
+.subHeaderContainer {
+    @media (min-width: 991px) {
+      height: calc(100svh - ((10vh + 84.25px) + (70svh)));
+    }
+    height: calc(100svh - ((10vh + 59.5px) + (70svh)));
+  }
+  
+  .subHeader {
+    z-index: 1;
+  }
+  
+  .iconContainer {
+    padding: 0 7vw;
+  }

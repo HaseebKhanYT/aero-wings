@@ -38,7 +38,7 @@ export default function ContactModal() {
                     alt="whatsapp Logo"
                   />
                   <div className="darkButtonText text-white mx-1">
-                    +91 91 771 770 11
+                    +91 91771 77011
                   </div>
                 </a>
               </div>
@@ -49,7 +49,7 @@ export default function ContactModal() {
               <div className="modalText">or</div>
               <div className="darkButtonContainer container my-5">
                 <a
-                  href="https://forms.gle/Mu5RDyfu1CZZaS1a6"
+                  href="https://forms.gle/TdfQpry5ifQHYEp48"
                   target="_blank"
                   className="darkButton align-items-center rounded d-flex"
                 >

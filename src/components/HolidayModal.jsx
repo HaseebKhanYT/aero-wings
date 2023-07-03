@@ -52,7 +52,7 @@ export default function HolidayModal(arr) {
                     />
                   </div>
                 </div>
-                <div className="holidayImageContainer d-flex justify-content-center col-lg-4 col-12">
+                <div className="holidayImageContainer d-none d-sm-flex justify-content-center col-lg-4 col-12">
                   <img
                     src={arr.arr.imageUrl1}
                     alt="title image"
@@ -61,7 +61,7 @@ export default function HolidayModal(arr) {
                     className="rounded"
                   />
                 </div>
-                <div className="holidayImageContainer d-flex justify-content-center col-lg-4 col-12">
+                <div className="holidayImageContainer d-none d-sm-flex justify-content-center col-lg-4 col-12">
                   <img
                     src={arr.arr.imageUrl2}
                     alt="title image"

@@ -1,19 +1,27 @@
+import { HashRouter, useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-// import "bootstrap/js/dist/modal";
-// import "bootstrap/js/dist/tab";
-// import "bootstrap/js/dist/collapse";
 
 import "./index.scss";
-import { BrowserRouter } from "react-router-dom";
+
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <HashRouter>
+      <Wrapper>
+        <App />
+      </Wrapper>
+    </HashRouter>
   </React.StrictMode>
 );

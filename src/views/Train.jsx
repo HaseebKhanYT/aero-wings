@@ -9,54 +9,54 @@ import trainLogo2 from "../assets/train/trainLogos02.svg";
 import trainLogo3 from "../assets/train/trainLogos03.svg";
 import trainLogo4 from "../assets/train/trainLogos04.svg";
 
-import trainImages1 from "../assets/train/trainImages01.svg";
-import trainImages2 from "../assets/train/trainImages02.svg";
-import trainImages3 from "../assets/train/trainImages03.svg";
-import trainImages4 from "../assets/train/trainImages04.svg";
-import trainImages5 from "../assets/train/trainImages05.svg";
-import trainImages6 from "../assets/train/trainImages06.svg";
-import trainImages7 from "../assets/train/trainImages07.svg";
-import trainImages8 from "../assets/train/trainImages08.svg";
-import trainImages9 from "../assets/train/trainImages09.svg";
+import trainImages1 from "../assets/train/trainImages01.jpg";
+import trainImages2 from "../assets/train/trainImages02.jpg";
+import trainImages3 from "../assets/train/trainImages03.jpg";
+import trainImages4 from "../assets/train/trainImages04.jpg";
+import trainImages5 from "../assets/train/trainImages05.jpg";
+import trainImages6 from "../assets/train/trainImages06.jpg";
+import trainImages7 from "../assets/train/trainImages07.jpg";
+import trainImages8 from "../assets/train/trainImages08.jpg";
+import trainImages9 from "../assets/train/trainImages09.jpg";
 
 const trainImages = [
   {
-    id:1,
+    id: 1,
     imageUrl: trainImages1,
   },
   {
-    id:2,
+    id: 2,
     imageUrl: trainImages2,
   },
   {
-    id:3,
+    id: 3,
     imageUrl: trainImages3,
   },
   {
-    id:4,
+    id: 4,
     imageUrl: trainImages4,
   },
   {
-    id:5,
+    id: 5,
     imageUrl: trainImages5,
   },
   {
-    id:6,
+    id: 6,
     imageUrl: trainImages6,
   },
   {
-    id:7,
+    id: 7,
     imageUrl: trainImages7,
   },
   {
-    id:8,
+    id: 8,
     imageUrl: trainImages8,
   },
   {
-    id:9,
+    id: 9,
     imageUrl: trainImages9,
   },
-]
+];
 
 const trainLogos = [
   {
@@ -121,8 +121,9 @@ export default function Train() {
           </div>
         </div>
       </div>
-      <div className="trainCaraousel my-5">
-      <Swiper
+      <div className="container ">
+        <Swiper
+          className="rounded"
           effect="fade"
           fadeEffect={{ crossFade: true }}
           modules={[Autoplay, EffectFade]}
@@ -134,12 +135,10 @@ export default function Train() {
           }}
         >
           {trainImages.map((slide) => (
-            <SwiperSlide key={slide.id}>
+            <SwiperSlide key={slide.id} className="rounded">
               <img
-                className="trainSlideImage"
+                className="trainSlideImage w-100 h-100 rounded"
                 src={slide.imageUrl}
-                width={"100%"}
-                height={"720px"}
                 alt="slide image"
               />
             </SwiperSlide>

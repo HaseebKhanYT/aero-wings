@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="footerBackground container-fluid d-flex justify-content-center align-items-center">
         <div className="footerContainer container-fluid justify-content-center align-items-center my-4">
           <div className="row w-100 align-items-center">
-            <span className="copyrightText text-white col-sm-4 my-3">
-              Copyright © 2023 All Rights Reserved
+            <span className="copyrightText text-white col-sm-4 my-3 text-nowrap">
+              Copyright © 2023 <br className="d-flex d-lg-none" /> Aerowings Travel & Cargo Agency. <br className="d-flex d-xl-none"/> All Rights Reserved.
             </span>
             <a href="#" className="col-sm-4 my-3">
               <img

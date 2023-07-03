@@ -1,11 +1,14 @@
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import HolidayModal from "./HolidayModal";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/HolidayCarousel.scss";
+
+import seemore from "../assets/seemore.png"
 
 export default function HolidayCarousel({ arr, onClick, focus }) {
 
@@ -19,14 +22,17 @@ export default function HolidayCarousel({ arr, onClick, focus }) {
             0: {
               slidesPerView: 1,
             },
-            720: {
+            520: {
               slidesPerView: 2,
             },
-            960: {
+            780: {
               slidesPerView: 3,
             },
-            1200: {
+            1050: {
               slidesPerView: 4,
+            },
+            1300: {
+              slidesPerView: 5,
             },
           }}
           navigation={true}
@@ -40,14 +46,14 @@ export default function HolidayCarousel({ arr, onClick, focus }) {
               key={slides.id}
             >
               <div
-                className="holidayImageContainer"
+                className="holidayImageContainer d-flex justify-content-start align-items-end"
                 data-bs-toggle="modal"
                 data-bs-target="#holidayModal"
                 onClick={() => {
                   onClick(slides);
                 }}
               >
-                <div className="holidayImageTextContainer">
+                <div className="holidayImageTextContainer position-absolute d-flex">
                   <div
                     className={
                       slides.font === 12
@@ -72,6 +78,12 @@ export default function HolidayCarousel({ arr, onClick, focus }) {
               </div>
             </SwiperSlide>
           ))}
+          {/* {console.log(arr[0].type)} */}
+          <SwiperSlide className="seemore">
+                    <Link to={arr[0].type}>
+                      <img src={seemore} width={"250px"} alt="see more" />
+                    </Link>
+          </SwiperSlide>
         </Swiper>
         <HolidayModal arr={focus} />
       </div>

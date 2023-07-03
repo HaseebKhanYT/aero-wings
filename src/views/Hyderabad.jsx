@@ -2,44 +2,57 @@ import { EffectFade, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
-import hyderabadHeaderImg from "../assets/images/hyderabad-header-img.svg";
-import hydSunset from "../assets/images/hyd-sunset-img.svg";
-import hydHussain1 from "../assets/images/hyd-hussainsagar-img.svg";
-import hydHussain2 from "../assets/images/hyd-hussainsagar2-img.svg";
+import hyderabadHeaderImg from "../assets/images/indiaFooterImg.webp";
+// import hydSunset from "../assets/images/hyd-sunset-img.svg";
+// import hydHussain1 from "../assets/images/hyd-hussainsagar-img.svg";
+// import hydHussain2 from "../assets/images/hyd-hussainsagar2-img.svg";
 
-import hydChowmahalla1 from "../assets/images/hyd-chowmahalla1.svg";
-import hydChowmahalla2 from "../assets/images/hyd-chowmahalla2.svg";
-import hydChowmahalla3 from "../assets/images/hyd-chowmahalla3.svg";
-import hydChowmahalla4 from "../assets/images/hyd-chowmahalla4.svg";
-import hydGolkonda1 from "../assets/images/hyd-golkonda1.svg";
-import hydGolkonda2 from "../assets/images/hyd-golkonda2.svg";
-import hydDining from "../assets/images/hyd-dining.svg";
-import hyd7Tombs from "../assets/images/hyd-7tombs.svg";
-import hydFalaknuma from "../assets/images/hyd-falaknuma.svg";
+import hydImage01 from "../assets/images/hydImages01.jpg";
+import hydImage02 from "../assets/images/hydImages02.jpg";
+import hydImage03 from "../assets/images/hydImages03.jpg";
+import hydImage04 from "../assets/images/hydImages04.jpg";
+import hydImage05 from "../assets/images/hydImages05.jpg";
+import hydImage06 from "../assets/images/hydImages06.jpg";
+import hydImage07 from "../assets/images/hydImages07.jpg";
+import hydImage08 from "../assets/images/hydImages08.jpg";
+import hydImage09 from "../assets/images/hydImages09.jpg";
+import hydImage10 from "../assets/images/hydImages10.jpg";
+import hydImage11 from "../assets/images/hydImages11.jpg";
+import hydImage12 from "../assets/images/hydImages12.jpg";
+import hydImage13 from "../assets/images/hydImages13.jpg";
+// import hydChowmahalla1 from "../assets/images/hyd-chowmahalla1.svg";
+// import hydChowmahalla2 from "../assets/images/hyd-chowmahalla2.svg";
+// import hydChowmahalla3 from "../assets/images/hyd-chowmahalla3.svg";
+// import hydChowmahalla4 from "../assets/images/hyd-chowmahalla4.svg";
+// import hydGolkonda1 from "../assets/images/hyd-golkonda1.svg";
+// import hydGolkonda2 from "../assets/images/hyd-golkonda2.svg";
+// import hydDining from "../assets/images/hyd-dining.svg";
+// import hyd7Tombs from "../assets/images/hyd-7tombs.svg";
+// import hydFalaknuma from "../assets/images/hyd-falaknuma.svg";
 
-import hydHotel1 from "../assets/images/hydHotel01.svg"
-import hydHotel2 from "../assets/images/hydHotel02.svg"
-import hydHotel3 from "../assets/images/hydHotel03.svg"
-import hydHotel4 from "../assets/images/hydHotel04.svg"
+import hydHotel1 from "../assets/images/hydHotel01.svg";
+import hydHotel2 from "../assets/images/hydHotel02.svg";
+import hydHotel3 from "../assets/images/hydHotel03.svg";
+import hydHotel4 from "../assets/images/hydHotel04.svg";
 
 const hydHotels = [
   {
-    id:1,
+    id: 1,
     imageUrl: hydHotel1,
   },
   {
-    id:2,
+    id: 2,
     imageUrl: hydHotel2,
   },
   {
-    id:3,
+    id: 3,
     imageUrl: hydHotel3,
   },
   {
-    id:4,
+    id: 4,
     imageUrl: hydHotel4,
   },
-]
+];
 
 import whatsappColor from "../assets/services/whatsappColor.svg";
 
@@ -51,53 +64,53 @@ export default function Hyderabad() {
   const hydCarouselImages1 = [
     {
       id: 1,
-      imageUrl: hydSunset,
+      imageUrl: hydImage01,
     },
     {
       id: 2,
-      imageUrl: hydHussain1,
+      imageUrl: hydImage02,
     },
     {
       id: 3,
-      imageUrl: hydHussain2,
+      imageUrl: hydImage03,
     },
   ];
   const hydCarouselImages2 = [
     {
       id: 1,
-      imageUrl: hydChowmahalla1,
+      imageUrl: hydImage04,
     },
     {
       id: 2,
-      imageUrl: hydChowmahalla2,
+      imageUrl: hydImage05,
     },
     {
       id: 3,
-      imageUrl: hydChowmahalla3,
+      imageUrl: hydImage06,
     },
     {
       id: 4,
-      imageUrl: hydChowmahalla4,
+      imageUrl: hydImage07,
     },
     {
       id: 5,
-      imageUrl: hydDining,
+      imageUrl: hydImage09,
     },
     {
       id: 6,
-      imageUrl: hydGolkonda1,
+      imageUrl: hydImage10,
     },
     {
       id: 7,
-      imageUrl: hyd7Tombs,
+      imageUrl: hydImage11,
     },
     {
       id: 8,
-      imageUrl: hydGolkonda2,
+      imageUrl: hydImage12,
     },
     {
       id: 9,
-      imageUrl: hydFalaknuma,
+      imageUrl: hydImage13,
     },
   ];
   return (
@@ -117,7 +130,7 @@ export default function Hyderabad() {
         Fort, and the Hussain Sagar. These places are not only important tourist
         attractions but also significant cultural and historical sites.
       </div>
-      <div className="hydCarousel my-5">
+      <div className="hydCarousel container-fluid g-0 my-5">
         <Swiper
           effect="fade"
           fadeEffect={{ crossFade: true }}
@@ -135,7 +148,7 @@ export default function Hyderabad() {
                 className="hydSlideImage"
                 src={slide.imageUrl}
                 width={"100%"}
-                height={"720px"}
+                // height={"720px"}
                 alt="slide image"
               />
             </SwiperSlide>
@@ -172,7 +185,7 @@ export default function Hyderabad() {
                 className="hydSlideImage"
                 src={slide.imageUrl}
                 width={"100%"}
-                height={"720px"}
+                // height={"720px"}
                 alt="slide image"
               />
             </SwiperSlide>
@@ -195,22 +208,16 @@ export default function Hyderabad() {
       </div>
       <div className="hydHotels container">
         <div className="row g-3">
-          {
-            hydHotels.map((logos)=>(
-              <div
-                        className="col col-lg-3 d-flex justify-content-center align-items-center"
-                        key={logos.id}
-                      >
-                        <div className="logoContainer d-flex justify-content-center">
-                          <img
-                            src={logos.imageUrl}
-                            width={"150px"}
-                            alt="logo img"
-                          />
-                        </div>
-                      </div>
-            ))
-          }
+          {hydHotels.map((logos) => (
+            <div
+              className="col col-lg-3 d-flex justify-content-center align-items-center"
+              key={logos.id}
+            >
+              <div className="logoContainer d-flex justify-content-center">
+                <img src={logos.imageUrl} width={"150px"} alt="logo img" />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="buttonContainer my-5">
