@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import HomeCarousel from "../components/HomeCarousel";
 import TCModal from "../components/TCModal";
+import StatCounter from "../components/StatCounter";
 
 import "../styles/Home.scss";
 
@@ -55,61 +56,7 @@ export default function Home() {
                     alt="Aero Wings Logo"
                   />
                 </div>
-                <div className="statsColumn position-absolute d-flex flex-column align-items-center">
-                  <div className="statsRow1 d-flex justify-content-between">
-                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat1">
-                      <div>
-                        {" "}
-                        <span className="blue statNumber"> 500,000+</span>
-                        <br /> <span className="statText">trips </span>
-                      </div>
-                    </div>
-                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat2">
-                      <div>
-                        {" "}
-                        <span className="blue statNumber"> 500+ </span>
-                        <br />
-                        <span className="statText">destinations</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="statsRow2 d-flex justify-content-between">
-                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat3">
-                      <div>
-                        {" "}
-                        <span className="blue statNumber"> 45+</span>
-                        <br />
-                        <span className="statText">years</span>
-                      </div>
-                    </div>
-                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat4">
-                      <div>
-                        {" "}
-                        <span className="blue statNumber"> 20+ </span>
-                        <br />
-                        <span className="statText"> services </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="statsRow1 d-flex justify-content-between">
-                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat5">
-                      <div>
-                        {" "}
-                        <span className="blue statNumber"> 40+ </span>
-                        <br />
-                        <span className="statText"> awards</span>
-                      </div>
-                    </div>
-                    <div className="statsContainer d-flex justify-content-center align-items-center bg-white stat6">
-                      <div>
-                        {" "}
-                        <span className="blue statNumber"> 24/7 </span>
-                        <br />
-                        <span className="statText"> support</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <StatCounter />
               </div>
               <div className="col-xl-6 col-lg-12 mt-3 mt-xl-0 homeAboutTextContainer d-flex flex-column justify-content-center align-items-center">
                 <div className="textBox1 px-3 container">
