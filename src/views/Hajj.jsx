@@ -222,9 +222,15 @@ export default function Hajj() {
               />
               <div className="hotelTextBox container-fluid g-0 position-absolute w-100 text-white">
                 <div className="row">
-                  <div className="hotelText col-8 d-flex justify-content-center align-items-center">{slide.hotel}</div>
+                  <div className="hotelText col-8 d-flex justify-content-center align-items-center">
+                    {slide.hotel}
+                  </div>
                   <div className="hotelLogo col-4 d-flex justify-content-center align-items-center">
-                    <img className="hotelLogoImage py-3" src={slide.hotelImageUrl} alt="hotel logo" />
+                    <img
+                      className="hotelLogoImage py-3"
+                      src={slide.hotelImageUrl}
+                      alt="hotel logo"
+                    />
                   </div>
                 </div>
               </div>
@@ -232,8 +238,11 @@ export default function Hajj() {
           ))}
         </Swiper>
         <div className="buttonContainer my-5">
-          <div className="contactButton" data-bs-toggle="modal"
-            data-bs-target="#contactModal">
+          <div
+            className="contactButton"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
             <img src={whatsappColor} alt="whatsapp Logo" />
             Request A Quote
           </div>

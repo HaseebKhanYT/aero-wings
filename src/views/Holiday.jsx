@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ContactModal from "../components/ContactModal";
 
 import holidayHeaderImg from "../assets/images/holidaysHeaderImg.jpg";
 
@@ -121,11 +122,15 @@ export default function Holiday() {
           </ul>
         </div>
         <div className="buttonContainer container my-5">
-          <Link to="/contact" className="contactButton">
+          <div className="contactButton"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+          >
             <img src={whatsappColor} alt="whatsapp Logo" />
             Get Started
-          </Link>
+          </div>
         </div>
+        <ContactModal />
         <div className="buttonContainer container my-5">
           <Link to="/foreign" className="shortcutButton">
             See International Destinations

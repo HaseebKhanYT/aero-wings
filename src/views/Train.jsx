@@ -78,6 +78,7 @@ const trainLogos = [
 ];
 
 import "../styles/Train.scss";
+import ContactModal from "../components/ContactModal";
 export default function Train() {
   return (
     <div className="train">
@@ -146,11 +147,13 @@ export default function Train() {
         </Swiper>
       </div>
       <div className="buttonContainer my-5">
-        <Link to="/contact" className="contactButton">
+        <div data-bs-toggle="modal"
+            data-bs-target="#contactModal" className="contactButton">
           <img src={whatsappColor} alt="whatsapp Logo" />
           Book Your Journey
-        </Link>
+        </div>
       </div>
+      <ContactModal/>
     </div>
   );
 }

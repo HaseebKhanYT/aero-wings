@@ -1,5 +1,5 @@
 import "../styles/Navbar.scss";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo/logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar() {

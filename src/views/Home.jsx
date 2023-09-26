@@ -9,11 +9,11 @@ import homeAboutImage from "../assets/homeAboutImage.jpg";
 import hajjTitle from "../assets/hajjTitle.svg";
 import hajjTitleGeometry from "../assets/hajjTitleGeometry.svg";
 
-import logoWing from "../assets/wingslogo.svg";
+import logoWing from "../assets/logo/wingslogo.svg";
 import iata from "../assets/logo/iataLogo.png";
 import kabahGate from "../assets/kabahGate.jpg";
-import dhikrImage from "../assets/dhikrImage.jpg";
-import madinaDome from "../assets/madinaDome.jpg";
+import dhikrImage from "../assets/home/dhikrImage.jpg";
+import madinaDome from "../assets/home/madinaDome.jpg";
 import HomeHolidays from "../components/HomeHolidays";
 import SubHeader from "../components/SubHeader";
 

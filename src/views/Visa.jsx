@@ -39,6 +39,7 @@ import flag35 from "../assets/flags/flag35.svg";
 import flag36 from "../assets/flags/flag36.svg";
 
 import "../styles/Visa.scss";
+import ContactModal from "../components/ContactModal";
 
 const countries = [
   {
@@ -311,11 +312,14 @@ export default function Visa() {
           </div>
         </div>
         <div className="buttonContainer my-5">
-          <Link to="/contact" className="contactButton">
+          <div className="contactButton"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal">
             <img src={whatsappColor} alt="whatsapp Logo" />
             Request More Information
-          </Link>
+          </div>
         </div>
+        <ContactModal/>
       </div>
     </>
   );

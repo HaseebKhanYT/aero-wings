@@ -67,6 +67,7 @@ const cruiseLogos = [
 
 import whatsappColor from "../assets/services/whatsappColor.svg";
 import "../styles/Cruise.scss";
+import ContactModal from "../components/ContactModal";
 export default function Cruise() {
   return (
     <>
@@ -117,11 +118,13 @@ export default function Cruise() {
           </div>
         </div>
         <div className="buttonContainer my-5">
-          <Link to="/contact" className="contactButton">
+          <div data-bs-toggle="modal"
+            data-bs-target="#contactModal" className="contactButton">
             <img src={whatsappColor} alt="whatsapp Logo" />
             Plan Your Voyage
-          </Link>
+          </div>
         </div>
+        <ContactModal/>
       </div>
     </>
   );

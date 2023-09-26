@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ContactModal from "../components/ContactModal";
 import corporateHeaderImg from "../assets/images/corporate-header-img.png";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 import "../styles/Corporate.scss";
@@ -64,13 +64,15 @@ export default function Corporate() {
           </ul>
         </div>
         <div className="buttonContainer my-5">
-          <Link to="/contact" className="contactButton">
+          <div data-bs-toggle="modal"
+            data-bs-target="#contactModal" className="contactButton">
             <img 
             
             src={whatsappColor} alt="whatsapp Logo" />
             Reach Us To Know More
-          </Link>
+          </div>
         </div>
+        <ContactModal />
       </div>
     </>
   );

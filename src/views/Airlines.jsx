@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import ContactModal from "../components/ContactModal";
 import airlinesHeaderImg from "../assets/airlines/airlineHeaderImg.jpg";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 import "../styles/Airlines.scss";
@@ -262,11 +262,14 @@ export default function Airlines() {
           </div>
         </div>
         <div className="buttonContainer my-5">
-          <Link to="/contact" className="contactButton">
+          <div className="contactButton"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal">
             <img src={whatsappColor} alt="whatsapp Logo" />
             Book Now
-          </Link>
+          </div>
         </div>
+          <ContactModal />
       </div>
     </>
   );

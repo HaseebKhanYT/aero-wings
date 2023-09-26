@@ -8,7 +8,7 @@ import Kabah from "../assets/images/kabah-bg.jpg";
 import India from "../assets/images/india-bg.jpg";
 import Thailand from "../assets/images/thailand-bg.jpg";
 import Corporate from "../assets/images/corporate-bg.jpg";
-import IncredibleIndia from "../assets/incredibleIndia.svg";
+import IncredibleIndia from "../assets/home/incredibleIndia.svg";
 
 import "swiper/css";
 import "swiper/css/navigation";

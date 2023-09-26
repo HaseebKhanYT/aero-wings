@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/HolidayCarousel.scss";
 
-import seemore from "../assets/seemore.png"
+import seemore from "../assets/home/seemore.png"
 
 export default function HolidayCarousel({ arr, onClick, focus }) {
 

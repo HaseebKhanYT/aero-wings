@@ -98,7 +98,7 @@ export default function Offers() {
             </div>
             <div className="darkButtonContainer container my-5">
               <a
-                href="https://forms.gle/Mu5RDyfu1CZZaS1a6"
+                href="https://forms.gle/TdfQpry5ifQHYEp48"
                 target="_blank"
                 className="darkButton align-items-center rounded d-flex"
               >

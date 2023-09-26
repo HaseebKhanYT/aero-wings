@@ -1,6 +1,6 @@
 import { EffectFade, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
+import ContactModal from "../components/ContactModal";
 
 import titleStrip from "../assets/holyland/holylandStrip.jpg";
 import holylandHeaderImg from "../assets/holyland/holylandHeaderImg.jpg";
@@ -165,11 +165,14 @@ export default function Holylands() {
           ))}
         </Swiper>
         <div className="buttonContainer my-5">
-          <Link to="/contact" className="contactButton">
+          <div className="contactButton"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal">
             <img src={whatsappColor} alt="whatsapp Logo" />
             Personalize Your itenary
-          </Link>
+          </div>
         </div>
+        <ContactModal />
       </div>
     </>
   );

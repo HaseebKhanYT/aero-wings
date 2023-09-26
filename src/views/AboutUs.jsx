@@ -1,16 +1,16 @@
 
-import iconAirplane from "../assets/iconAirplane.svg";
-import iconHotel from "../assets/iconHotel.svg";
-import iconCar from "../assets/iconCar.svg";
-import iconCargo from "../assets/iconCargo.svg";
-import iconHoliday from "../assets/iconHoliday.svg";
+import iconAirplane from "../assets/icons/iconAirplane.svg";
+import iconHotel from "../assets/icons/iconHotel.svg";
+import iconCar from "../assets/icons/iconCar.svg";
+import iconCargo from "../assets/icons/iconCargo.svg";
+import iconHoliday from "../assets/icons/iconHoliday.svg";
 
 import timeline from "../assets/timeline.webp";
 
 import iata from "../assets/logo/iataLogo.png";
-import tafi from "../assets/tafiLogo.svg";
-import minority from "../assets/minorityLogo.svg";
-import mohu from "../assets/mohuLogo.svg";
+import tafi from "../assets/logo/tafiLogo.svg";
+import minority from "../assets/logo/minorityLogo.svg";
+import mohu from "../assets/logo/mohuLogo.svg";
 import { Link } from "react-router-dom";
 
 import VerticalCarousel from "../components/VerticalCarousel";
