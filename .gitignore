@@ -25,3 +25,11 @@ dist-ssr
 
 # Local Netlify folder
 .netlify
+
+# Playwright MCP scratch output
+.playwright-mcp/
+
+# Local screenshot scratch
+*.png
+!src/assets/**/*.png
+!public/**/*.png
