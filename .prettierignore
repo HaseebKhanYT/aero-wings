@@ -1,0 +1,6 @@
+dist
+node_modules
+.netlify
+.playwright-mcp
+public/.htaccess
+package-lock.json
