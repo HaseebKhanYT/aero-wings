@@ -1,6 +1,5 @@
 import { EffectFade, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
 import trainHeaderImg from "../assets/images/train-header-img.png";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 

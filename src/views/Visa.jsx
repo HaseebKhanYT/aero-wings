@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import visaHeaderImg from "../assets/images/visa-header-img.png";
 import whatsappColor from "../assets/services/whatsappColor.svg";
 import flag1 from "../assets/flags/flag01.svg";

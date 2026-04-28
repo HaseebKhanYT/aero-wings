@@ -28,10 +28,6 @@ export default function Services() {
   const [focusService, setFocusService] = useState(0);
   const ref = useRef(null);
 
-  // const scrollToServices = () => {
-  //   ref.current?.scrollIntoView({ behavior: "smooth" });
-  // };
-
   const mainServices = [
     {
       id: 1,
