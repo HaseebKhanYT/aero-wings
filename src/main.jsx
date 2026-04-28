@@ -2,11 +2,11 @@ import { HashRouter, useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import App from "@/app/App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-import "./index.scss";
+import "./styles/index.scss";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
