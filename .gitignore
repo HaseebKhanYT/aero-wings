@@ -29,6 +29,9 @@ src/assets/*
 # Local Netlify folder
 .netlify
 
+# Local agent guidance — not meant to be tracked
+CLAUDE.md
+
 # Playwright MCP scratch output
 .playwright-mcp/
 
