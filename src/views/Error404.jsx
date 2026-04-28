@@ -5,7 +5,6 @@ export default function Error404() {
   return (
     <>
       <div className="error">
-        {/* <div className="headerText my-5">Error 404</div> */}
         <div className="errorContainer my-5">
           <div className="errorMessageContainer my-5">
             <div className="errorMessage1 my-5">Oops, page not found!</div>

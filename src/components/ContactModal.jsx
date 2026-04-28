@@ -60,9 +60,6 @@ export default function ContactModal() {
                 </a>
               </div>
             </div>
-            {/* <div className="modal-footer border-0">
-              
-            </div> */}
           </div>
         </div>
       </div>

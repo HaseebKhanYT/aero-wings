@@ -31,11 +31,6 @@ export default function Holylands() {
       imageUrl: cordobaImg,
       caption: "Cordoba, Spain",
     },
-    // {
-    //   id: 2,
-    //   imageUrl: mihrabImg,
-    //   caption: "Great Mosque of Cordoba, Spain",
-    // },
     {
       id: 2,
       imageUrl: cordobaMosqueImg,

@@ -78,7 +78,6 @@ export default function HolidayCarousel({ arr, onClick, focus }) {
               </div>
             </SwiperSlide>
           ))}
-          {/* {console.log(arr[0].type)} */}
           <SwiperSlide className="seemore">
                     <Link to={arr[0].type}>
                       <img src={seemore} width={"250px"} alt="see more" />

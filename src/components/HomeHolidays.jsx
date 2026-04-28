@@ -175,12 +175,6 @@ const domesticHolidays = [
     description:
       'Kerala, also known as "God\'s Own Country," is a tropical paradise located in the southwestern region of India. It is known for its picturesque landscapes, serene backwaters, palm-lined beaches, and lush greenery. The state is a popular destination for tourists who are seeking a serene escape from the hustle and bustle of city life. One of the most popular destinations in Kerala is the hill station of Munnar, known for its rolling hills, tea plantations, and picturesque landscapes. Another must-visit location is the backwaters of Alleppey, where visitors can enjoy a leisurely boat ride and soak up the stunning natural beauty. Kerala is also known for its mouth-watering cuisine, which features a variety of seafood dishes, coconut-based curries, and traditional vegetarian fare. Overall, Kerala is a must-visit destination for those looking to relax and rejuvenate amidst natural beauty and traditional culture.',
   },
-  // {
-  //   id: 12,
-  //   title: "",
-  //   imageUrl: seemore,
-  //   type: "link"
-  // },
 ];
 
 const internationalHolidays = [
